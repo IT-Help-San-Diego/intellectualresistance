@@ -1,7 +1,7 @@
 # intellectualresistance.com
 
 The umbrella site for the **Intellectual Resistance** — a body of work on logic,
-reason, and thinking done right. Single-page, zero-JS, hardened static site in
+reason, and thinking that shows its work. Single-page, zero-JS, hardened static site in
 the IT Help San Diego scientific design family.
 
 ## Frameworks (each labeled by epistemic status)

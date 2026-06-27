@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'sha256-pvm3GmHFP+O33dxK6xAueFloQ8GOr4ssRI5KA3iozR4='; script-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'sha256-QdM0XTmfQEO1A+tE3Kb0j9iJ6DM3SzjsQU+4TFJGWB8='; script-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <meta name="theme-color" content="#0d1117">
 <meta name="color-scheme" content="dark">
-<title>The Intellectual Resistance — thinking done right</title>
-<meta name="description" content="The Intellectual Resistance is a body of work on logic, reason, and thinking done right: preserving signal integrity in a civilization that transmits faster than it verifies. The Verification Principle, Carrier Color, candidate societal control levers, the Owl Semaphore, and Star-Centric Transport — with the math, and with the epistemic discipline to call a candidate a candidate.">
+<title>The Intellectual Resistance — thinking that shows its work</title>
+<meta name="description" content="The Intellectual Resistance is a body of work on logic, reason, and thinking that shows its work: preserving signal integrity in a civilization that transmits faster than it verifies. The Verification Principle, Carrier Color, candidate societal control levers, the Owl Semaphore, and Star-Centric Transport — with the math, and with the epistemic discipline to call a candidate a candidate.">
 <meta name="author" content="Carey Balboa">
 <meta name="keywords" content="intellectual resistance, verification principle, carrier color, societal control levers, owl semaphore, star-centric transport, metacognition, Bayesian reasoning, epistemics, Klein four-group, Carey Balboa, IT Help San Diego">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -20,15 +20,15 @@
 <meta property="og:site_name" content="The Intellectual Resistance">
 <meta property="og:locale" content="en_US">
 <meta property="og:url" content="https://intellectualresistance.com/">
-<meta property="og:title" content="The Intellectual Resistance — thinking done right">
-<meta property="og:description" content="A body of work on logic, reason, and thinking done right — preserving signal integrity in a civilization that transmits faster than it verifies.">
+<meta property="og:title" content="The Intellectual Resistance — thinking that shows its work">
+<meta property="og:description" content="A body of work on logic, reason, and thinking that shows its work — preserving signal integrity in a civilization that transmits faster than it verifies.">
 <meta property="og:image" content="https://intellectualresistance.com/assets/og-card.svg">
 <meta property="og:image:type" content="image/svg+xml">
 <meta property="og:image:alt" content="A resistor in a circuit over a dark field — the Intellectual Resistance mark.">
 <!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="The Intellectual Resistance — thinking done right">
-<meta name="twitter:description" content="Logic, reason, and thinking done right. The Verification Principle, Carrier Color, candidate control levers, the Owl Semaphore, Star-Centric Transport — with the math.">
+<meta name="twitter:title" content="The Intellectual Resistance — thinking that shows its work">
+<meta name="twitter:description" content="Logic, reason, and thinking that shows its work. The Verification Principle, Carrier Color, candidate control levers, the Owl Semaphore, Star-Centric Transport — with the math.">
 <meta name="twitter:image" content="https://intellectualresistance.com/assets/og-card.svg">
 <meta name="twitter:image:alt" content="A resistor in a circuit over a dark field — the Intellectual Resistance mark.">
 <style>
@@ -163,6 +163,23 @@ section{padding:var(--s6) 0;position:relative}
 .creed .item p{font-size:.94rem;color:var(--text-muted);margin:0}
 .creed .item p b{color:var(--text)}
 @media(max-width:720px){.creed{grid-template-columns:1fr}}
+
+/* ── the metacognitive arc ── */
+.arc{margin-top:var(--s6);border-top:1px solid var(--border-soft);padding-top:var(--s5)}
+.arc .arc-k{font-family:var(--mono);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--copper);margin-bottom:var(--s4);text-align:center}
+.arc-rows{max-width:560px;margin:0 auto;display:flex;flex-direction:column;gap:var(--s3)}
+.arc-row{display:grid;grid-template-columns:74px 1fr;gap:var(--s3);align-items:baseline;padding-bottom:var(--s3);border-bottom:1px solid var(--border-soft)}
+.arc-row:last-child{border-bottom:none}
+.arc-row .yr{font-family:var(--mono);font-size:.92rem;color:var(--text-dim);letter-spacing:.04em}
+.arc-row .ln .q{font-family:var(--display);font-size:1.12rem;color:var(--text);font-weight:600;letter-spacing:-.01em}
+.arc-row .ln .g{display:block;font-size:.84rem;color:var(--text-muted);margin-top:.15rem}
+.arc-row.now .yr{color:var(--gold)}
+.arc-row.now .ln .q{color:var(--gold)}
+.arc-foot{max-width:560px;margin:var(--s4) auto 0;text-align:center}
+.arc-foot blockquote{margin:0;font-family:var(--display);font-style:italic;font-weight:500;font-size:clamp(1.15rem,3vw,1.5rem);line-height:1.4;color:var(--text)}
+.arc-foot blockquote .em{color:var(--gold);font-style:italic}
+.arc-foot cite{display:block;margin-top:var(--s2);font-style:normal;font-family:var(--mono);font-size:.72rem;letter-spacing:.04em;color:var(--text-dim)}
+@media(max-width:520px){.arc-row{grid-template-columns:60px 1fr;gap:var(--s2)}}
 
 /* ============================================================ FRAMEWORK CARDS (map) */
 .map{background:radial-gradient(80% 120% at 50% 0%,#10151f,#0d1117 70%)}
@@ -349,7 +366,7 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       "@id": "https://intellectualresistance.com/#website",
       "url": "https://intellectualresistance.com/",
       "name": "The Intellectual Resistance",
-      "description": "A body of work on logic, reason, and thinking done right — preserving signal integrity in a civilization that transmits faster than it verifies.",
+      "description": "A body of work on logic, reason, and thinking that shows its work — preserving signal integrity in a civilization that transmits faster than it verifies.",
       "inLanguage": "en-US",
       "publisher": { "@id": "https://intellectualresistance.com/#person" }
     },
@@ -379,6 +396,27 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
         "Information security",
         "Evidence-based analysis",
         "Group theory"
+      ],
+      "subjectOf": [
+        {
+          "@type": "ScholarlyArticle",
+          "name": "The Belief Machine: How Human Identity Defense, AI Sycophancy, and Unaudited Targeting Systems Became One Problem",
+          "url": "https://ssrn.com/abstract=6722059",
+          "datePublished": "2026-05-12",
+          "author": { "@id": "https://intellectualresistance.com/#person" }
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Owl Semaphore System Specification",
+          "identifier": "https://doi.org/10.5281/zenodo.19473697",
+          "author": { "@id": "https://intellectualresistance.com/#person" }
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "name": "DNS Tool: Domain Security Audit Platform",
+          "identifier": "https://doi.org/10.5281/zenodo.19468134",
+          "author": { "@id": "https://intellectualresistance.com/#person" }
+        }
       ]
     },
     {
@@ -452,7 +490,7 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
   </svg>
 
   <div class="container hero-inner">
-    <div class="eyebrow">A body of work &middot; logic, reason, thinking done right</div>
+    <div class="eyebrow">A body of work &middot; logic, reason, thinking that shows its work</div>
     <h1>Resistance is the<br><span class="accent">whole point.</span></h1>
     <p class="lead">In a circuit, resistance is what makes current <em>usable</em> &mdash; it sets the terms and drops the voltage to something that won't burn the system down. Thinking is the same. <b>Friction, doubt, and the deliberate pause before the answer are not the obstacle. They are the work.</b></p>
     <p class="turn">The <b>Intellectual Resistance</b> is the umbrella over a set of frameworks for one problem: how to preserve signal in a civilization that has learned to transmit far faster than it can verify. Each is stated with its math &mdash; and labeled honestly for exactly how far it has been proven.</p>
@@ -496,6 +534,29 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       <div class="item"><div class="k">Claim exactly what is proven</div><p><b>And then stop.</b> A proven theorem is marked proven. A recurring pattern is marked a candidate. A design bet is marked a hypothesis. The restraint is the strength.</p></div>
       <div class="item"><div class="k">Find where presupposition enters</div><p><b>Disputes rarely begin with a false conclusion.</b> They begin with a hidden assumption injected far earlier in the chain. Locate that moment and most disagreements resolve into something solvable.</p></div>
       <div class="item"><div class="k">Reality-check the bold question</div><p><b>Ask the big question &mdash; then return to what's defensible.</b> When the evidence says a framing is unreasonable, the framing yields. The point is to be right, not to be loud.</p></div>
+    </div>
+
+    <!-- the metacognitive arc -->
+    <div class="arc">
+      <div class="arc-k">What thinking has been for</div>
+      <div class="arc-rows">
+        <div class="arc-row">
+          <span class="yr">1637</span>
+          <span class="ln"><span class="q">&ldquo;I think, therefore I am.&rdquo;</span><span class="g">Descartes &mdash; thinking proves you exist.</span></span>
+        </div>
+        <div class="arc-row">
+          <span class="yr">1997</span>
+          <span class="ln"><span class="q">&ldquo;Think different.&rdquo;</span><span class="g">Apple &mdash; thinking sets you apart.</span></span>
+        </div>
+        <div class="arc-row now">
+          <span class="yr">2026</span>
+          <span class="ln"><span class="q">&ldquo;Think about your thinking.&rdquo;</span><span class="g">The Intellectual Resistance &mdash; thinking audits itself.</span></span>
+        </div>
+      </div>
+      <div class="arc-foot">
+        <blockquote>&ldquo;I <span class="em">metacognate</span>, therefore I am &mdash; again and again.&rdquo;</blockquote>
+        <cite>&mdash; Carey Balboa</cite>
+      </div>
     </div>
   </div>
 </section>
@@ -774,6 +835,11 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       <div class="rule"></div>
       <cite>&mdash; the operating principle of the Intellectual Resistance</cite>
     </div>
+
+    <hr class="divider">
+
+    <!-- published companion: The Belief Machine -->
+    <div class="callout epistemic"><strong>Published companion &mdash; <em>The Belief Machine</em> (SSRN, 2026).</strong> A peer-reviewable essay that supplies empirical spine to two of the frameworks above. It documents <b>identity-protective cognition</b> (Kahan et al., 2017<sup><a href="#r7">[7]</a></sup>) &mdash; the lab-measured finding that information threatening group identity is processed defensively <em>regardless of intelligence</em> &mdash; which is the documented cousin of Carrier&nbsp;Color: the carrier (group identity) overriding the signal. It then argues the fix is the <b>mandatory protected pause</b> (the surgical timeout, the aviation checklist), which is the Verification Principle applied to AI governance: a structured interruption that forces foreground evaluation before a high-stakes action. It also defines a new term, <em>mechanized oppression</em>. <a href="https://ssrn.com/abstract=6722059" target="_blank" rel="noopener">Read it on SSRN &#8599;</a></p>
   </div>
 </section>
 
@@ -821,7 +887,11 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       <li id="r4"><span class="srcbadge sb-acad">Four-valued logic (distinction)</span>N. D. Belnap, &ldquo;A Useful Four-Valued Logic,&rdquo; in <em>Modern Uses of Multiple-Valued Logic</em>, 1977 &mdash; cited here only to mark the boundary: the Owl Semaphore shares V&#8324; as an abstract group skeleton but is a system of stance-operations, not a many-valued logic.</li>
       <li id="r5"><span class="srcbadge sb-self">Project</span>DNS Tool &mdash; deployed OSINT domain &amp; email-security intelligence platform. <a href="https://dnstool.it-help.tech" target="_blank" rel="noopener">dnstool.it-help.tech &#8599;</a> · source: <a href="https://github.com/IT-Help-San-Diego/dns-tool-intel" target="_blank" rel="noopener">github.com/IT-Help-San-Diego &#8599;</a></li>
       <li id="r6"><span class="srcbadge sb-self">Project</span>Organic Computer &mdash; the human mind spec'd as hardware; sustained deliberate reasoning as a service. <a href="https://organiccomputer.me" target="_blank" rel="noopener">organiccomputer.me &#8599;</a></li>
+      <li id="r7"><span class="srcbadge sb-acad">Primary &mdash; peer-reviewed</span>D. M. Kahan, E. Peters, E. C. Dawson &amp; P. Slovic, &ldquo;Motivated numeracy and enlightened self-government,&rdquo; <em>Behavioural Public Policy</em>, vol. 1, no. 1, pp. 54&ndash;86, 2017 &mdash; the empirical basis for identity-protective cognition. <a href="https://doi.org/10.1017/bpp.2016.2" target="_blank" rel="noopener">doi:10.1017/bpp.2016.2 &#8599;</a></li>
+      <li id="r8"><span class="srcbadge sb-self">Companion paper</span>C. J. Balboa, <em>The Belief Machine: How Human Identity Defense, AI Sycophancy, and Unaudited Targeting Systems Became One Problem</em>, SSRN working paper 6722059, 2026. ORCID 0009-0000-5237-9065. <a href="https://ssrn.com/abstract=6722059" target="_blank" rel="noopener">ssrn.com/abstract=6722059 &#8599;</a></li>
+      <li id="r9"><span class="srcbadge sb-self">Framework spec</span>C. J. Balboa, <em>Owl Semaphore System Specification</em> (finite algebra of epistemic states), Zenodo, 2026. <a href="https://doi.org/10.5281/zenodo.19473697" target="_blank" rel="noopener">doi:10.5281/zenodo.19473697 &#8599;</a></li>
     </ol>
+    <p class="muted fs-90">Author identity &mdash; ORCID <a href="https://orcid.org/0009-0000-5237-9065" target="_blank" rel="noopener">0009-0000-5237-9065</a> · DNS Tool corpus DOI <a href="https://doi.org/10.5281/zenodo.19468134" target="_blank" rel="noopener">10.5281/zenodo.19468134</a>.</p>
   </div>
 </section>
 </main>
@@ -829,7 +899,7 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
 <footer>
   <div class="container">
     <p class="mono">THE INTELLECTUAL RESISTANCE — intellectualresistance.com</p>
-    <p class="tagline">Logic, reason, and thinking done right. Built in the IT Help San Diego scientific design language —<br>golden-ratio layout, self-contained assets, strict content-security policy. Every claim labeled for how far it's proven.</p>
+    <p class="tagline">Logic, reason, and thinking that shows its work. Built in the IT Help San Diego scientific design language —<br>golden-ratio layout, self-contained assets, strict content-security policy. Every claim labeled for how far it's proven.</p>
 
     <!-- Corporate tree -->
     <nav class="ftr-tree" aria-label="Organizational structure">

@@ -1,7 +1,7 @@
 # The Intellectual Resistance — Full Reference
 
 > intellectualresistance.com — a body of work on logic, reason, and thinking
-> done right. It is the umbrella over five frameworks for one problem: how to
+> that shows its work. It is the umbrella over five frameworks for one problem: how to
 > preserve signal in a civilization that has learned to transmit far faster than
 > it can verify. Each framework is stated with its math and labeled honestly for
 > exactly how far it has been proven. Authored by Carey Balboa, founder of IT
