@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny-ps" viewBox="0 0 512 512" width="512" height="512" x="0" y="0" preserveAspectRatio="xMidYMid meet">
+  <title>The Intellectual Resistance</title>
+  <rect x="0" y="0" width="512" height="512" fill="#0d1117"/>
+  <line x1="80" y1="256" x2="176" y2="256" stroke="#3fb950" stroke-width="20" stroke-linecap="round"/>
+  <polyline points="176,256 208,176 256,336 304,176 336,256" fill="none" stroke="#c8956a" stroke-width="22" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="336" y1="256" x2="432" y2="256" stroke="#d4a853" stroke-width="20" stroke-linecap="round"/>
+  <circle cx="80" cy="256" r="18" fill="#3fb950"/>
+  <circle cx="432" cy="256" r="18" fill="#d4a853"/>
+</svg>
