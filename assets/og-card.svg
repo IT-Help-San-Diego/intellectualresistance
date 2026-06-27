@@ -18,9 +18,9 @@
   <rect width="1200" height="630" fill="url(#glow)"/>
 
   <!-- eyebrow -->
-  <g font-family="SFMono-Regular,Consolas,monospace" font-size="22" letter-spacing="6" fill="#d4a853">
+  <g font-family="SFMono-Regular,Consolas,monospace" font-size="20" letter-spacing="3.5" fill="#d4a853">
     <rect x="90" y="118" width="40" height="2" fill="#d4a853"/>
-    <text x="146" y="126">A BODY OF WORK · LOGIC, REASON, THINKING DONE RIGHT</text>
+    <text x="146" y="126">A BODY OF WORK · LOGIC, REASON, THINKING THAT SHOWS ITS WORK</text>
   </g>
 
   <!-- headline -->
