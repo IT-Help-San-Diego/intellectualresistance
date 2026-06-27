@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'sha256-QdM0XTmfQEO1A+tE3Kb0j9iJ6DM3SzjsQU+4TFJGWB8='; script-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'sha256-AhQU6rSI+Hi9akUjayQJaAwPKca0bAivSkdFTwvlpcc='; script-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <meta name="theme-color" content="#0d1117">
 <meta name="color-scheme" content="dark">
@@ -240,21 +240,27 @@ section{padding:var(--s6) 0;position:relative}
 .levers .fail{font-family:var(--mono);color:var(--gold);font-size:.8rem;white-space:nowrap}
 .levers .ex{color:var(--text-muted);font-size:.85rem}
 
-/* owl V4 group diagram */
-.owlwrap{display:grid;grid-template-columns:200px 1fr;gap:var(--s5);align-items:center;margin:var(--s4) 0}
-@media(max-width:680px){.owlwrap{grid-template-columns:1fr;gap:var(--s4)}}
-.owlfig{text-align:center}
-.owlfig img{width:100%;height:auto;max-width:160px;aspect-ratio:1/1;object-fit:contain;
-  filter:drop-shadow(0 12px 30px rgba(0,0,0,.5))}
-.owlfig figcaption{font-family:var(--mono);font-size:.68rem;color:var(--text-dim);margin-top:var(--s2)}
-.v4{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
-.v4 .st{border:1px solid var(--border);border-radius:11px;padding:var(--s3);background:var(--bg-2);text-align:center}
-.v4 .st .nm{font-family:var(--mono);font-size:.74rem;font-weight:700;letter-spacing:.04em}
-.v4 .st .gl{font-size:.72rem;color:var(--text-dim);margin-top:.2rem}
-.v4 .st.n{border-color:rgba(63,185,80,.3)} .v4 .st.n .nm{color:var(--success)}
-.v4 .st.nn{border-color:rgba(88,166,255,.3)} .v4 .st.nn .nm{color:var(--info)}
-.v4 .st.c{border-color:rgba(248,81,73,.3)} .v4 .st.c .nm{color:var(--danger)}
-.v4 .st.m{border-color:rgba(140,65,145,.4)} .v4 .st.m .nm{color:#c77fce}
+/* four-owl quad — each state with its owl, transform, and epistemic story */
+.owlquad{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--s4);margin:var(--s5) 0}
+@media(max-width:760px){.owlquad{grid-template-columns:1fr}}
+.owlcard{display:grid;grid-template-columns:118px 1fr;gap:var(--s4);align-items:start;
+  border:1px solid var(--border);border-radius:14px;background:var(--bg-2);padding:var(--s4)}
+.owlcard.s-n{border-top:3px solid var(--success)}
+.owlcard.s-nn{border-top:3px solid var(--info)}
+.owlcard.s-c{border-top:3px solid var(--danger)}
+.owlcard.s-m{border-top:3px solid #c77fce}
+.owlcard .owlimg{width:118px}
+.owlcard .owlimg img{width:118px;height:118px;object-fit:contain;filter:drop-shadow(0 8px 22px rgba(0,0,0,.5))}
+.owlcard .owlimg .tf{display:block;font-family:var(--mono);font-size:.62rem;color:var(--text-dim);text-align:center;margin-top:.4rem;line-height:1.5;letter-spacing:.02em}
+.owlcard .body{min-width:0}
+.owlcard .body .nm{font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.owlcard.s-n .body .nm{color:var(--success)}
+.owlcard.s-nn .body .nm{color:var(--info)}
+.owlcard.s-c .body .nm{color:var(--danger)}
+.owlcard.s-m .body .nm{color:#c77fce}
+.owlcard .body .ti{font-family:var(--display);font-weight:600;font-size:1.02rem;color:var(--text);margin:.15rem 0 .4rem}
+.owlcard .body p{font-size:.85rem;color:var(--text-muted);margin:0;line-height:1.55}
+@media(max-width:420px){.owlcard{grid-template-columns:1fr;justify-items:center;text-align:center}.owlcard .body{text-align:left}}
 
 /* star-centric transport pipeline */
 .pipe{width:100%;height:auto;margin:var(--s4) 0;display:block}
@@ -736,23 +742,59 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
     </div>
     <div class="meta"><span class="status st-proven">Algebra proven</span> <span class="status st-hypothesis">Utility: open study</span></div>
 
-    <p>The Owl Semaphore is a way to <b>label the stance you are reasoning from</b>. It defines four states &mdash; <b>Normative</b>, <b>Non-Normative</b>, <b>Critical</b>, and <b>Metacognitive</b> &mdash; treated not as truth-values but as <em>operations on stance</em>: transformations you apply when you change how you're evaluating a claim.</p>
+    <p>The Owl Semaphore is a way to <b>label the stance you are reasoning from</b>. It defines four states &mdash; <b>Normative</b>, <b>Non-Normative</b>, <b>Critical</b>, and <b>Metacognitive</b> &mdash; treated not as truth-values but as <em>operations on stance</em>: transformations you apply when you change how you're evaluating a claim. The semaphore is not a filing system; it is a notation for how rigorous thought already moves. It encodes a <em>position</em>, not a proof &mdash; and where it borrows from a discipline, it does so as analogy, not as validation.</p>
 
-    <div class="owlwrap">
-      <figure class="owlfig">
-        <picture>
-          <source srcset="assets/owl-normative.webp" type="image/webp">
-          <img src="assets/owl-normative.png" width="160" height="160" alt="The Owl Semaphore normative-state seal: a stylized owl in gold." loading="lazy" decoding="async">
-        </picture>
-        <figcaption>// OWL SEMAPHORE &middot; normative seal</figcaption>
+    <div class="owlquad">
+      <figure class="owlcard s-n">
+        <div class="owlimg">
+          <picture><source srcset="assets/owl-normative.webp" type="image/webp"><img src="assets/owl-normative.png" width="118" height="118" alt="The Normative owl — upright gold Owl of Athena in a Greek meander ring." loading="lazy" decoding="async"></picture>
+          <span class="tf">T = I &middot; det = +1<br>(x,&thinsp;y) &rarr; (x,&thinsp;y)</span>
+        </div>
+        <figcaption class="body">
+          <div class="nm">Normative</div>
+          <div class="ti">The proven ground</div>
+          <p>Upright, facing forward &mdash; no transform; you see the room exactly as it is. Newton's laws held for 200 years before Einstein found their edges: tested, verified, operational. The owl stands upright when the work has been done and the foundation holds &mdash; not permanent truth, but a foundation the evidence supports right now.</p>
+        </figcaption>
       </figure>
-      <div class="v4">
-        <div class="st n"><div class="nm">NORMATIVE</div><div class="gl">identity stance</div></div>
-        <div class="st nn"><div class="nm">NON-NORMATIVE</div><div class="gl">flip orientation</div></div>
-        <div class="st c"><div class="nm">CRITICAL</div><div class="gl">flip locus of audit</div></div>
-        <div class="st m"><div class="nm">METACOGNITIVE</div><div class="gl">flip both (compose)</div></div>
-      </div>
+
+      <figure class="owlcard s-nn">
+        <div class="owlimg">
+          <picture><source srcset="assets/owl-non-normative.webp" type="image/webp"><img src="assets/owl-non-normative.png" width="118" height="118" alt="The Non-Normative owl — mirror-reflected, in a teal ring." loading="lazy" decoding="async"></picture>
+          <span class="tf">&sigma;&#7515; &middot; det = &minus;1<br>(x,&thinsp;y) &rarr; (&minus;x,&thinsp;y)</span>
+        </div>
+        <figcaption class="body">
+          <div class="nm">Non-Normative</div>
+          <div class="ti">Da Vinci's wings</div>
+          <p>A mirror image &mdash; up stays up, but left and right swap: a vertical-axis reflection. Leonardo spent years sketching wing mechanics and building machines that couldn't fly; he failed, yet left a guideline the Wright brothers stood on 400 years later. The engine of progress: rigorous exploration that hasn't finished yet.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="owlcard s-c">
+        <div class="owlimg">
+          <picture><source srcset="assets/owl-critical.webp" type="image/webp"><img src="assets/owl-critical.png" width="118" height="118" alt="The Critical owl — fully inverted, in an alert-red ring." loading="lazy" decoding="async"></picture>
+          <span class="tf">C&#8322; &middot; det = +1<br>(x,&thinsp;y) &rarr; (&minus;x,&thinsp;&minus;y)</span>
+        </div>
+        <figcaption class="body">
+          <div class="nm">Critical</div>
+          <div class="ti">The Manhattan moment</div>
+          <p>A handstand &mdash; both axes flip; the blood rushes to your head and you can't hold it long. Total inversion under pressure: &ldquo;what if the atmosphere ignites?&rdquo; Your proof turns on you &mdash; not because the analysis was wrong, but because it was right and the answer is terrifying. Psychology's <em>ego-dystonic</em> is a loose analogy; engineers call it a show-stopper, security a 0-day.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="owlcard s-m">
+        <div class="owlimg">
+          <picture><source srcset="assets/owl-metacognitive.webp" type="image/webp"><img src="assets/owl-metacognitive.png" width="118" height="118" alt="The Metacognitive owl — horizontally reflected, in a violet ring." loading="lazy" decoding="async"></picture>
+          <span class="tf">&sigma;&#8341; &middot; det = &minus;1<br>(x,&thinsp;y) &rarr; (x,&thinsp;&minus;y)</span>
+        </div>
+        <figcaption class="body">
+          <div class="nm">Metacognitive</div>
+          <div class="ti">The observer's mirror</div>
+          <p>A child bends down and looks between their legs to find the lost piece &mdash; the room is the same, but up and down invert. A different angle reveals what the original frame could not; robotics inverts sensors for the same reason. Not a finding about the subject &mdash; a finding about the <em>instrument</em>: calibration audits, methodology reviews, asking whether the telescope itself made the anomaly. (Gödel is invoked only as a structural analogy &mdash; the need for a frame outside the first &mdash; never as proof about cognition.)</p>
+        </figcaption>
+      </figure>
     </div>
+
+    <p class="muted fs-90">Triple-redundant by design &mdash; state is carried by posture, ring color, <em>and</em> the transform &mdash; so the notation degrades gracefully and stays accessible. Full stories and sources: <a href="https://dnstool.it-help.tech/owl-semaphore" target="_blank" rel="noopener">the Owl Semaphore page &#8599;</a>.</p>
 
     <p>Two independent, commuting yes/no distinctions generate these states: the <em>orientation of stance</em> and the <em>locus of audit</em>. Two independent involutions force exactly four elements, closure forces the fourth as their composition, and every element is its own inverse. That structure has a name:</p>
 
