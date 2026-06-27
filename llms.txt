@@ -1,6 +1,6 @@
 # The Intellectual Resistance
 
-> A body of work on logic, reason, and thinking done right — preserving signal integrity in a civilization that has learned to transmit faster than it can verify. Five frameworks (each stated with its math and labeled by epistemic status) and two shipped projects. By Carey Balboa, IT Help San Diego Inc.
+> A body of work on logic, reason, and thinking that shows its work — preserving signal integrity in a civilization that has learned to transmit faster than it can verify. Five frameworks (each stated with its math and labeled by epistemic status) and two shipped projects. By Carey Balboa, IT Help San Diego Inc.
 
 ## Frameworks
 
