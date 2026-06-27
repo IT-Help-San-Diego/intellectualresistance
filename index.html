@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'sha256-AhQU6rSI+Hi9akUjayQJaAwPKca0bAivSkdFTwvlpcc='; script-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'sha256-Zv3RGh1rDTcub1sMEevkoXN+n2lg/BHEtPlFP8gUp/Y='; script-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <meta name="theme-color" content="#0d1117">
 <meta name="color-scheme" content="dark">
@@ -242,27 +242,29 @@ section{padding:var(--s6) 0;position:relative}
 .levers .fail{font-family:var(--mono);color:var(--gold);font-size:.8rem;white-space:nowrap}
 .levers .ex{color:var(--text-muted);font-size:.85rem}
 
-/* four-owl quad — each state with its owl, transform, and epistemic story */
-.owlquad{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--s4);margin:var(--s5) 0}
-@media(max-width:760px){.owlquad{grid-template-columns:1fr}}
-.owlcard{display:grid;grid-template-columns:118px 1fr;gap:var(--s4);align-items:start;
-  border:1px solid var(--border);border-radius:14px;background:var(--bg-2);padding:var(--s4)}
+/* four-owl quad — each state with its owl, transform, and epistemic story.
+   MOBILE-FIRST: cards stack (owl + math centered on top, full-width readable text below).
+   This is the default at every width; a 2-up grid + side-by-side card is a wide-screen enhancement only. */
+.owlquad{display:grid;grid-template-columns:1fr;gap:var(--s3);margin:var(--s5) 0}
+.owlcard{display:flex;flex-direction:column;align-items:center;gap:var(--s2);text-align:center;
+  border:1px solid var(--border);border-radius:14px;background:var(--bg-2);padding:var(--s4) var(--s4) var(--s4)}
 .owlcard.s-n{border-top:3px solid var(--success)}
 .owlcard.s-nn{border-top:3px solid var(--info)}
 .owlcard.s-c{border-top:3px solid var(--danger)}
 .owlcard.s-m{border-top:3px solid #c77fce}
-.owlcard .owlimg{width:118px}
-.owlcard .owlimg img{width:118px;height:118px;object-fit:contain;filter:drop-shadow(0 8px 22px rgba(0,0,0,.5))}
-.owlcard .owlimg .tf{display:block;font-family:var(--mono);font-size:.62rem;color:var(--text-dim);text-align:center;margin-top:.4rem;line-height:1.5;letter-spacing:.02em}
-.owlcard .body{min-width:0}
-.owlcard .body .nm{font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.owlcard .owlimg{display:flex;flex-direction:column;align-items:center}
+.owlcard .owlimg img{width:112px;height:112px;object-fit:contain;filter:drop-shadow(0 8px 22px rgba(0,0,0,.5))}
+.owlcard .owlimg .tf{display:block;font-family:var(--mono);font-size:.82rem;color:var(--text-dim);text-align:center;margin-top:.5rem;line-height:1.7;letter-spacing:.01em;white-space:nowrap}
+.owlcard .body{min-width:0;max-width:60ch;margin-top:.2rem}
+.owlcard .body .nm{font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-align:center}
 .owlcard.s-n .body .nm{color:var(--success)}
 .owlcard.s-nn .body .nm{color:var(--info)}
 .owlcard.s-c .body .nm{color:var(--danger)}
 .owlcard.s-m .body .nm{color:#c77fce}
-.owlcard .body .ti{font-family:var(--display);font-weight:600;font-size:1.02rem;color:var(--text);margin:.15rem 0 .4rem}
-.owlcard .body p{font-size:.85rem;color:var(--text-muted);margin:0;line-height:1.55}
-@media(max-width:420px){.owlcard{grid-template-columns:1fr;justify-items:center;text-align:center}.owlcard .body{text-align:left}}
+.owlcard .body .ti{font-family:var(--display);font-weight:600;font-size:1.08rem;color:var(--text);margin:.15rem 0 .5rem;text-align:center}
+.owlcard .body p{font-size:.95rem;color:var(--text-muted);margin:0;line-height:1.62;text-align:left}
+/* Single column, stacked, at every width — the section container is narrow enough that a
+   2-up side-by-side layout always starves the text column. One owl + math + full-width text per row. */
 
 /* star-centric transport pipeline */
 .pipe{width:100%;height:auto;margin:var(--s4) 0;display:block}
