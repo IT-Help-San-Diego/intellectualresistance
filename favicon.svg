@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="The Intellectual Resistance">
+  <rect width="32" height="32" rx="7" fill="#0d1117"/>
+  <!-- wire in -->
+  <line x1="3" y1="16" x2="11" y2="16" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round"/>
+  <!-- resistor zigzag -->
+  <polyline points="11,16 13,11 16,21 19,11 21,16"
+    fill="none" stroke="#c8956a" stroke-width="1.7" stroke-linejoin="round"/>
+  <!-- wire out -->
+  <line x1="21" y1="16" x2="29" y2="16" stroke="#d4a853" stroke-width="1.6" stroke-linecap="round"/>
+  <!-- terminal nodes -->
+  <circle cx="3" cy="16" r="1.7" fill="#3fb950"/>
+  <circle cx="29" cy="16" r="1.7" fill="#d4a853"/>
+</svg>

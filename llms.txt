@@ -1,0 +1,28 @@
+# The Intellectual Resistance
+
+> A body of work on logic, reason, and thinking done right — preserving signal integrity in a civilization that has learned to transmit faster than it can verify. Five frameworks (each stated with its math and labeled by epistemic status) and two shipped projects. By Carey Balboa, IT Help San Diego Inc.
+
+## Frameworks
+
+- [The Verification Principle](https://intellectualresistance.com/#verification) — PROVEN (theorem). Bayesian anti-dogmatism: if P(E)>0 and P(H)∈{0,1} then P(H|E)=P(H) — a belief pinned at certain or impossible cannot learn. The epistemic core under everything else.
+- [Carrier Color](https://intellectualresistance.com/#carrier-color) — MODEL. Identity-mediated distortion: Received = Signal + Carrier Color. Humans evaluate the carrier (person, tribe, ideology, status) before the signal. The goal is to make carrier legible, not to delete it. Offered as a lens; predictions not yet formally tested.
+- [Candidate Societal Control Levers](https://intellectualresistance.com/#levers) — CANDIDATE variables, causality NOT demonstrated. Recurring coordination variables across politics/media/institutions/cognition: verification capacity, carrier color, reasoning persistence, shared verification space, recursive correction. Working bookkeeping form: E = S/(C+N+K+P).
+- [The Owl Semaphore](https://intellectualresistance.com/#owl) — ALGEBRA PROVEN; utility an open study. Four epistemic stances (Normative, Non-Normative, Critical, Metacognitive) form the Klein four-group V₄. It is a group of stance-OPERATIONS, NOT a many-valued logic, NOT an extension of Boolean algebra, and NOT a rediscovery of Belnap–Dunn (shares only the abstract V₄ skeleton). Whether the four states are the right partition is an unvalidated design hypothesis; an inter-rater reliability pilot is pending.
+- [Star-Centric Transport](https://intellectualresistance.com/#transport) — PROPOSAL. Verification-aware data transport: a chunk advances only while a verifier can recover its center within tolerance τ. Formalism specified; empirical advantage not yet measured.
+
+## Applied (shipped)
+
+- [DNS Tool](https://dnstool.it-help.tech) — the Verification Principle made operational: multi-source OSINT domain/email-security intelligence with confidence scoring and "verify it yourself" commands. Built on DNS because RFCs give ground truth.
+- [Organic Computer](https://organiccomputer.me) — the human mind spec'd as hardware; sustained, deliberate reasoning offered as a service. The Resistance turned into a practice.
+
+## Related properties (same author)
+
+- [IT Help San Diego — Our Expertise](https://www.it-help.tech/about)
+- [DNS Tool — Origin Story](https://dnstool.it-help.tech/about)
+- ORCID: https://orcid.org/0009-0000-5237-9065 · DOI: https://doi.org/10.5281/zenodo.19468134
+
+## Use, License & Reuse
+
+Indexing access granted to AI/LLM and search crawlers via this file and `/robots.txt` is operational — it helps real users find first-party answers. It is **not** a license to redistribute, train on, or build derivatives from this site's content, copy, brand assets, or the Intellectual Resistance marks. All rights reserved unless a page is explicitly marked otherwise.
+
+Contact: licensing@it-help.tech

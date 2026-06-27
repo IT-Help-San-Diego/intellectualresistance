@@ -1,0 +1,7 @@
+# intellectualresistance.com
+# A research umbrella of IT Help San Diego Inc.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://intellectualresistance.com/sitemap.xml

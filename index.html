@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'sha256-pvm3GmHFP+O33dxK6xAueFloQ8GOr4ssRI5KA3iozR4='; script-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#0d1117">
+<meta name="color-scheme" content="dark">
+<title>The Intellectual Resistance — thinking done right</title>
+<meta name="description" content="The Intellectual Resistance is a body of work on logic, reason, and thinking done right: preserving signal integrity in a civilization that transmits faster than it verifies. The Verification Principle, Carrier Color, candidate societal control levers, the Owl Semaphore, and Star-Centric Transport — with the math, and with the epistemic discipline to call a candidate a candidate.">
+<meta name="author" content="Carey Balboa">
+<meta name="keywords" content="intellectual resistance, verification principle, carrier color, societal control levers, owl semaphore, star-centric transport, metacognition, Bayesian reasoning, epistemics, Klein four-group, Carey Balboa, IT Help San Diego">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="https://intellectualresistance.com/">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Intellectual Resistance">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://intellectualresistance.com/">
+<meta property="og:title" content="The Intellectual Resistance — thinking done right">
+<meta property="og:description" content="A body of work on logic, reason, and thinking done right — preserving signal integrity in a civilization that transmits faster than it verifies.">
+<meta property="og:image" content="https://intellectualresistance.com/assets/og-card.svg">
+<meta property="og:image:type" content="image/svg+xml">
+<meta property="og:image:alt" content="A resistor in a circuit over a dark field — the Intellectual Resistance mark.">
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Intellectual Resistance — thinking done right">
+<meta name="twitter:description" content="Logic, reason, and thinking done right. The Verification Principle, Carrier Color, candidate control levers, the Owl Semaphore, Star-Centric Transport — with the math.">
+<meta name="twitter:image" content="https://intellectualresistance.com/assets/og-card.svg">
+<meta name="twitter:image:alt" content="A resistor in a circuit over a dark field — the Intellectual Resistance mark.">
+<style>
+/* ============================================================
+   GOLDEN-RATIO DESIGN SYSTEM  ·  φ = 1.618
+   Shared house language with it-help.tech / dnstool / organiccomputer.
+   ============================================================ */
+:root{
+  --phi:1.618;
+  --s1:0.382rem; --s2:0.618rem; --s3:1rem; --s4:1.618rem;
+  --s5:2.618rem; --s6:4.236rem; --s7:6.854rem; --s8:11.09rem;
+
+  --bg:#0d1117;
+  --bg-2:#161b22;
+  --bg-3:#21262d;
+  --bg-glass:rgba(13,17,23,.55);
+  --border:#30363d;
+  --border-soft:#21262d;
+  --text:rgba(230,237,243,0.92);
+  --text-muted:#9aa4ae;
+  --text-dim:#828c96;
+  --copper:#c8956a;
+  --gold:#d4a853;
+  --amber:#ffc000;
+  --info:#58a6ff;
+  --success:#3fb950;
+  --danger:#f85149;
+  --violet:#8C4191;
+  --teal:#4A9D96;
+  --mono:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"SF Pro Text",system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --display:-apple-system,BlinkMacSystemFont,"SF Pro Display",system-ui,"Segoe UI",sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;font-family:var(--sans);background:var(--bg);color:var(--text);
+  line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+.container{width:100%;max-width:1080px;margin:0 auto;padding:0 var(--s4)}
+.narrow{max-width:667px}
+a{color:var(--copper);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px;transition:color .15s ease}
+a:hover{color:var(--gold)}
+nav a,.btn,.ftr-copyright a,.ftr-node,.ftr-link,.ftr-socials a,.section-icon a,.cardlink,.skip{text-decoration:none}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;line-height:1.15;margin:0 0 var(--s2);letter-spacing:-.02em}
+p{margin:0 0 var(--s3)}
+sup a{color:var(--info);font-size:.62em;font-weight:700;padding:0 .1em}
+.mono{font-family:var(--mono)}
+.skip{position:absolute;left:-999px;top:0;background:var(--gold);color:#1a1206;padding:.6rem 1rem;border-radius:0 0 8px 0;z-index:100;font-weight:700}
+.skip:focus{left:0}
+.eyebrow{
+  font-family:var(--mono);font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--gold);display:flex;align-items:center;gap:var(--s2);margin-bottom:var(--s3);
+}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--gold)}
+.eyebrow.center{justify-content:center}
+
+/* ============================================================ NAV */
+.nav{position:sticky;top:0;z-index:50;background:rgba(13,17,23,.82);
+  backdrop-filter:saturate(140%) blur(12px);border-bottom:1px solid var(--border-soft)}
+.nav .container{display:flex;align-items:center;justify-content:space-between;height:56px}
+.nav .brand{display:flex;align-items:center;gap:.6rem;font-family:var(--mono);font-size:.82rem;color:var(--text);letter-spacing:.04em}
+.nav .brand .dot{width:8px;height:8px;border-radius:50%;background:var(--success);box-shadow:0 0 9px var(--success)}
+.nav .links{display:flex;gap:var(--s4);font-size:.82rem}
+.nav .links a{color:var(--text-muted)}
+.nav .links a:hover{color:var(--gold)}
+.domain-tag{font-family:var(--mono);font-size:.6rem;letter-spacing:.1em;text-transform:lowercase;
+  color:var(--gold);border:1px solid rgba(212,168,83,.3);background:rgba(212,168,83,.07);padding:.1rem .4rem;border-radius:4px}
+@media(max-width:860px){.nav .links{display:none}}
+
+/* ============================================================ HERO */
+.hero{position:relative;background:linear-gradient(170deg,#150f08 0%,#0d1117 46%,#0a1424 76%,#0d1117 100%);
+  border-bottom:1px solid var(--border);padding:var(--s7) 0 var(--s6);overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(58% 70% at 78% -5%,rgba(212,168,83,.10),transparent 70%)}
+.spiral{position:absolute;top:-90px;right:-90px;width:520px;height:520px;opacity:.10;pointer-events:none}
+.hero-inner{position:relative;z-index:2}
+.hero h1{font-size:clamp(2.1rem,5.6vw,3.7rem);font-weight:680;letter-spacing:-.025em;margin-bottom:var(--s4);max-width:16ch}
+.hero h1 .accent{color:var(--gold)}
+.hero .lead{font-size:clamp(1.05rem,2vw,1.3rem);color:var(--text);max-width:54ch;font-weight:300}
+.hero .lead b{font-weight:600;color:var(--text)}
+.hero .turn{margin-top:var(--s4);font-size:1.05rem;color:var(--text);max-width:56ch;border-left:3px solid var(--gold);padding-left:var(--s3)}
+.hero .turn b{color:var(--gold);font-weight:600}
+
+/* hero resistor schematic */
+.hero-circuit{width:100%;height:auto;margin-top:var(--s6);max-width:760px;display:block}
+
+/* ============================================================ SECTION SHELL */
+section{padding:var(--s6) 0;position:relative}
+.section-head{display:flex;align-items:center;gap:var(--s3);margin-bottom:var(--s4)}
+.section-icon{width:44px;height:44px;border-radius:11px;flex-shrink:0;display:flex;align-items:center;justify-content:center}
+.section-icon svg{width:22px;height:22px}
+.si-info{background:rgba(88,166,255,.1);color:var(--info)}
+.si-gold{background:rgba(212,168,83,.1);color:var(--gold)}
+.si-green{background:rgba(63,185,80,.1);color:var(--success)}
+.si-violet{background:rgba(140,65,145,.12);color:var(--violet)}
+.si-copper{background:rgba(200,149,106,.12);color:var(--copper)}
+.si-teal{background:rgba(74,157,150,.12);color:var(--teal)}
+.section-head h2{font-size:clamp(1.35rem,3vw,1.8rem);margin:0}
+.section-head .tag{font-size:.88rem;color:var(--text-muted);margin-top:.1rem}
+.prose p{color:var(--text)} .prose .muted{color:var(--text-muted)}
+.divider{height:1px;background:var(--border);margin:var(--s5) 0;border:none}
+.lede{font-size:1.1rem;color:var(--text-muted);max-width:62ch}
+.lede b{color:var(--text)}
+
+.callout{border-left:3px solid var(--gold);background:var(--bg-2);padding:var(--s3) var(--s4);
+  border-radius:0 10px 10px 0;margin:var(--s4) 0;color:var(--text-muted)}
+.callout strong{color:var(--text)}
+.callout.epistemic{border-left-color:var(--info)}
+.callout.epistemic strong{color:var(--info)}
+
+/* status pills — epistemic discipline made visible */
+.status{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--mono);font-size:.6rem;
+  letter-spacing:.08em;text-transform:uppercase;padding:.16rem .5rem;border-radius:4px;vertical-align:middle}
+.status::before{content:"";width:6px;height:6px;border-radius:50%}
+.st-proven{color:var(--success);border:1px solid rgba(63,185,80,.3);background:rgba(63,185,80,.07)}
+.st-proven::before{background:var(--success)}
+.st-shipped{color:var(--info);border:1px solid rgba(88,166,255,.3);background:rgba(88,166,255,.07)}
+.st-shipped::before{background:var(--info)}
+.st-candidate{color:var(--gold);border:1px solid rgba(212,168,83,.3);background:rgba(212,168,83,.07)}
+.st-candidate::before{background:var(--gold)}
+.st-hypothesis{color:var(--copper);border:1px solid rgba(200,149,106,.3);background:rgba(200,149,106,.07)}
+.st-hypothesis::before{background:var(--copper)}
+
+/* ============================================================ MANIFESTO */
+.manifesto{background:linear-gradient(180deg,#0d1117,#0b0e14)}
+.manifesto .big{font-family:var(--display);font-size:clamp(1.5rem,3.6vw,2.2rem);font-weight:600;line-height:1.3;letter-spacing:-.02em;max-width:22ch;margin-bottom:var(--s4)}
+.manifesto .big .accent{color:var(--gold)}
+.creed{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--s3);margin-top:var(--s5)}
+.creed .item{background:var(--bg-2);border:1px solid var(--border);border-radius:12px;padding:var(--s4)}
+.creed .item .k{font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--copper);margin-bottom:var(--s2)}
+.creed .item p{font-size:.94rem;color:var(--text-muted);margin:0}
+.creed .item p b{color:var(--text)}
+@media(max-width:720px){.creed{grid-template-columns:1fr}}
+
+/* ============================================================ FRAMEWORK CARDS (map) */
+.map{background:radial-gradient(80% 120% at 50% 0%,#10151f,#0d1117 70%)}
+.fwgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3);margin-top:var(--s4)}
+@media(max-width:880px){.fwgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.fwgrid{grid-template-columns:1fr}}
+.fwcard{display:flex;flex-direction:column;background:var(--bg-2);border:1px solid var(--border);border-radius:14px;
+  padding:var(--s4);transition:border-color .2s,transform .2s}
+.fwcard:hover{border-color:rgba(212,168,83,.35);transform:translateY(-2px)}
+.fwcard .num{font-family:var(--mono);font-size:.7rem;color:var(--text-dim);letter-spacing:.1em}
+.fwcard h3{font-size:1.06rem;margin:.3rem 0 .4rem}
+.fwcard h3 a{color:var(--text)}
+.fwcard h3 a:hover{color:var(--gold)}
+.fwcard p{font-size:.86rem;color:var(--text-muted);margin:0 0 var(--s3)}
+.fwcard .foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:.5rem;flex-wrap:wrap}
+.cardlink{font-family:var(--mono);font-size:.72rem;color:var(--copper)}
+.cardlink:hover{color:var(--gold)}
+
+/* ============================================================ FRAMEWORK SECTION */
+.fw{border-top:1px solid var(--border-soft)}
+.fw .container{max-width:820px}
+.fw .meta{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;margin-bottom:var(--s3)}
+.fw p{color:var(--text);max-width:66ch}
+.fw .muted{color:var(--text-muted)}
+.eqbox{margin:var(--s4) 0;border:1px solid var(--border);border-radius:14px;
+  background:radial-gradient(70% 140% at 50% 0%,rgba(88,166,255,.05),var(--bg-2) 72%);padding:var(--s5) var(--s4);text-align:center}
+.eqbox .pre{font-family:var(--mono);font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text-muted)}
+.eqbox .stmt{font-family:var(--mono);font-size:clamp(1.05rem,3vw,1.5rem);color:var(--text);margin:var(--s3) 0;letter-spacing:-.01em;line-height:1.5}
+.eqbox .stmt .hl{color:var(--info)}
+.eqbox .stmt .gold{color:var(--gold)}
+.eqbox .gloss{color:var(--text-muted);font-size:.92rem;max-width:54ch;margin:0 auto}
+.eqbox .gloss b{color:var(--gold)}
+.eqbox .def{font-family:var(--mono);font-size:.76rem;color:var(--text-dim);display:block;margin-top:var(--s3)}
+
+/* carrier-color spectrum (reused pattern) */
+.spectrum{display:grid;grid-template-columns:1fr 1.2fr 1fr;gap:var(--s3);margin:var(--s4) 0;align-items:stretch}
+@media(max-width:820px){.spectrum{grid-template-columns:1fr}}
+.sp{border:1px solid var(--border);border-radius:14px;padding:var(--s4);background:var(--bg-2)}
+.sp .cap{font-family:var(--mono);font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:var(--s2)}
+.sp h3{font-size:1rem;margin:0 0 var(--s2)}
+.sp p{font-size:.85rem;color:var(--text-muted);margin:0}
+.sp.trust{border-color:rgba(63,185,80,.28)} .sp.trust .cap{color:var(--success)}
+.sp.bad{border-color:rgba(248,81,73,.28)} .sp.bad .cap{color:var(--danger)}
+.sp.mid{border-color:rgba(212,168,83,.4);background:linear-gradient(160deg,rgba(212,168,83,.07),var(--bg-2) 62%)}
+.sp.mid .cap{color:var(--gold)}
+.sp .eq{font-family:var(--mono);font-size:.9rem;color:var(--text);margin-top:var(--s2);padding-top:var(--s2);border-top:1px solid var(--border-soft)}
+
+/* levers table */
+.levers{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--border);
+  border-radius:14px;overflow:hidden;font-size:.92rem;margin:var(--s4) 0}
+.levers caption{caption-side:top;text-align:left;font-family:var(--mono);font-size:.72rem;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted);padding:0 0 var(--s2)}
+.levers th,.levers td{padding:.8rem 1rem;text-align:left;vertical-align:top;border-bottom:1px solid var(--border-soft)}
+.levers thead th{background:var(--bg-3);color:var(--text-muted);font-weight:600;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase}
+.levers tbody tr:last-child td{border-bottom:none}
+.levers tbody tr:hover{background:rgba(255,255,255,.015)}
+.levers .lv{color:var(--text);font-weight:600;width:26%}
+.levers .fail{font-family:var(--mono);color:var(--gold);font-size:.8rem;white-space:nowrap}
+.levers .ex{color:var(--text-muted);font-size:.85rem}
+
+/* owl V4 group diagram */
+.owlwrap{display:grid;grid-template-columns:200px 1fr;gap:var(--s5);align-items:center;margin:var(--s4) 0}
+@media(max-width:680px){.owlwrap{grid-template-columns:1fr;gap:var(--s4)}}
+.owlfig{text-align:center}
+.owlfig img{width:100%;height:auto;max-width:160px;aspect-ratio:1/1;object-fit:contain;
+  filter:drop-shadow(0 12px 30px rgba(0,0,0,.5))}
+.owlfig figcaption{font-family:var(--mono);font-size:.68rem;color:var(--text-dim);margin-top:var(--s2)}
+.v4{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+.v4 .st{border:1px solid var(--border);border-radius:11px;padding:var(--s3);background:var(--bg-2);text-align:center}
+.v4 .st .nm{font-family:var(--mono);font-size:.74rem;font-weight:700;letter-spacing:.04em}
+.v4 .st .gl{font-size:.72rem;color:var(--text-dim);margin-top:.2rem}
+.v4 .st.n{border-color:rgba(63,185,80,.3)} .v4 .st.n .nm{color:var(--success)}
+.v4 .st.nn{border-color:rgba(88,166,255,.3)} .v4 .st.nn .nm{color:var(--info)}
+.v4 .st.c{border-color:rgba(248,81,73,.3)} .v4 .st.c .nm{color:var(--danger)}
+.v4 .st.m{border-color:rgba(140,65,145,.4)} .v4 .st.m .nm{color:#c77fce}
+
+/* star-centric transport pipeline */
+.pipe{width:100%;height:auto;margin:var(--s4) 0;display:block}
+
+/* ============================================================ APPLIED / PROJECTS */
+.applied{background:linear-gradient(180deg,#0b0e14,#0d1117)}
+.projects{display:grid;grid-template-columns:1fr 1fr;gap:var(--s4);margin-top:var(--s4)}
+@media(max-width:760px){.projects{grid-template-columns:1fr}}
+.project{border:1px solid var(--border);border-radius:16px;padding:var(--s5) var(--s4);background:var(--bg-2);position:relative;overflow:hidden}
+.project.dns{border-color:rgba(88,166,255,.3);background:linear-gradient(160deg,rgba(88,166,255,.06),var(--bg-2) 62%)}
+.project.oc{border-color:rgba(63,185,80,.3);background:linear-gradient(160deg,rgba(63,185,80,.06),var(--bg-2) 62%)}
+.project .kicker{font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--text-muted);margin-bottom:.5rem}
+.project h3{font-size:1.25rem;margin-bottom:var(--s2)}
+.project.dns h3{color:var(--info)} .project.oc h3{color:var(--success)}
+.project p{font-size:.92rem;color:var(--text-muted)}
+.project .visit{display:inline-flex;align-items:center;gap:.45rem;margin-top:var(--s3);font-weight:600;font-size:.9rem}
+.project.dns .visit{color:var(--info)} .project.oc .visit{color:var(--success)}
+
+/* ============================================================ MAXIM */
+.maxim{max-width:48ch;margin:var(--s6) auto 0;text-align:center}
+.maxim .label{font-family:var(--mono);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--copper);margin-bottom:var(--s3);display:block}
+.maxim blockquote{margin:0;font-family:var(--display);font-style:italic;font-weight:500;
+  font-size:clamp(1.3rem,3.4vw,1.9rem);line-height:1.4;letter-spacing:-.01em;color:var(--text)}
+.maxim blockquote .em{color:var(--gold);font-style:italic}
+.maxim .rule{width:42px;height:2px;background:linear-gradient(90deg,var(--gold),var(--copper));margin:var(--s4) auto 0;border-radius:2px}
+.maxim cite{display:block;margin-top:var(--s3);font-style:normal;font-size:.82rem;color:var(--text-dim);font-family:var(--mono)}
+
+/* ============================================================ CTA */
+.cta{text-align:center}
+.cta .box{border:1px solid var(--border);border-radius:18px;background:linear-gradient(160deg,#11161f,#0d1117);
+  padding:var(--s6) var(--s4);max-width:720px;margin:0 auto;position:relative;overflow:hidden}
+.cta .box::after{content:"";position:absolute;inset:0;background:radial-gradient(60% 80% at 50% -10%,rgba(212,168,83,.10),transparent 70%);pointer-events:none}
+.cta h2{font-size:clamp(1.6rem,4vw,2.3rem)}
+.cta p{color:var(--text-muted);max-width:48ch;margin:0 auto var(--s4)}
+.btn{display:inline-block;font-family:var(--sans);font-weight:600;font-size:1rem;padding:.85rem 1.8rem;border-radius:10px;border:1px solid transparent;cursor:pointer}
+.btn-primary{background:linear-gradient(180deg,#e0b667,#c8956a);color:#1a1206;box-shadow:0 8px 24px rgba(200,149,106,.25)}
+.btn-primary:hover{color:#1a1206;filter:brightness(1.06)}
+.btn-ghost{background:transparent;color:var(--text);border-color:var(--border);margin-left:.6rem}
+.btn-ghost:hover{color:var(--gold);border-color:var(--gold)}
+@media(max-width:520px){.btn-ghost{margin-left:0;margin-top:.6rem;display:inline-block}}
+
+/* ============================================================ REFERENCES + FOOTER */
+.refs{border-top:1px solid var(--border);background:var(--bg-2)}
+.refs ol{font-size:.84rem;color:var(--text-muted);line-height:1.8;padding-left:1.4rem;max-width:62rem}
+.refs li{margin-bottom:.5rem}
+.srcbadge{display:inline-block;font-family:var(--mono);font-size:.6rem;letter-spacing:.06em;padding:.1rem .4rem;border-radius:3px;margin-right:.5rem;text-transform:uppercase}
+.sb-gov{color:var(--success);border:1px solid rgba(63,185,80,.3);background:rgba(63,185,80,.08)}
+.sb-acad{color:var(--info);border:1px solid rgba(88,166,255,.3);background:rgba(88,166,255,.08)}
+.sb-self{color:var(--copper);border:1px solid rgba(200,149,106,.3);background:rgba(200,149,106,.08)}
+footer{padding:var(--s5) 0;border-top:1px solid var(--border);color:var(--text-dim);font-size:.83rem;text-align:center}
+footer .mono{color:var(--text-muted)}
+footer .tagline{max-width:60ch;margin:0 auto var(--s4)}
+
+/* ============================================================ CORPORATE TREE */
+.ftr-tree{display:flex;flex-direction:column;align-items:center;max-width:740px;margin:0 auto;padding:0}
+.ftr-copyright{display:flex;align-items:center;flex-wrap:wrap;justify-content:center;gap:.4rem;font-size:.78rem;color:var(--text-muted);margin-bottom:0}
+.ftr-copyright a{display:inline-flex;align-items:center;gap:.4rem;padding:.25rem .7rem;font-weight:600;color:#c9d1d9;background:rgba(22,27,34,.55);border:1px solid rgba(48,54,61,.4);border-radius:8px;transition:border-color .25s,color .2s}
+.ftr-copyright a:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
+.ftr-node{display:inline-flex;align-items:center;gap:.45rem;padding:.3rem .85rem;font-size:.72rem;color:var(--text-muted);background:rgba(22,27,34,.55);border:1px solid rgba(48,54,61,.4);border-radius:8px;white-space:nowrap;transition:border-color .25s,color .2s}
+a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
+.ftr-node--project{font-weight:700;color:var(--gold);border-color:rgba(200,149,106,.3);font-size:.76rem;letter-spacing:.02em}
+.ftr-vline{width:1px;height:12px;background:rgba(200,149,106,.18);flex-shrink:0}
+.ftr-org{position:relative;width:100%;max-width:740px;margin:0 auto;padding:12px 0}
+.ftr-org::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:1px;background:rgba(200,149,106,.18)}
+.ftr-org-reg{position:relative;z-index:1;display:flex;flex-direction:column;gap:4px;margin-bottom:16px}
+.ftr-org-reg-left{display:flex;align-items:center;align-self:flex-end;margin-right:50%}
+.ftr-org-reg-right{display:flex;align-items:center;align-self:flex-start;margin-left:50%}
+.ftr-org-reg-arm{width:12px;height:1px;background:rgba(200,149,106,.18);flex-shrink:0}
+.ftr-org-dept{z-index:1;display:flex;align-items:flex-start}
+.ftr-org-dept-left{flex:1;display:flex;justify-content:flex-end}
+.ftr-org-dept-left-col{display:flex;flex-direction:column;align-items:center}
+.ftr-org-dept-left-top{display:flex;align-items:center}
+.ftr-org-dept-right{flex:1;display:flex;align-items:center}
+.ftr-org-dept-arm{width:16px;height:1px;background:rgba(200,149,106,.18);flex-shrink:0}
+.ftr-grid-connector{position:relative;display:flex;flex-direction:column;align-items:center;max-width:740px;margin:0 auto;padding-top:12px}
+.ftr-grid-connector::before{content:'';position:absolute;left:50%;top:0;height:12px;width:1px;background:rgba(200,149,106,.18)}
+.ftr-grid-bar{height:1px;background:rgba(200,149,106,.18);align-self:stretch;margin:0 calc(16.66% - .375rem)}
+.ftr-grid-drops{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;width:100%}
+.ftr-grid-drop{display:flex;justify-content:center}
+.ftr-grid-drop .ftr-vline{height:8px}
+.ftr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;max-width:740px;margin:0 auto;text-align:left}
+.ftr-cell{background:rgba(22,27,34,.55);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(48,54,61,.4);border-radius:10px;padding:.85rem .9rem;transition:border-color .25s,background .25s}
+.ftr-cell:hover{border-color:rgba(200,149,106,.18);background:rgba(22,27,34,.7)}
+.ftr-heading{display:block;font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--gold);margin-bottom:.55rem;padding-bottom:.35rem;border-bottom:1px solid rgba(200,149,106,.08)}
+.ftr-link{display:flex;font-size:.74rem;line-height:1.35;padding:.35rem 0;min-height:34px;align-items:center;gap:.45rem;color:var(--text-muted);transition:color .2s;border-bottom:1px solid rgba(48,54,61,.35);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ftr-link:last-child{border-bottom:none}
+.ftr-link:hover{color:#e6edf3}
+.ftr-socials{display:flex;justify-content:center;align-items:center;gap:1.25rem;margin-top:var(--s4);flex-wrap:wrap}
+.ftr-socials a{color:var(--text-muted);display:inline-flex;align-items:center;gap:.35rem;font-size:.75rem}
+.ftr-socials a:hover{color:var(--gold)}
+@media(max-width:640px){
+  .ftr-grid-bar{margin:0 calc(33.33% + .375rem)}
+  .ftr-grid{grid-template-columns:1fr}
+}
+
+/* ── utilities ── */
+.mt-s4{margin-top:var(--s4)}
+.mt-s5{margin-top:var(--s5)}
+.fs-90{font-size:.9rem}
+.center{text-align:center}
+.u-sup-sm{font-size:.55em}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://intellectualresistance.com/#website",
+      "url": "https://intellectualresistance.com/",
+      "name": "The Intellectual Resistance",
+      "description": "A body of work on logic, reason, and thinking done right — preserving signal integrity in a civilization that transmits faster than it verifies.",
+      "inLanguage": "en-US",
+      "publisher": { "@id": "https://intellectualresistance.com/#person" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://intellectualresistance.com/#person",
+      "name": "Carey Balboa",
+      "jobTitle": "Founder, IT Help San Diego Inc.",
+      "description": "27 years in technology and security; author of evidence-first, metacognitive frameworks for reasoning under uncertainty.",
+      "url": "https://www.it-help.tech/about",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0000-5237-9065"
+      },
+      "sameAs": [
+        "https://orcid.org/0009-0000-5237-9065",
+        "https://github.com/IT-Help-San-Diego",
+        "https://www.it-help.tech/about",
+        "https://dnstool.it-help.tech/about",
+        "https://organiccomputer.me/"
+      ],
+      "knowsAbout": [
+        "Metacognition",
+        "Bayesian reasoning",
+        "Epistemics",
+        "Information security",
+        "Evidence-based analysis",
+        "Group theory"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://intellectualresistance.com/#org",
+      "name": "IT Help San Diego Inc.",
+      "url": "https://www.it-help.tech",
+      "founder": { "@id": "https://intellectualresistance.com/#person" }
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://intellectualresistance.com/#collection",
+      "url": "https://intellectualresistance.com/",
+      "name": "The Intellectual Resistance",
+      "isPartOf": { "@id": "https://intellectualresistance.com/#website" },
+      "about": [
+        { "@type": "Thing", "name": "The Verification Principle" },
+        { "@type": "Thing", "name": "Carrier Color Theory" },
+        { "@type": "Thing", "name": "Candidate Societal Control Levers" },
+        { "@type": "Thing", "name": "The Owl Semaphore" },
+        { "@type": "Thing", "name": "Star-Centric Transport" }
+      ],
+      "hasPart": [
+        { "@type": "WebSite", "name": "DNS Tool", "url": "https://dnstool.it-help.tech" },
+        { "@type": "WebSite", "name": "Organic Computer", "url": "https://organiccomputer.me" }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://intellectualresistance.com/#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "The Resistance", "item": "https://intellectualresistance.com/" },
+        { "@type": "ListItem", "position": 2, "name": "The Verification Principle", "item": "https://intellectualresistance.com/#verification" },
+        { "@type": "ListItem", "position": 3, "name": "Carrier Color", "item": "https://intellectualresistance.com/#carrier-color" },
+        { "@type": "ListItem", "position": 4, "name": "Control Levers", "item": "https://intellectualresistance.com/#levers" },
+        { "@type": "ListItem", "position": 5, "name": "The Owl Semaphore", "item": "https://intellectualresistance.com/#owl" },
+        { "@type": "ListItem", "position": 6, "name": "Star-Centric Transport", "item": "https://intellectualresistance.com/#transport" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a href="#main" class="skip">Skip to content</a>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav">
+  <div class="container">
+    <div class="brand"><span class="dot"></span> INTELLECTUAL&nbsp;RESISTANCE <span class="domain-tag">intellectualresistance.com</span></div>
+    <div class="links">
+      <a href="#verification">Verification</a>
+      <a href="#carrier-color">Carrier&nbsp;Color</a>
+      <a href="#levers">Levers</a>
+      <a href="#owl">Owl</a>
+      <a href="#transport">Transport</a>
+      <a href="#applied">Applied</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+<!-- ===================== HERO ===================== -->
+<header class="hero">
+  <svg class="spiral" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+    <path d="M61.8 38.2 a23.6 23.6 0 1 1 -23.6 -23.6 a14.6 14.6 0 0 1 14.6 14.6 a9 9 0 0 1 -9 9 a5.6 5.6 0 0 1 -5.6 -5.6 a3.4 3.4 0 0 1 3.4 -3.4"
+      stroke="#d4a853" stroke-width="0.6"/>
+    <rect x="38.2" y="14.6" width="23.6" height="23.6" stroke="#d4a853" stroke-width="0.3" opacity=".5"/>
+    <rect x="14.6" y="14.6" width="23.6" height="23.6" stroke="#d4a853" stroke-width="0.3" opacity=".5"/>
+    <rect x="14.6" y="38.2" width="38.2" height="38.2" stroke="#d4a853" stroke-width="0.3" opacity=".4"/>
+  </svg>
+
+  <div class="container hero-inner">
+    <div class="eyebrow">A body of work &middot; logic, reason, thinking done right</div>
+    <h1>Resistance is the<br><span class="accent">whole point.</span></h1>
+    <p class="lead">In a circuit, resistance is what makes current <em>usable</em> &mdash; it sets the terms and drops the voltage to something that won't burn the system down. Thinking is the same. <b>Friction, doubt, and the deliberate pause before the answer are not the obstacle. They are the work.</b></p>
+    <p class="turn">The <b>Intellectual Resistance</b> is the umbrella over a set of frameworks for one problem: how to preserve signal in a civilization that has learned to transmit far faster than it can verify. Each is stated with its math &mdash; and labeled honestly for exactly how far it has been proven.</p>
+
+    <!-- resistor schematic -->
+    <svg class="hero-circuit" viewBox="0 0 760 110" role="img" aria-label="A resistor in a circuit: a raw problem enters as current, passes through the human in the loop, and exits as a usable answer.">
+      <defs>
+        <linearGradient id="wire" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#3fb950"/><stop offset="1" stop-color="#d4a853"/>
+        </linearGradient>
+      </defs>
+      <line x1="24" y1="55" x2="270" y2="55" stroke="url(#wire)" stroke-width="2.5"/>
+      <polyline points="270,55 290,28 322,82 354,28 386,82 418,28 450,82 470,55"
+        fill="none" stroke="#c8956a" stroke-width="3" stroke-linejoin="round"/>
+      <line x1="470" y1="55" x2="736" y2="55" stroke="url(#wire)" stroke-width="2.5"/>
+      <circle cx="24" cy="55" r="5" fill="#3fb950"/>
+      <circle cx="736" cy="55" r="5" fill="#d4a853"/>
+      <g font-family="SFMono-Regular,Consolas,monospace" font-size="13" fill="#8b949e">
+        <text x="370" y="20" text-anchor="middle" fill="#c8956a">R = the human in the loop</text>
+        <text x="24" y="86" text-anchor="start">I = the raw problem</text>
+        <text x="736" y="86" text-anchor="end">V = an answer you can use</text>
+      </g>
+    </svg>
+  </div>
+</header>
+
+<!-- ===================== THESIS / MANIFESTO ===================== -->
+<section class="manifesto" id="thesis">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-icon si-copper">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg>
+      </div>
+      <div><h2>The thesis</h2><div class="tag">Stated plainly, then defended framework by framework.</div></div>
+    </div>
+    <p class="big">A civilization can <span class="accent">transmit faster than it verifies</span> &mdash; and when it does, the carrier starts to outrun the signal.</p>
+    <p class="lede">Reputation beats evidence. Affiliation beats verification. The symbol replaces the thing it stood for. None of this requires a conspiracy; it is what happens by default when information velocity outpaces verification velocity. The Intellectual Resistance is the deliberate countercurrent: <b>set an honest prior, find where presupposition entered, and let evidence do its work</b> &mdash; the same discipline whether the claim is a DNS record, an argument between friends, or a civilization-scale belief.</p>
+
+    <div class="creed">
+      <div class="item"><div class="k">Verification over assertion</div><p><b>A real measurement beats a confident reading.</b> A computed number, a reproducible command, a brute-force enumeration &mdash; these outrank any citation or memory, including my own.</p></div>
+      <div class="item"><div class="k">Claim exactly what is proven</div><p><b>And then stop.</b> A proven theorem is marked proven. A recurring pattern is marked a candidate. A design bet is marked a hypothesis. The restraint is the strength.</p></div>
+      <div class="item"><div class="k">Find where presupposition enters</div><p><b>Disputes rarely begin with a false conclusion.</b> They begin with a hidden assumption injected far earlier in the chain. Locate that moment and most disagreements resolve into something solvable.</p></div>
+      <div class="item"><div class="k">Reality-check the bold question</div><p><b>Ask the big question &mdash; then return to what's defensible.</b> When the evidence says a framing is unreasonable, the framing yields. The point is to be right, not to be loud.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== THE MAP ===================== -->
+<section class="map" id="map">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-icon si-gold">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.5 6H15.5M6 8.5V15.5M18 8.5V15.5M8.5 18H15.5"/></svg>
+      </div>
+      <div><h2>The map</h2><div class="tag">Five frameworks and two shipped projects &mdash; each labeled by epistemic status.</div></div>
+    </div>
+    <p class="lede">These are not independent ideas. Each is a different cut at the same problem &mdash; signal integrity under scale &mdash; and they share vocabulary and machinery. Below, each gets its own section with the math. The status pill on every card is load-bearing: it tells you how far the claim has actually been carried.</p>
+
+    <div class="fwgrid">
+      <article class="fwcard">
+        <span class="num">01</span>
+        <h3><a href="#verification">The Verification Principle</a></h3>
+        <p>Bayesian anti-dogmatism: a belief pinned at certainty or impossibility cannot learn. The epistemic core under everything else.</p>
+        <div class="foot"><span class="status st-proven">Proven (theorem)</span><a class="cardlink" href="#verification">read &rarr;</a></div>
+      </article>
+      <article class="fwcard">
+        <span class="num">02</span>
+        <h3><a href="#carrier-color">Carrier Color</a></h3>
+        <p>Identity-mediated distortion: humans evaluate the carrier of a message before its signal. A model of where bias enters, not a claim that it always does.</p>
+        <div class="foot"><span class="status st-candidate">Model / framework</span><a class="cardlink" href="#carrier-color">read &rarr;</a></div>
+      </article>
+      <article class="fwcard">
+        <span class="num">03</span>
+        <h3><a href="#levers">Societal Control Levers</a></h3>
+        <p>A handful of variables that recur across politics, media, institutions, and cognition &mdash; candidates for what governs coordination at scale.</p>
+        <div class="foot"><span class="status st-candidate">Candidate variables</span><a class="cardlink" href="#levers">read &rarr;</a></div>
+      </article>
+      <article class="fwcard">
+        <span class="num">04</span>
+        <h3><a href="#owl">The Owl Semaphore</a></h3>
+        <p>A finite algebra over four epistemic stances. The algebra (a Klein four-group) is proven; whether the four states are the <em>right</em> partition is an open study.</p>
+        <div class="foot"><span class="status st-proven">Algebra proven</span><a class="cardlink" href="#owl">read &rarr;</a></div>
+      </article>
+      <article class="fwcard">
+        <span class="num">05</span>
+        <h3><a href="#transport">Star-Centric Transport</a></h3>
+        <p>A verification-aware model of data movement: a chunk only counts as progress while a verifier can still recover its center.</p>
+        <div class="foot"><span class="status st-candidate">Proposal</span><a class="cardlink" href="#transport">read &rarr;</a></div>
+      </article>
+      <article class="fwcard">
+        <span class="num">06</span>
+        <h3><a href="#applied">Applied: DNS Tool &amp; Organic Computer</a></h3>
+        <p>The principle, shipped. DNS Tool runs the verification engine on real infrastructure; Organic Computer offers the human substrate directly.</p>
+        <div class="foot"><span class="status st-shipped">Shipped</span><a class="cardlink" href="#applied">read &rarr;</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 1. VERIFICATION PRINCIPLE ===================== -->
+<section class="fw" id="verification">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-icon si-info">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4"/><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4z"/></svg>
+      </div>
+      <div><h2>01 &middot; The Verification Principle</h2><div class="tag">Bayesian anti-dogmatism &mdash; why a closed mind is a mathematical fact, not a character flaw.</div></div>
+    </div>
+    <div class="meta"><span class="status st-proven">Proven (theorem)</span></div>
+
+    <p>The principle is simple: <b>the answer to a question lives in the foundations of the question.</b> A question's foundation is the <em>prior</em> you begin with &mdash; how strongly you already believe a hypothesis before new evidence arrives. Honest reasoning sets that prior from evidence, holds it strictly between impossible and certain, and updates it as new evidence comes in.</p>
+
+    <p>What makes this more than advice is that the failure mode is provable. Bayes' rule updates a hypothesis <span class="mono">H</span> given evidence <span class="mono">E</span>. If the prior <span class="mono">P(H)</span> is pinned at exactly 0 or exactly 1, the update is mathematically frozen:</p>
+
+    <div class="eqbox">
+      <div class="pre">The core theorem &mdash; why dogma cannot learn</div>
+      <div class="stmt">P(E) &gt; 0,&nbsp;&nbsp;P(H) &isin; {0,&thinsp;1}&nbsp;&nbsp;<span class="hl">&rArr;</span>&nbsp;&nbsp;P(H&thinsp;|&thinsp;E) = P(H)</div>
+      <p class="gloss">A belief held as <b>certain</b> or <b>impossible</b> is unrevisable &mdash; evidence simply bounces off. Not a personality trait: a <b>fact</b> about a prior set to 0 or 1. The proof is one line of Bayes' rule.</p>
+      <span class="def">H = hypothesis under test &nbsp;·&nbsp; E = evidence &nbsp;·&nbsp; P(E) &gt; 0 required &nbsp;·&nbsp; priors empirical, never 0 or 1</span>
+    </div>
+
+    <p>So the discipline is to keep priors bounded away from 0 and 1, and to update in odds form &mdash; <span class="mono">posterior odds = Bayes factor &times; prior odds</span> &mdash; so evidence can always move the needle. To <em>understand the foundations</em> of a claim, in this exact sense, <b>is</b> what logic is. It holds for a DNS record, an argument between friends, or polarized politics: anywhere a mind updates on evidence.</p>
+
+    <div class="callout"><strong>Why it leads the set:</strong> every other framework here assumes this one. Carrier Color is a description of <em>what</em> corrupts the prior; the Owl Semaphore is a way to <em>label</em> the stance you're updating from; Star-Centric Transport carries the same verify-before-you-advance logic into data pipelines. The Verification Principle is the floor they all stand on.</p>
+  </div>
+</section>
+
+<!-- ===================== 2. CARRIER COLOR ===================== -->
+<section class="fw" id="carrier-color">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-icon si-violet">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M3 12h18" opacity=".4"/><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18"/></svg>
+      </div>
+      <div><h2>02 &middot; Carrier Color</h2><div class="tag">Identity-mediated distortion &mdash; you evaluate the carrier before the signal.</div></div>
+    </div>
+    <div class="meta"><span class="status st-candidate">Model / framework</span></div>
+
+    <p>Carrier Color names a specific kind of distortion in how information is received. A message has a <b>signal</b> &mdash; the proposition, the evidence, the actual claim &mdash; and it has a <b>carrier</b>: the person, tribe, institution, ideology, status marker, or emotional charge attached to it. The model's claim is that humans frequently evaluate the carrier <em>before</em> the signal, so what reaches judgment is not the signal alone:</p>
+
+    <div class="eqbox">
+      <div class="pre">The received message</div>
+      <div class="stmt">Received&nbsp;=&nbsp;Signal&nbsp;<span class="gold">+</span>&nbsp;Carrier&nbsp;Color</div>
+      <p class="gloss">The same proposition &mdash; &ldquo;inflation rose 4%,&rdquo; &ldquo;love your neighbor,&rdquo; &ldquo;this software has a vulnerability&rdquo; &mdash; lands differently depending on <b>who carries it</b>. The diagnostic: <em>if I strip the carrier, does my evaluation of the signal change?</em> If yes, Carrier Color is present.</p>
+    </div>
+
+    <p>Crucially, the goal is <b>not</b> to delete the carrier. Carrier Color often carries real contextual information &mdash; the wisdom, the stakes, the history. The goal is to make it <em>legible</em>: to sort the carrier from the signal so you can decode what was actually meant. The same move works in a family conversation (&ldquo;this is your carrier color, this is mine, here is the real question&rdquo;) and, in principle, in an intelligence product, where a finding could travel with a transparent log of the human stances that shaped it rather than arriving as bare, falsely-neutral certainty.</p>
+
+    <div class="spectrum">
+      <div class="sp trust">
+        <div class="cap">Carrier dominates &mdash; trust</div>
+        <h3>Reputation as evidence</h3>
+        <p>Accept it because of who said it. The signal is never inspected.</p>
+        <div class="eq">C &raquo; S</div>
+      </div>
+      <div class="sp mid">
+        <div class="cap">Carrier made legible</div>
+        <h3>Sort, then decode</h3>
+        <p>Name the carrier, separate it, evaluate the signal on its own terms &mdash; then read the carrier back in as context.</p>
+        <div class="eq">decode(Signal | Carrier)</div>
+      </div>
+      <div class="sp bad">
+        <div class="cap">Carrier dominates &mdash; reject</div>
+        <h3>Reputation as disqualifier</h3>
+        <p>Reject it because of who said it. The signal is, again, never inspected.</p>
+        <div class="eq">C &raquo; S</div>
+      </div>
+    </div>
+
+    <div class="callout epistemic"><strong>Epistemic status:</strong> Carrier Color is an <strong>explanatory model</strong>, not a measured law. It is useful and it generates testable predictions (e.g., anonymized vs. attributed evaluations of the same claim should diverge when Carrier Color is high), but those experiments have not been formally run here. It is offered as a lens, held to the same standard it describes.</p>
+  </div>
+</section>
+
+<!-- ===================== 3. CONTROL LEVERS ===================== -->
+<section class="fw" id="levers">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-icon si-gold">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 20V10M12 20V4M19 20v-7"/><circle cx="5" cy="7" r="2"/><circle cx="12" cy="4" r="0" opacity="0"/><circle cx="19" cy="10" r="2"/><circle cx="12" cy="9" r="2"/></svg>
+      </div>
+      <div><h2>03 &middot; Candidate Societal Control Levers</h2><div class="tag">Variables that recur wherever coordination happens at scale.</div></div>
+    </div>
+    <div class="meta"><span class="status st-candidate">Candidate variables &mdash; causality not demonstrated</span></div>
+
+    <p>Looking across politics, religion, media, AI, institutions, organizations, and individual cognition, a handful of variables keep reappearing as the things that seem to govern whether a system reasons well or drifts. One way to write the pressure they put on a system is as an <b>epistemic efficiency</b>: useful signal over the burdens that degrade it.</p>
+
+    <div class="eqbox">
+      <div class="pre">Epistemic efficiency (working form)</div>
+      <div class="stmt">E&nbsp;=&nbsp;<span class="gold">S</span>&nbsp;/&nbsp;(&thinsp;C&nbsp;+&nbsp;N&nbsp;+&nbsp;K&nbsp;+&nbsp;P&thinsp;)</div>
+      <p class="gloss">Signal <b>S</b> divided by carrier color <b>C</b>, noise <b>N</b>, coordination cost <b>K</b>, and power-gradient pressure <b>P</b>. A healthy system keeps S large relative to the denominator; a degrading one lets the denominator win.</p>
+      <span class="def">A descriptive bookkeeping device, not a measured equation &mdash; the variables are not yet operationally defined or fit to data.</span>
+    </div>
+
+    <p>Compressed to the few that seem most load-bearing, the current candidate set is:</p>
+
+    <table class="levers">
+      <caption>Five candidate civilization-scale coordination variables</caption>
+      <thead><tr><th>Candidate lever</th><th>Failure mode</th><th>Where you see it</th></tr></thead>
+      <tbody>
+        <tr><td class="lv">Verification capacity</td><td class="fail">info velocity &gt; verify velocity</td><td class="ex">DNS works because verification exists; open social feeds often fail because it's weak.</td></tr>
+        <tr><td class="lv">Carrier Color</td><td class="fail">C &raquo; S</td><td class="ex">Political, religious, and brand labels overriding the proposition they're attached to.</td></tr>
+        <tr><td class="lv">Reasoning persistence</td><td class="fail">switching &uarr;, recursion &darr;</td><td class="ex">Fragmented attention; the inability to hold a causal chain long enough to verify it.</td></tr>
+        <tr><td class="lv">Shared verification space</td><td class="fail">private axioms only</td><td class="ex">Groups solving every problem with private truth systems; science is the counterexample.</td></tr>
+        <tr><td class="lv">Recursive correction capacity</td><td class="fail">certainty lock / feedback suppression</td><td class="ex">Aviation, engineering, and DNS recover from error; certainty-locked systems cannot.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout epistemic"><strong>Read this carefully:</strong> the word is <strong>candidate</strong>, deliberately. These are recurring variables, not demonstrated causes &mdash; no causality has been established, no dominance proven. Calling them &ldquo;the&rdquo; control levers would be exactly the kind of overclaim this whole project exists to resist. They are where to look next, not a finished answer.</p>
+  </div>
+</section>
+
+<!-- ===================== 4. OWL SEMAPHORE ===================== -->
+<section class="fw" id="owl">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-icon si-green">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="10" r="3"/><circle cx="15" cy="10" r="3"/><path d="M12 13v4M5 7l2-2M19 7l-2-2"/></svg>
+      </div>
+      <div><h2>04 &middot; The Owl Semaphore</h2><div class="tag">A finite algebra over four epistemic stances.</div></div>
+    </div>
+    <div class="meta"><span class="status st-proven">Algebra proven</span> <span class="status st-hypothesis">Utility: open study</span></div>
+
+    <p>The Owl Semaphore is a way to <b>label the stance you are reasoning from</b>. It defines four states &mdash; <b>Normative</b>, <b>Non-Normative</b>, <b>Critical</b>, and <b>Metacognitive</b> &mdash; treated not as truth-values but as <em>operations on stance</em>: transformations you apply when you change how you're evaluating a claim.</p>
+
+    <div class="owlwrap">
+      <figure class="owlfig">
+        <picture>
+          <source srcset="assets/owl-normative.webp" type="image/webp">
+          <img src="assets/owl-normative.png" width="160" height="160" alt="The Owl Semaphore normative-state seal: a stylized owl in gold." loading="lazy" decoding="async">
+        </picture>
+        <figcaption>// OWL SEMAPHORE &middot; normative seal</figcaption>
+      </figure>
+      <div class="v4">
+        <div class="st n"><div class="nm">NORMATIVE</div><div class="gl">identity stance</div></div>
+        <div class="st nn"><div class="nm">NON-NORMATIVE</div><div class="gl">flip orientation</div></div>
+        <div class="st c"><div class="nm">CRITICAL</div><div class="gl">flip locus of audit</div></div>
+        <div class="st m"><div class="nm">METACOGNITIVE</div><div class="gl">flip both (compose)</div></div>
+      </div>
+    </div>
+
+    <p>Two independent, commuting yes/no distinctions generate these states: the <em>orientation of stance</em> and the <em>locus of audit</em>. Two independent involutions force exactly four elements, closure forces the fourth as their composition, and every element is its own inverse. That structure has a name:</p>
+
+    <div class="eqbox">
+      <div class="pre">The proven structure</div>
+      <div class="stmt">{&thinsp;N,&thinsp;NN,&thinsp;C,&thinsp;M&thinsp;}&nbsp;&cong;&nbsp;<span class="gold">V&#8324;</span>&nbsp;&nbsp;(Klein four-group)</div>
+      <p class="gloss">The four states form the <b>Klein four-group</b> &mdash; the symmetry group of a rectangle. V&#8324; is <b>forced</b>: two commuting involutions land on it automatically, selecting it over the only other order-4 group (C&#8324;) and over every non-abelian group. Verified by direct enumeration.</p>
+      <span class="def">involution: x &compfn; x = identity &nbsp;·&nbsp; commuting: a &compfn; b = b &compfn; a &nbsp;·&nbsp; fourth element C&#8322; = &sigma;&#7515; &compfn; &sigma;&#8341;</span>
+    </div>
+
+    <div class="callout epistemic"><strong>Two claims, two very different statuses &mdash; do not conflate them.</strong> <em>(1) The algebra is proven.</em> The group structure is a verified mathematical fact. <em>(2) Whether these four states are the right partition of how people actually evaluate claims is an unvalidated design hypothesis.</em> There is no inter-rater reliability study finished yet; a pre-registered feasibility pilot (Fleiss' &kappa;) is the next step. And to be precise about lineage: this is a <strong>group of stance-operations, not a many-valued logic</strong> &mdash; it shares only the abstract V&#8324; skeleton with four-valued logics like Belnap&ndash;Dunn (a structural rhyme that any two-distinction system produces), and is not a logic, not an extension of Boolean algebra, and not a rediscovery of them.</p>
+  </div>
+</section>
+
+<!-- ===================== 5. STAR-CENTRIC TRANSPORT ===================== -->
+<section class="fw" id="transport">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-icon si-teal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg>
+      </div>
+      <div><h2>05 &middot; Star-Centric Transport</h2><div class="tag">Data should only count as progress while its center can still be recovered.</div></div>
+    </div>
+    <div class="meta"><span class="status st-candidate">Proposal</span></div>
+
+    <p>Star-Centric Transport carries the verify-before-you-advance discipline into data pipelines. Modern systems are good at checking syntax, schema, and delivery order, but weak at noticing when data has become <em>operationally distorted</em> long before a downstream failure appears. The proposal: every clean chunk retains a recoverable <b>center</b> &mdash; a latent balance point &mdash; and a chunk may advance only while a verifier can still reconstruct that center within tolerance.</p>
+
+    <div class="eqbox">
+      <div class="pre">The transport rule</div>
+      <div class="stmt">x&#7522; = f(c&#7522;, k&#7522;)&nbsp;&nbsp;&middot;&nbsp;&nbsp;advance&nbsp;iff&nbsp;&Vert;&thinsp;c&#770;&#7522;,&#11428; &minus; c&#7522;&thinsp;&Vert;&nbsp;&le;&nbsp;<span class="gold">&tau;</span></div>
+      <p class="gloss">Observed form <b>x&#7522;</b> is the latent center <b>c&#7522;</b> deformed by contextual distortion <b>k&#7522;</b>. At each checkpoint the verifier estimates the center; if its distance from the true center exceeds the tolerance band <b>&tau;</b>, the chunk is slowed, quarantined, or flagged &mdash; not treated as trustworthy forward progress.</p>
+      <span class="def">The &ldquo;star&rdquo; is not &ldquo;perfect data&rdquo; &mdash; it's the invariant the pipeline is trying to preserve across transmission, transformation, and review.</span>
+    </div>
+
+    <svg class="pipe" viewBox="0 0 760 96" role="img" aria-label="A data pipeline with three checkpoints; each verifies that a chunk's recoverable center is still within tolerance before allowing it to advance.">
+      <line x1="20" y1="48" x2="740" y2="48" stroke="#30363d" stroke-width="2"/>
+      <g font-family="SFMono-Regular,Consolas,monospace" font-size="11" fill="#8b949e" text-anchor="middle">
+        <g><circle cx="140" cy="48" r="13" fill="none" stroke="#3fb950" stroke-width="2"/><path d="M134 48l4 4 8-9" stroke="#3fb950" stroke-width="2" fill="none"/><text x="140" y="78">checkpoint 1</text></g>
+        <g><circle cx="380" cy="48" r="13" fill="none" stroke="#d4a853" stroke-width="2"/><path d="M374 48l4 4 8-9" stroke="#d4a853" stroke-width="2" fill="none"/><text x="380" y="78">checkpoint 2</text></g>
+        <g><circle cx="620" cy="48" r="13" fill="none" stroke="#4A9D96" stroke-width="2"/><path d="M614 48l4 4 8-9" stroke="#4A9D96" stroke-width="2" fill="none"/><text x="620" y="78">checkpoint 3</text></g>
+        <text x="20" y="34" text-anchor="start" fill="#3fb950">chunk in</text>
+        <text x="740" y="34" text-anchor="end" fill="#4A9D96">verified out</text>
+      </g>
+    </svg>
+
+    <p class="muted">The payoff is earlier, more honest progress estimation; drift caught before it poisons aggregate state; and integrity checks that happen <em>before</em> downstream escalation or policy action. It generalizes the same confidence-and-drift logic that already runs inside DNS Tool &mdash; positioned not as a mystical new protocol, but as a verification-aware transport model for high-integrity pipelines.</p>
+    <div class="callout epistemic"><strong>Epistemic status:</strong> a <strong>design proposal</strong> with a worked formalism, not a deployed protocol with benchmarks. The mechanism is specified; its empirical advantage over existing validation/drift-detection approaches remains to be measured.</p>
+  </div>
+</section>
+
+<!-- ===================== APPLIED / PROJECTS ===================== -->
+<section class="applied" id="applied">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-icon si-info">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></svg>
+      </div>
+      <div><h2>Applied &mdash; the principle, shipped</h2><div class="tag">Theory earns its keep when it runs on real infrastructure.</div></div>
+    </div>
+    <p class="lede">Two of these ideas are not just essays. They are deployed, verifiable systems &mdash; the proof that the Verification Principle survives contact with reality.</p>
+
+    <div class="projects">
+      <div class="project dns">
+        <div class="kicker">OSINT &middot; domain security intelligence</div>
+        <h3>DNS Tool</h3>
+        <p>The Verification Principle, made operational. DNS Tool collects from many redundant public sources, cross-references them, scores every finding by confidence (Observed / Inferred / Third-party), and hands you the exact <span class="mono">dig</span>/<span class="mono">openssl</span>/<span class="mono">curl</span> command to verify it yourself. Built on DNS precisely because the RFCs give ground truth: when a record says <span class="mono">v=spf1 -all</span>, there is no ambiguity about what it means. It is the proving ground &mdash; the principle demonstrated where claims can be independently checked.</p>
+        <a class="visit" href="https://dnstool.it-help.tech" target="_blank" rel="noopener">Open DNS Tool &#8599;</a>
+      </div>
+      <div class="project oc">
+        <div class="kicker">Deep thinking as a service</div>
+        <h3>Organic Computer</h3>
+        <p>The human substrate, offered directly. Organic Computer specs the human mind like hardware &mdash; an exaflop-scale reasoner running on ~20&nbsp;W and a glass of water &mdash; and sells the scarcest resource in business: a single mind that will hold one hard problem for hours and reason to its foundations. It is the Intellectual Resistance turned into a practice: metacognition first, AI as instrument never author, every figure sourced.</p>
+        <a class="visit" href="https://organiccomputer.me" target="_blank" rel="noopener">Open Organic Computer &#8599;</a>
+      </div>
+    </div>
+
+    <div class="maxim">
+      <span class="label">The maxim</span>
+      <blockquote>The answer to a question lives in the <span class="em">foundations</span> of the question. To understand those foundations &mdash; <span class="em">that</span> is logic.</blockquote>
+      <div class="rule"></div>
+      <cite>&mdash; the operating principle of the Intellectual Resistance</cite>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT / ORIGIN ===================== -->
+<section class="fw" id="about">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-icon si-copper">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-6 8-6s8 2 8 6"/></svg>
+      </div>
+      <div><h2>Whose resistance this is</h2><div class="tag">The origin of the discipline.</div></div>
+    </div>
+    <p>I'm <b>Carey Balboa</b>, founder of IT Help San Diego, solving technology problems for 27 years. The discipline behind this work has an old root: as a kid I loved math &mdash; the real kind, the kind that makes things happen &mdash; but I was handed &ldquo;just memorize it, just trust us&rdquo; instead of &ldquo;here is <em>why</em> it works.&rdquo; I wouldn't accept answers whose foundations I couldn't see. That refusal cost me in school; it also became my method.</p>
+    <p>To this day I don't memorize what changes &mdash; I look it up, every time, from the highest-authority source &mdash; because the honest move is to verify, not to trust a memory, including my own. Around 2015 the question changed from &ldquo;how do you break in?&rdquo; to &ldquo;why does this keep failing, and why won't anyone slow down enough to think about it?&rdquo; I cut the things that fracture attention and built my life around protecting it. The frameworks on this page are what that protected attention has been pointed at. They are offered the way I'd want to receive them: with the math shown, and with each claim labeled for exactly how far it's been carried.</p>
+    <div class="callout"><strong>A standing invitation to refute.</strong> Everything here is built to be falsifiable. If a framework's math is wrong, the honest response is to fix or retract it &mdash; and the fastest way to earn my attention is a real measurement that contradicts a claim. That is not a threat to the work; it <em>is</em> the work.</p>
+  </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<section class="cta" id="engage">
+  <div class="container">
+    <div class="box">
+      <div class="eyebrow center">Engage</div>
+      <h2>Bring a hard problem to a mind that verifies.</h2>
+      <p>The frameworks are the theory; the practice is available. If you have a problem that needs sustained, evidence-first reasoning &mdash; not a confident guess &mdash; that is exactly the work.</p>
+      <a href="https://organiccomputer.me" target="_blank" rel="noopener" class="btn btn-primary">Engage the Organic Computer</a>
+      <a href="https://dnstool.it-help.tech" target="_blank" rel="noopener" class="btn btn-ghost">Run the DNS Tool</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== REFERENCES ===================== -->
+<section class="refs" id="references">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-icon si-info">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+      </div>
+      <div><h2>References &amp; primary sources</h2><div class="tag">Foundations you can check independently.</div></div>
+    </div>
+    <ol>
+      <li id="r1"><span class="srcbadge sb-self">Primary</span>C. J. Balboa, <em>Philosophical Foundations for Security Analysis Communication</em> &amp; <em>DNS Tool Methodology</em>, 2026. ORCID 0009-0000-5237-9065. <a href="https://doi.org/10.5281/zenodo.19468134" target="_blank" rel="noopener">doi:10.5281/zenodo.19468134 &#8599;</a></li>
+      <li id="r2"><span class="srcbadge sb-acad">Group theory</span>The Klein four-group V&#8324; is the unique non-cyclic group of order 4 &mdash; the symmetry group of a non-square rectangle; any structure built from two independent commuting involutions is isomorphic to it. Standard result in elementary abstract algebra (see e.g. Dummit &amp; Foote, <em>Abstract Algebra</em>, 3rd ed., &sect;2.5).</li>
+      <li id="r3"><span class="srcbadge sb-acad">Bayesian epistemics</span>The &ldquo;regularity&rdquo; requirement that contingent priors lie strictly in (0,1) so that conditionalization can revise them is standard in Bayesian confirmation theory; a prior of 0 or 1 is a fixed point of Bayes' rule. See R. Carnap, <em>Logical Foundations of Probability</em> (1950); standard treatments of conditionalization.</li>
+      <li id="r4"><span class="srcbadge sb-acad">Four-valued logic (distinction)</span>N. D. Belnap, &ldquo;A Useful Four-Valued Logic,&rdquo; in <em>Modern Uses of Multiple-Valued Logic</em>, 1977 &mdash; cited here only to mark the boundary: the Owl Semaphore shares V&#8324; as an abstract group skeleton but is a system of stance-operations, not a many-valued logic.</li>
+      <li id="r5"><span class="srcbadge sb-self">Project</span>DNS Tool &mdash; deployed OSINT domain &amp; email-security intelligence platform. <a href="https://dnstool.it-help.tech" target="_blank" rel="noopener">dnstool.it-help.tech &#8599;</a> · source: <a href="https://github.com/IT-Help-San-Diego/dns-tool-intel" target="_blank" rel="noopener">github.com/IT-Help-San-Diego &#8599;</a></li>
+      <li id="r6"><span class="srcbadge sb-self">Project</span>Organic Computer &mdash; the human mind spec'd as hardware; sustained deliberate reasoning as a service. <a href="https://organiccomputer.me" target="_blank" rel="noopener">organiccomputer.me &#8599;</a></li>
+    </ol>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <p class="mono">THE INTELLECTUAL RESISTANCE — intellectualresistance.com</p>
+    <p class="tagline">Logic, reason, and thinking done right. Built in the IT Help San Diego scientific design language —<br>golden-ratio layout, self-contained assets, strict content-security policy. Every claim labeled for how far it's proven.</p>
+
+    <!-- Corporate tree -->
+    <nav class="ftr-tree" aria-label="Organizational structure">
+      <div class="ftr-copyright">
+        <span>&copy; 2026</span>
+        <a href="https://github.com/IT-Help-San-Diego" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M9 13h.01M9 17h.01M15 9h.01M15 13h.01M15 17h.01"/></svg>
+          IT Help San Diego Inc.
+        </a>
+        <span>All rights reserved.</span>
+      </div>
+      <div class="ftr-org">
+        <div class="ftr-org-reg">
+          <div class="ftr-org-reg-left"><a href="https://opencorporates.com/companies/us_de/10191352" target="_blank" rel="noopener" class="ftr-node">Incorporated in Delaware</a><div class="ftr-org-reg-arm"></div></div>
+          <div class="ftr-org-reg-right"><div class="ftr-org-reg-arm"></div><a href="https://opencorporates.com/companies/us_ca/B20250124081" target="_blank" rel="noopener" class="ftr-node">Foreign Entity in California</a></div>
+        </div>
+        <div class="ftr-org-dept">
+          <div class="ftr-org-dept-left">
+            <div class="ftr-org-dept-left-col">
+              <div class="ftr-org-dept-left-top">
+                <span class="ftr-node">Research Department</span>
+                <div class="ftr-org-dept-arm"></div>
+              </div>
+              <div class="ftr-vline"></div>
+              <span class="ftr-node ftr-node--project">Intellectual Resistance</span>
+            </div>
+          </div>
+          <div class="ftr-org-dept-right">
+            <div class="ftr-org-dept-arm"></div>
+            <a href="https://www.it-help.tech" target="_blank" rel="noopener" class="ftr-node">IT Help San Diego</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="ftr-grid-connector">
+      <div class="ftr-grid-bar"></div>
+      <div class="ftr-grid-drops">
+        <div class="ftr-grid-drop"><div class="ftr-vline"></div></div>
+        <div class="ftr-grid-drop"><div class="ftr-vline"></div></div>
+        <div class="ftr-grid-drop"><div class="ftr-vline"></div></div>
+      </div>
+    </div>
+
+    <div class="ftr-grid">
+      <div class="ftr-cell">
+        <span class="ftr-heading">Frameworks</span>
+        <a href="#verification" class="ftr-link">Verification Principle</a>
+        <a href="#carrier-color" class="ftr-link">Carrier Color</a>
+        <a href="#levers" class="ftr-link">Control Levers</a>
+        <a href="#owl" class="ftr-link">Owl Semaphore</a>
+        <a href="#transport" class="ftr-link">Star-Centric Transport</a>
+      </div>
+      <div class="ftr-cell">
+        <span class="ftr-heading">Applied</span>
+        <a href="https://dnstool.it-help.tech" target="_blank" rel="noopener" class="ftr-link">DNS Tool</a>
+        <a href="https://organiccomputer.me" target="_blank" rel="noopener" class="ftr-link">Organic Computer</a>
+        <a href="https://github.com/IT-Help-San-Diego" target="_blank" rel="noopener" class="ftr-link">Source / GitHub</a>
+        <a href="/llms.txt" class="ftr-link">llms.txt</a>
+      </div>
+      <div class="ftr-cell">
+        <span class="ftr-heading">Company</span>
+        <a href="https://www.it-help.tech/about" target="_blank" rel="noopener" class="ftr-link">Our Expertise</a>
+        <a href="https://www.it-help.tech/security-policy" target="_blank" rel="noopener" class="ftr-link">Security</a>
+        <a href="https://www.it-help.tech/privacy" target="_blank" rel="noopener" class="ftr-link">Privacy</a>
+        <a href="/.well-known/security.txt" class="ftr-link">security.txt</a>
+      </div>
+    </div>
+
+    <div class="ftr-socials">
+      <a href="https://github.com/IT-Help-San-Diego" target="_blank" rel="noopener" title="Source on GitHub">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        <span>GitHub</span>
+      </a>
+      <a href="https://orcid.org/0009-0000-5237-9065" target="_blank" rel="noopener" title="ORCID iD">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256" aria-hidden="true"><path fill="#a6ce39" d="M256 128c0 70.7-57.3 128-128 128S0 198.7 0 128 57.3 0 128 0s128 57.3 128 128z"/><path fill="#fff" d="M86.3 186.2H70.9V79.1h15.4v107.1zm22.6 0h41.4c39.9 0 57.6-28.8 57.6-53.9 0-25.3-17.5-53.2-57.6-53.2h-41.4v107.1zm15.4-93.2h24.5c34.3 0 43.7 22.4 43.7 39.7 0 19.4-11.8 39.6-43.7 39.6h-24.5V93zm-37.4-23.5c5.7 0 10.3-4.6 10.3-10.3S92.6 49 86.9 49s-10.3 4.6-10.3 10.3 4.6 10.2 10.3 10.2z"/></svg>
+        <span>ORCID</span>
+      </a>
+      <a href="https://organiccomputer.me" target="_blank" rel="noopener" title="Organic Computer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 12h4l2-5 4 10 2-5h4"/></svg>
+        <span>Organic Computer</span>
+      </a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
