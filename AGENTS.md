@@ -9,7 +9,16 @@ the **intellectualresistance.com** repository. Read this fully before any edit.
 / Same scientific design family as it-help.tech / dnstool.it-help.tech /
 / organiccomputer.me.
 
-## What this site is
+## Cross-agent worklog (read this, then append after every change)
+
+  Two agents touch this repo: **Hermes desktop** (local, on the owner's Mac) and the
+  **Replit Agent** (a private dev/backend workspace). To avoid a conflicting source of
+  truth, both record their work in `AGENT_WORKLOG.md` (repo root). Before you start,
+  READ it to see what the other did; after any change, APPEND a dated, signed entry.
+  It is `*.md`, so the deploy excludes it from the published site — it lives only in
+  the repo, never on the live domain.
+
+  ## What this site is
 
 A single-page, dead-serious umbrella that ties the frameworks together. Each
 framework gets its own explainer section WITH ITS MATH, and the projects are
