@@ -647,6 +647,18 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
 
     <p>So the discipline is to keep priors bounded away from 0 and 1, and to update in odds form &mdash; <span class="mono">posterior odds = Bayes factor &times; prior odds</span> &mdash; so evidence can always move the needle. To <em>understand the foundations</em> of a claim, in this exact sense, <b>is</b> what logic is. It holds for a DNS record, an argument between friends, or polarized politics: anywhere a mind updates on evidence.</p>
 
+    <p>The theorem says a pinned prior <em>can't</em> move. A fair follow-on: can you <b>detect</b>, from behavior alone, when a prior is locked? The tempting metric is raw movement &mdash; <span class="mono">M = &Sigma;&thinsp;|P(H&thinsp;|&thinsp;E&#7522;) &minus; P(H)|</span> &mdash; and <span class="mono">M = 0</span> does flag a prior that never budged. But movement alone is the wrong measure, for a precise reason:</p>
+
+    <div class="eqbox">
+      <div class="pre">The detector has to control for informative evidence</div>
+      <div class="stmt">BF&#7522; = 1&nbsp;&nbsp;<span class="hl">&rArr;</span>&nbsp;&nbsp;P(H&thinsp;|&thinsp;E&#7522;) = P(H)</div>
+      <p class="gloss">If a piece of evidence carries no information &mdash; its Bayes factor is 1 &mdash; a perfectly rational reasoner shows <b>zero</b> update too. So &ldquo;didn't move&rdquo; cannot, by itself, separate a locked prior from correctly-ignored noise. A lock only shows when the evidence is <em>informative</em> (BF&#7522; &ne; 1) yet the prior still doesn't move.</p>
+      <span class="def">right quantity: &Sigma;&thinsp;|&thinsp;P_agent(H | E&#7522;) &minus; P_Bayes(H | E&#7522;)&thinsp;| &mdash; deviation from the Bayes-correct posterior, not from the prior</span>
+    </div>
+
+    <div class="callout epistemic"><strong>Epistemic status &mdash; candidate diagnostic, not part of the theorem.</strong> It presumes you can estimate each evidence item's likelihood ratio (usually the hard part), and its thresholds are uncalibrated &mdash; no validation run here. It earns a place on this floor only as &ldquo;where to look,&rdquo; clearly below the proven line above.</p>
+    </div>
+
     <div class="callout"><strong>Why it leads the set:</strong> every other framework here assumes this one. Carrier Color is a description of <em>what</em> corrupts the prior; the Owl Semaphore is a way to <em>label</em> the stance you're updating from; Star-Centric Transport carries the same verify-before-you-advance logic into data pipelines. The Verification Principle is the floor they all stand on.</p>
   </div>
 </section>
@@ -800,13 +812,16 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
 
     <p class="muted fs-90">Triple-redundant by design &mdash; state is carried by posture, ring color, <em>and</em> the transform &mdash; so the notation degrades gracefully and stays accessible. Full stories and sources: <a href="https://dnstool.it-help.tech/owl-semaphore" target="_blank" rel="noopener">the Owl Semaphore page &#8599;</a>.</p>
 
-    <p>Two independent, commuting yes/no distinctions generate these states: the <em>orientation of stance</em> and the <em>locus of audit</em>. Two independent involutions force exactly four elements, closure forces the fourth as their composition, and every element is its own inverse. That structure has a name:</p>
+    <p>Two independent, commuting yes/no distinctions generate these states: the <em>orientation of stance</em> and the <em>locus of audit</em>. Two independent, commuting involutions force exactly four elements, closure forces the fourth as their composition, and every element is its own inverse. That structure has a name:</p>
 
     <div class="eqbox">
       <div class="pre">The proven structure</div>
       <div class="stmt">{&thinsp;N,&thinsp;NN,&thinsp;C,&thinsp;M&thinsp;}&nbsp;&cong;&nbsp;<span class="gold">V&#8324;</span>&nbsp;&nbsp;(Klein four-group)</div>
       <p class="gloss">The four states form the <b>Klein four-group</b> &mdash; the symmetry group of a rectangle. V&#8324; is <b>forced</b>: two commuting involutions land on it automatically, selecting it over the only other order-4 group (C&#8324;) and over every non-abelian group. Verified by direct enumeration.</p>
-      <span class="def">involution: x &compfn; x = identity &nbsp;·&nbsp; commuting: a &compfn; b = b &compfn; a &nbsp;·&nbsp; fourth element C&#8322; = &sigma;&#7515; &compfn; &sigma;&#8341;</span>
+      <span class="def">involution: x &compfn; x = identity &nbsp;·&nbsp; commuting: a &compfn; b = b &compfn; a &nbsp;·&nbsp; fourth element C&#8322; = &sigma;&#7515; &compfn; &sigma;&#8341; &nbsp;·&nbsp; C&#8324; excluded: no element of order 4</span>
+    </div>
+
+    <div class="callout"><strong>Why &ldquo;commuting&rdquo; is the load-bearing word.</strong> Independence alone won't do it &mdash; two involutions that <em>don't</em> commute generate a dihedral group (D&#8323;, D&#8324;, or larger) with arbitrarily many elements. The moment they commute, their product is itself an involution &mdash; (a&compfn;b)&sup2; = a&compfn;b&compfn;a&compfn;b = a&sup2;b&sup2; = e &mdash; so {&thinsp;e, a, b, a&compfn;b&thinsp;} closes at exactly four, each its own inverse. That, and only that, is V&#8324;: the structure is <em>forced</em>, not chosen.</p>
     </div>
 
     <div class="callout epistemic"><strong>Two claims, two very different statuses &mdash; do not conflate them.</strong> <em>(1) The algebra is proven.</em> The group structure is a verified mathematical fact. <em>(2) Whether these four states are the right partition of how people actually evaluate claims is an unvalidated design hypothesis.</em> There is no inter-rater reliability study finished yet; a pre-registered feasibility pilot (Fleiss' &kappa;) is the next step. And to be precise about lineage: this is a <strong>group of stance-operations, not a many-valued logic</strong> &mdash; it shares only the abstract V&#8324; skeleton with four-valued logics like Belnap&ndash;Dunn (a structural rhyme that any two-distinction system produces), and is not a logic, not an extension of Boolean algebra, and not a rediscovery of them.</p>
@@ -833,6 +848,17 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       <span class="def">The &ldquo;star&rdquo; is not &ldquo;perfect data&rdquo; &mdash; it's the invariant the pipeline is trying to preserve across transmission, transformation, and review.</span>
     </div>
 
+    <p>A transport rule needs a unit to transport. The natural one is an <b>epistemic packet</b> &mdash; the chunk plus the two things you'd need to audit it later:</p>
+
+    <div class="eqbox">
+      <div class="pre">The epistemic packet</div>
+      <div class="stmt"><span class="gold">P</span> = &langle;&thinsp;D,&thinsp;C,&thinsp;L&thinsp;&rangle;</div>
+      <p class="gloss"><b>D</b> &mdash; payload: the signal being moved (the latent center <span class="mono">c&#7522;</span> above, before distortion). <b>C</b> &mdash; carrier-color metadata: the tribe/role/emotional-amplitude tags &sect;2 says ride along with any human-sourced claim. <b>L</b> &mdash; lineage log: a signed, append-only record of each hop, marking where carrier color was injected or amplified.</p>
+      <span class="def">L makes &ldquo;find where presupposition entered&rdquo; a literal, replayable trace rather than a forensic guess &nbsp;·&nbsp; &ldquo;center&rdquo; here is the latent invariant c&#7522;, <em>not</em> political centrism</span>
+    </div>
+
+    <p>Because each hop is logged, a verifier can do what pipelines usually can't: when the <em>same</em> payload D arrives along carriers that bias in <em>different</em> directions, that agreement is evidence the signal is carrier-independent. In the odds form of &sect;1, quasi-independent carriers multiply their Bayes factors &mdash; so <b>convergence across dissimilar carriers raises posterior confidence</b>. It does not certify truth: a shared upstream source or a common hidden axiom breaks the independence the inference needs. Convergence is a strong prior-mover, not a verdict.</p>
+
     <svg class="pipe" viewBox="0 0 760 96" role="img" aria-label="A data pipeline with three checkpoints; each verifies that a chunk's recoverable center is still within tolerance before allowing it to advance.">
       <line x1="20" y1="48" x2="740" y2="48" stroke="#30363d" stroke-width="2"/>
       <g font-family="SFMono-Regular,Consolas,monospace" font-size="11" fill="#8b949e" text-anchor="middle">
@@ -845,7 +871,7 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
     </svg>
 
     <p class="muted">The payoff is earlier, more honest progress estimation; drift caught before it poisons aggregate state; and integrity checks that happen <em>before</em> downstream escalation or policy action. It generalizes the same confidence-and-drift logic that already runs inside DNS Tool &mdash; positioned not as a mystical new protocol, but as a verification-aware transport model for high-integrity pipelines.</p>
-    <div class="callout epistemic"><strong>Epistemic status:</strong> a <strong>design proposal</strong> with a worked formalism, not a deployed protocol with benchmarks. The mechanism is specified; its empirical advantage over existing validation/drift-detection approaches remains to be measured.</p>
+    <div class="callout epistemic"><strong>Epistemic status:</strong> a <strong>design proposal</strong> with a worked formalism &mdash; the epistemic-packet format included &mdash; not a deployed protocol with benchmarks. The mechanism is specified; its empirical advantage over existing validation/drift-detection approaches remains to be measured.</p>
   </div>
 </section>
 
