@@ -45,6 +45,13 @@ between 0 and 1, and updates in odds form (posterior odds = Bayes factor ×
 prior odds). To understand the foundations of a claim, in this exact sense, is
 what logic is. This principle is the floor every other framework here stands on.
 
+Operational corollary (CANDIDATE, not part of the theorem): to detect a locked
+prior from behavior, measure deviation from the Bayes-correct update, not raw
+movement from the prior. M = Σ|P(H|Ei) − P(H)| = 0 does not by itself prove
+dogma, because uninformative evidence (Bayes factor 1) leaves even a perfectly
+rational agent unmoved. A lock shows only when evidence is informative (BF ≠ 1)
+yet the prior still doesn't move; thresholds uncalibrated, no validation run.
+
 ## 2. Carrier Color — MODEL / framework
 
 Identity-mediated distortion in how information is received. A message has a
@@ -86,8 +93,12 @@ stance; locus of audit) generate them: two commuting involutions force exactly
 four elements, closure forces the fourth as their composition, every element is
 its own inverse. The four states therefore form the Klein four-group V₄ (the
 symmetry group of a rectangle). V₄ is forced — two commuting involutions land on
-it automatically, selecting it over the only other order-4 group (C₄) and over
-every non-abelian group; verified by direct enumeration.
+it automatically, selecting it over the only other order-4 group (C₄, excluded because no element
+of order 4 exists here) and over every non-abelian group; verified by direct
+enumeration. Commutativity is the load-bearing condition: two involutions that
+do NOT commute generate a dihedral group of arbitrary even order; when they
+commute, the product is itself an involution ((ab)² = a²b² = e), so {e, a, b,
+ab} closes at exactly four — and that is V₄, nothing else.
 
 IMPORTANT framing (two claims, two statuses, never conflated): (a) the ALGEBRA
 is proven — a verified mathematical fact; (b) whether these four states are the
@@ -115,7 +126,15 @@ pipeline preserves across transmission and transformation. Payoff: earlier
 honest progress estimation, drift caught before it poisons aggregate state, and
 integrity checks before downstream escalation. Generalizes the confidence/drift
 logic already running in DNS Tool. Epistemic status: a design proposal with a
-worked formalism, not a deployed protocol with benchmarks.
+worked formalism, not a deployed protocol with benchmarks. Refinement (same
+proposal status): the epistemic packet P = ⟨D, C, L⟩ — payload D, carrier-color
+metadata C, and a signed, append-only lineage log L that makes "find where
+presupposition entered" a replayable trace rather than a forensic guess.
+Convergence of the same payload D across dissimilar carriers raises posterior
+confidence (odds form, §1: quasi-independent carriers multiply their Bayes
+factors) but does NOT certify truth — shared upstream sources or a common hidden
+axiom break the independence. "Center" here is the latent invariant c_i, not
+political centrism.
 
 ## Applied — the principle, shipped
 

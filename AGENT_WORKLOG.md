@@ -7,7 +7,32 @@
 
   ---
 
-  ## 2026-06-28 · Replit Agent
+  ## 2026-06-29 · Replit Agent
+    - Integrated three owner-approved, verified scientific improvements into index.html
+      (+ the llms.txt / llms-full.txt mirrors). All additive; reused existing component
+      classes only, so the CSP style-hash is unchanged and verify.sh passes clean
+      (no-JS / no-inline-style / no-external-subresource invariants intact).
+      · §1 Verification Principle — added a CANDIDATE lock-detector: raw belief-movement
+        M = Σ|P(H|Ei) − P(H)| is the wrong metric (BFi = 1 ⇒ a rational agent also stays
+        put); the right quantity is deviation from the Bayes-correct posterior. Placed
+        clearly below the proven theorem, labeled candidate.
+      · §4 Owl Semaphore — fixed "two independent involutions" → "independent, commuting"
+        (the one-word omission that left the V₄ derivation under-specified); added a
+        "why commuting is load-bearing" note ((a∘b)² = a²b² = e vs. the dihedral group
+        non-commuting involutions generate) and "C₄ excluded: no element of order 4" to
+        the equation key. Algebra-only; the design-hypothesis status of the four-state
+        partition is untouched.
+      · §5 Star-Centric Transport — added the epistemic packet P = ⟨D, C, L⟩ (payload /
+        carrier-color metadata / signed lineage log) and a convergence paragraph linking
+        it to §1's odds form and §2's carrier color; flagged "center = latent invariant,
+        not political centrism." Stays PROPOSAL.
+    - Source corroboration: three owner-supplied review files (2026-06-29) independently
+      confirmed the commuting fix and the lock-detector/OEP reframe. Their prose framework
+      names were treated as untrusted (some hallucinated) — only the verified math landed.
+    - Published via the GitHub Git Data API on top of origin/main (no local git push; the
+      Replit workspace stays repo-local). This is the commit below.
+
+    ## 2026-06-28 · Replit Agent
   - Stood up Replit as a PRIVATE dev/backend workspace only (local dev server on :5000).
     Nothing from the Replit workspace is pushed to origin — the canonical repo is left
     pristine, by owner's instruction. `.replit` / `replit.md` stay local-only.
