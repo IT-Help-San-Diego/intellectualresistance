@@ -1,6 +1,20 @@
-.DS_Store
-**/.DS_Store
+
+# Prevent accidental push of the private research directory structure
+private-local-only/
+research_archive/
+
+# Block sensitive data types found in agent artifacts and transcripts
+*.csv
+*.json
 *.log
-.env
-.secrets*
-node_modules/
+*.xml
+*.sql
+*.xlsx
+*.numbers
+
+# Block potential PII patterns (if they appear as files)
+*transcript*
+*conversation*
+*personal*
+*phi*
+
