@@ -31,6 +31,11 @@
       names were treated as untrusted (some hallucinated) — only the verified math landed.
     - Published via the GitHub Git Data API on top of origin/main (no local git push; the
       Replit workspace stays repo-local). This is the commit below.
+    - Follow-up (same day, after code review): tightened §4 for precision — the
+      "exactly four / V₄" claim now requires a, b to be distinct, non-identity
+      involutions, and the non-commuting case names the dihedral group D_n
+      (n = ord(ab) ≥ 3, or infinite dihedral) instead of "arbitrarily many."
+      Synced to llms-full.txt; verify.sh still green.
 
     ## 2026-06-28 · Replit Agent
   - Stood up Replit as a PRIVATE dev/backend workspace only (local dev server on :5000).
