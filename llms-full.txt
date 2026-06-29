@@ -92,13 +92,14 @@ truth-values. Two independent, commuting yes/no distinctions (orientation of
 stance; locus of audit) generate them: two commuting involutions force exactly
 four elements, closure forces the fourth as their composition, every element is
 its own inverse. The four states therefore form the Klein four-group V₄ (the
-symmetry group of a rectangle). V₄ is forced — two commuting involutions land on
+symmetry group of a rectangle). V₄ is forced — two distinct, non-identity commuting involutions land on
 it automatically, selecting it over the only other order-4 group (C₄, excluded because no element
 of order 4 exists here) and over every non-abelian group; verified by direct
-enumeration. Commutativity is the load-bearing condition: two involutions that
-do NOT commute generate a dihedral group of arbitrary even order; when they
-commute, the product is itself an involution ((ab)² = a²b² = e), so {e, a, b,
-ab} closes at exactly four — and that is V₄, nothing else.
+enumeration. Commutativity is the load-bearing condition. Take a, b as distinct,
+non-identity involutions: if they do NOT commute they generate a dihedral group
+D_n with n = ord(ab) ≥ 3 (infinite dihedral if ab has infinite order); if they
+commute, the product is itself an involution ((ab)² = a²b² = e), so {e, a, b, ab}
+closes at exactly four — and that is V₄, nothing else.
 
 IMPORTANT framing (two claims, two statuses, never conflated): (a) the ALGEBRA
 is proven — a verified mathematical fact; (b) whether these four states are the
