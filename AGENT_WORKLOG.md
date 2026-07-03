@@ -8,3 +8,12 @@
 - Created safety bundles under `~/Downloads/intellectualresistance-local-only-backups/` before branch deletion.
 - Deleted the local `private-local-only` branch after verifying the artifact repo commit and parent ignore rules.
 
+
+## 2026-07-03T04:51:07Z — Hermes desktop
+
+- Diagnosed the GitHub Actions deploy failure at `Upload immutable assets (long cache)`.
+- Root cause: the public repo still tracked a broken `.hermes.md -> AGENTS.md` symlink after `AGENTS.md` had been removed from the public branch; `aws s3 sync` skipped the nonexistent symlink target and exited with code 2.
+- Removed the obsolete tracked `.hermes.md` symlink and the obsolete `.githooks/pre-push` private-branch guard.
+- Added a defensive deploy exclusion for `.githooks/*`.
+- Unset local `core.hooksPath` because the private branch guard is no longer part of the workflow.
+
