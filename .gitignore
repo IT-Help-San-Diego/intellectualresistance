@@ -4,3 +4,7 @@
 .env
 .secrets*
 node_modules/
+
+# Local-only private research artifacts; never publish to GitHub
+/Research Artifacts/
+/private_research_vault/
