@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'sha256-Zv3RGh1rDTcub1sMEevkoXN+n2lg/BHEtPlFP8gUp/Y='; script-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'sha256-g07SfHaGHBjha3DhClDGmuYzyvG3yGx8lu2gFFGV/2g='; script-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <meta name="theme-color" content="#0d1117">
 <meta name="color-scheme" content="dark">
@@ -292,19 +292,6 @@ section{padding:var(--s6) 0;position:relative}
 .maxim .rule{width:42px;height:2px;background:linear-gradient(90deg,var(--gold),var(--copper));margin:var(--s4) auto 0;border-radius:2px}
 .maxim cite{display:block;margin-top:var(--s3);font-style:normal;font-size:.82rem;color:var(--text-dim);font-family:var(--mono)}
 
-/* ============================================================ CTA */
-.cta{text-align:center}
-.cta .box{border:1px solid var(--border);border-radius:18px;background:linear-gradient(160deg,#11161f,#0d1117);
-  padding:var(--s6) var(--s4);max-width:720px;margin:0 auto;position:relative;overflow:hidden}
-.cta .box::after{content:"";position:absolute;inset:0;background:radial-gradient(60% 80% at 50% -10%,rgba(212,168,83,.10),transparent 70%);pointer-events:none}
-.cta h2{font-size:clamp(1.6rem,4vw,2.3rem)}
-.cta p{color:var(--text-muted);max-width:48ch;margin:0 auto var(--s4)}
-.btn{display:inline-block;font-family:var(--sans);font-weight:600;font-size:1rem;padding:.85rem 1.8rem;border-radius:10px;border:1px solid transparent;cursor:pointer}
-.btn-primary{background:linear-gradient(180deg,#e0b667,#c8956a);color:#1a1206;box-shadow:0 8px 24px rgba(200,149,106,.25)}
-.btn-primary:hover{color:#1a1206;filter:brightness(1.06)}
-.btn-ghost{background:transparent;color:var(--text);border-color:var(--border);margin-left:.6rem}
-.btn-ghost:hover{color:var(--gold);border-color:var(--gold)}
-@media(max-width:520px){.btn-ghost{margin-left:0;margin-top:.6rem;display:inline-block}}
 
 /* ============================================================ REFERENCES + FOOTER */
 .refs{border-top:1px solid var(--border);background:var(--bg-2)}
@@ -927,19 +914,6 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
     <p>I'm <b>Carey Balboa</b>, founder of IT Help San Diego, solving technology problems for 27 years. The discipline behind this work has an old root: as a kid I loved math &mdash; the real kind, the kind that makes things happen &mdash; but I was handed &ldquo;just memorize it, just trust us&rdquo; instead of &ldquo;here is <em>why</em> it works.&rdquo; I wouldn't accept answers whose foundations I couldn't see. That refusal cost me in school; it also became my method.</p>
     <p>To this day I don't memorize what changes &mdash; I look it up, every time, from the highest-authority source &mdash; because the honest move is to verify, not to trust a memory, including my own. Around 2015 the question changed from &ldquo;how do you break in?&rdquo; to &ldquo;why does this keep failing, and why won't anyone slow down enough to think about it?&rdquo; I cut the things that fracture attention and built my life around protecting it. The frameworks on this page are what that protected attention has been pointed at. They are offered the way I'd want to receive them: with the math shown, and with each claim labeled for exactly how far it's been carried.</p>
     <div class="callout"><strong>A standing invitation to refute.</strong> Everything here is built to be falsifiable. If a framework's math is wrong, the honest response is to fix or retract it &mdash; and the fastest way to earn my attention is a real measurement that contradicts a claim. That is not a threat to the work; it <em>is</em> the work.</p>
-  </div>
-</section>
-
-<!-- ===================== CTA ===================== -->
-<section class="cta" id="engage">
-  <div class="container">
-    <div class="box">
-      <div class="eyebrow center">Engage</div>
-      <h2>Bring a hard problem to a mind that verifies.</h2>
-      <p>The frameworks are the theory; the practice is available. If you have a problem that needs sustained, evidence-first reasoning &mdash; not a confident guess &mdash; that is exactly the work.</p>
-      <a href="https://organiccomputer.me" target="_blank" rel="noopener" class="btn btn-primary">Engage the Organic Computer</a>
-      <a href="https://dnstool.it-help.tech" target="_blank" rel="noopener" class="btn btn-ghost">Run the DNS Tool</a>
-    </div>
   </div>
 </section>
 
