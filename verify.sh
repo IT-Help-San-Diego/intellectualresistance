@@ -19,7 +19,12 @@ def k(name, cond):
     print(f"  [{'PASS' if cond else 'FAIL'}] {name}")
     if not cond: fails.append(name)
 
-html = open("index.html", encoding="utf-8").read()
+pages = ["index.html"]
+if os.path.exists("dose/01/index.html"):
+    pages.append("dose/01/index.html")
+
+htmls = {p: open(p, encoding="utf-8").read() for p in pages}
+html = htmls["index.html"]  # homepage style is the CSP source of truth
 
 # 1. CSP style-hash consistency (the #1 cause of a blank page)
 style = re.search(r"<style>(.*?)</style>", html, re.S).group(1)
@@ -37,23 +42,24 @@ if os.path.exists(pol_path):
     except Exception as e:
         k(f"security-headers.json parses ({e})", False)
 
-# 2. No-JS / no-inline-style invariants (CSP is script-src 'none')
-k("zero inline style= attributes", len(re.findall(r'\sstyle="[^"]*"', html)) == 0)
-k("only ld+json <script> blocks (no executable JS)",
-  all("application/ld+json" in s for s in re.findall(r"<script[^>]*>", html)))
-k("no external subresources (src/srcset http[s])",
-  len(re.findall(r'(?:src|srcset)="https?://[^"]*"', html)) == 0)
-
-# 3. JSON-LD validity
-m = re.search(r'<script type="application/ld\+json">(.*?)</script>', html, re.S)
-if m:
-    try:
-        json.loads(m.group(1)); k("JSON-LD parses", True)
-    except Exception as e:
-        k(f"JSON-LD parses ({e})", False)
-
-# 4. No leftover placeholders
-k("no PLACEHOLDER tokens", "PLACEHOLDER" not in html)
+for path, body in htmls.items():
+    st = re.search(r"<style>(.*?)</style>", body, re.S)
+    k(f"{path} <style> bytes == homepage (shared CSP hash)", bool(st) and st.group(1) == style)
+    k(f"{path} zero inline style= attributes", len(re.findall(r'\sstyle="[^"]*"', body)) == 0)
+    k(f"{path} only ld+json <script> blocks (no executable JS)",
+      all("application/ld+json" in s for s in re.findall(r"<script[^>]*>", body)))
+    k(f"{path} no external subresources (src/srcset http[s])",
+      len(re.findall(r'(?:src|srcset)="https?://[^"]*"', body)) == 0)
+    m = re.search(r'<script type="application/ld\+json">(.*?)</script>', body, re.S)
+    if m:
+        try:
+            json.loads(m.group(1)); k(f"{path} JSON-LD parses", True)
+        except Exception as e:
+            k(f"{path} JSON-LD parses ({e})", False)
+    k(f"{path} no PLACEHOLDER tokens", "PLACEHOLDER" not in body)
+    og = re.search(r'property="og:image"\s+content="[^"]+\.(svg|png|jpg|jpeg)"', body)
+    if og:
+        k(f"{path} og:image is raster (png/jpg, not svg)", og.group(1).lower() != "svg")
 
 # 5. BIMI logo (if referenced) is well-formed SVG Tiny-PS
 if os.path.exists("bimi-logo.svg"):
@@ -91,11 +97,6 @@ for root, dirs, files in os.walk("."):
                 stale_hits.append(f"{p}: '{phrase}'")
 k("no stale/retired phrases in shipped files" + (f" (hits: {stale_hits})" if stale_hits else ""),
   len(stale_hits) == 0)
-
-# 7. OG image must be a raster (Apple/iMessage will not render an SVG og:image)
-og = re.search(r'property="og:image"\s+content="[^"]+\.(svg|png|jpg|jpeg)"', html)
-if og:
-    k("og:image is raster (png/jpg, not svg — iMessage requirement)", og.group(1).lower() != "svg")
 
 if fails:
     print("=" * 52); print(f"FAILED: {len(fails)} check(s)"); sys.exit(1)

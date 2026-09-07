@@ -73,6 +73,7 @@ jobs:
             --exclude "*.sh" --exclude "Makefile" \
             --exclude ".DS_Store" --exclude "**/.DS_Store" \
             --exclude "*.html" --exclude "*.txt" --exclude "*.xml" --exclude ".well-known/*" \
+            --exclude "dose/01" \
             --cache-control "public,max-age=31536000,immutable" \
             --metadata-directive REPLACE --delete
 
@@ -82,6 +83,15 @@ jobs:
             --exclude "*" --include "*.html" \
             --cache-control "public,max-age=3600,stale-while-revalidate=86400" \
             --metadata-directive REPLACE
+          # Facebook (and the shirt URL) request /dose/01 with no trailing slash.
+          # CloudFront DefaultRootObject only rewrites the site root, so this
+          # extensionless key must exist as text/html or the path 404s.
+          if [ -f dose/01/index.html ]; then
+            aws s3 cp dose/01/index.html "s3://$BUCKET/dose/01" \
+              --content-type "text/html; charset=utf-8" \
+              --cache-control "public,max-age=3600,stale-while-revalidate=86400" \
+              --metadata-directive REPLACE
+          fi
 
       - name: Upload text endpoints (robots, llms, security.txt) with correct content-type
         run: |
