@@ -1,29 +1,30 @@
 # The Intellectual Resistance
 
-> A body of work on logic, reason, and thinking that shows its work — preserving signal integrity in a civilization that has learned to transmit faster than it can verify. Five frameworks (each stated with its math and labeled by epistemic status) and two shipped projects. By Carey Balboa, IT Help San Diego Inc.
+> A body of work on logic, reason, and thinking that shows its work: preserving signal integrity in a civilization that has learned to transmit faster than it can verify. Five frameworks (each stated with its math and labeled by epistemic status) and two shipped projects. By Carey Balboa, IT Help San Diego Inc.
 
 ## Frameworks
 
-- [The Verification Principle](https://intellectualresistance.com/#verification) — PROVEN (theorem). Bayesian anti-dogmatism: if P(E)>0 and P(H)∈{0,1} then P(H|E)=P(H) — a belief pinned at certain or impossible cannot learn. The epistemic core under everything else. Candidate corollary: detecting a locked prior requires measuring deviation from the Bayes-correct update, not raw movement (uninformative evidence, BF=1, leaves a rational agent unmoved too).
-- [Carrier Color](https://intellectualresistance.com/#carrier-color) — MODEL. Identity-mediated distortion: Received = Signal + Carrier Color. Humans evaluate the carrier (person, tribe, ideology, status) before the signal. The goal is to make carrier legible, not to delete it. Offered as a lens; predictions not yet formally tested.
-- [Candidate Societal Control Levers](https://intellectualresistance.com/#levers) — CANDIDATE variables, causality NOT demonstrated. Recurring coordination variables across politics/media/institutions/cognition: verification capacity, carrier color, reasoning persistence, shared verification space, recursive correction. Working bookkeeping form: E = S/(C+N+K+P).
-- [The Owl Semaphore](https://intellectualresistance.com/#owl) — ALGEBRA PROVEN; utility an open study. Four epistemic stances (Normative, Non-Normative, Critical, Metacognitive) form the Klein four-group V₄ (commutativity is load-bearing — two non-commuting involutions would instead generate a dihedral group). It is a group of stance-OPERATIONS, NOT a many-valued logic, NOT an extension of Boolean algebra, and NOT a rediscovery of Belnap–Dunn (shares only the abstract V₄ skeleton). Whether the four states are the right partition is an unvalidated design hypothesis; an inter-rater reliability pilot is pending.
-- [Dose 01 — METACOGNITIVE](https://intellectualresistance.com/dose/01) — v1 · 2026. Public derivation of the first dose: σₕ : (x, y) → (x, −y); ∀n. M(Iₙ) ⊢ Iₙ₊₁; M := λx.Think(Think(x)). Algebra proven. Effect unmeasured. The garment prints this URL and the edition mark; the mark increments only when the derivation on the cloth changes.
-- [Star-Centric Transport](https://intellectualresistance.com/#transport) — PROPOSAL. Verification-aware data transport: a chunk advances only while a verifier can recover its center within tolerance τ. Refinement: the epistemic packet P = ⟨D, C, L⟩ adds a signed lineage log L ("find where presupposition entered" as a replayable trace); convergence of the same payload across dissimilar carriers raises posterior confidence but does not certify truth. Formalism specified; empirical advantage not yet measured.
+- [The Verification Principle](https://intellectualresistance.com/#verification): PROVEN (theorem). Bayesian anti-dogmatism: if P(E)>0 and P(H)∈{0,1} then P(H|E)=P(H): a belief pinned at certain or impossible cannot learn. The epistemic core under everything else. Candidate corollary: detecting a locked prior requires measuring deviation from the Bayes-correct update, not raw movement (uninformative evidence, BF=1, leaves a rational agent unmoved too).
+- [Carrier Color](https://intellectualresistance.com/#carrier-color): MODEL. Identity-mediated distortion: Received = Signal + Carrier Color. Humans evaluate the carrier (person, tribe, ideology, status) before the signal. The goal is to make carrier legible, not to delete it. Offered as a lens; one prediction has been tested in a narrow AI setting, and the human case remains untested.
+- [Candidate Societal Control Levers](https://intellectualresistance.com/#levers): CANDIDATE variables, causality NOT demonstrated. Recurring coordination variables across politics/media/institutions/cognition: verification capacity, carrier color, reasoning persistence, shared verification space, recursive correction. Working bookkeeping form: E = S/(C+N+K+P).
+- [The Tetrasemaphore](https://intellectualresistance.com/#tetrasemaphore): ALGEBRA PROVEN, machine-checked in Lean (release 1.0.0, https://doi.org/10.5281/zenodo.23575816); utility an open question. Four semaphores mark how a piece of work stands (NORMATIVE, NON-NORMATIVE, METACOGNITIVE, CRITICAL); as moves of a flat picture they are I, σᵥ, σₕ and C₂, the Klein four-group V₄ (commutativity is load-bearing: two non-commuting involutions would instead generate a dihedral group). It is a group of moves, NOT a many-valued logic, NOT an extension of Boolean algebra, and NOT a rediscovery of Belnap–Dunn (it shares only the abstract V₄ skeleton). Whether it helps people think about their thinking is untested; the tests are at https://tetrasemaphore.systems/#how-to-test-it.
+- [Dose 01 · METACOGNITIVE](https://intellectualresistance.com/dose/01) · v1 · 2026. Public derivation of the first dose: σₕ : (x, y) → (x, −y); ∀n. M(Iₙ) ⊢ Iₙ₊₁; M := λx.Think(Think(x)). Algebra proven. Effect unmeasured. The garment prints this URL and the edition mark; the mark increments only when the derivation on the cloth changes.
+- [Star-Centric Transport](https://intellectualresistance.com/#transport): PROPOSAL. Verification-aware data transport: a chunk advances only while a verifier can recover its center within tolerance τ. Refinement: the epistemic packet P = ⟨D, C, L⟩ adds a signed lineage log L ("find where presupposition entered" as a replayable trace); convergence of the same payload across dissimilar carriers raises posterior confidence but does not certify truth. Formalism specified; empirical advantage not yet measured.
 
 ## Applied (shipped)
 
-- [DNS Tool](https://dnstool.it-help.tech) — the Verification Principle made operational: multi-source OSINT domain/email-security intelligence with confidence scoring and "verify it yourself" commands. Built on DNS because RFCs give ground truth.
-- [Organic Computer](https://organiccomputer.me) — the human mind spec'd as hardware; sustained, deliberate reasoning offered as a service. The Resistance turned into a practice.
+- [DNS Tool](https://dnstool.it-help.tech): the Verification Principle made operational: multi-source OSINT domain/email-security intelligence with confidence scoring and "verify it yourself" commands. Built on DNS because RFCs give ground truth.
+- [Calibration Scope](https://calibrationscope.com): the principle turned into an instrument: blind capability tests on AI models and on people, with machine-verified ground truth. Source: https://github.com/IT-Help-San-Diego/calibration-scope.
+- [Organic Computer](https://organiccomputer.me): the human mind spec'd as hardware; sustained, deliberate reasoning offered as a service. The Resistance turned into a practice.
 
 ## Related properties (same author)
 
-- [IT Help San Diego — Our Expertise](https://www.it-help.tech/about)
-- [DNS Tool — Origin Story](https://dnstool.it-help.tech/about)
+- [IT Help San Diego · Our Expertise](https://www.it-help.tech/about)
+- [DNS Tool · Origin Story](https://dnstool.it-help.tech/about)
 - ORCID: https://orcid.org/0009-0000-5237-9065 · DOI: https://doi.org/10.5281/zenodo.19468134
 
 ## Use, License & Reuse
 
-Indexing access granted to AI/LLM and search crawlers via this file and `/robots.txt` is operational — it helps real users find first-party answers. It is **not** a license to redistribute, train on, or build derivatives from this site's content, copy, brand assets, or the Intellectual Resistance marks. All rights reserved unless a page is explicitly marked otherwise.
+Indexing access granted to AI/LLM and search crawlers via this file and `/robots.txt` is operational; it helps real users find first-party answers. It is **not** a license to redistribute, train on, or build derivatives from this site's content, copy, brand assets, or the Intellectual Resistance marks. All rights reserved unless a page is explicitly marked otherwise.
 
 Contact: licensing@it-help.tech

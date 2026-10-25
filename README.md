@@ -1,7 +1,7 @@
 # intellectualresistance.com
 
-The umbrella site for the **Intellectual Resistance** — a body of work on logic,
-reason, and thinking that shows its work. Single-page, zero-JS, hardened static site in
+The umbrella site for the **Intellectual Resistance**: a body of work on logic,
+reason, and thinking that shows its work. Zero-JS, hardened static site in
 the IT Help San Diego scientific design family.
 
 ## Frameworks (each labeled by epistemic status)
@@ -11,11 +11,11 @@ the IT Help San Diego scientific design family.
 | 1 | The Verification Principle | **Proven** (Bayes theorem) |
 | 2 | Carrier Color | Model / framework |
 | 3 | Societal Control Levers | **Candidate** variables (no causality demonstrated) |
-| 4 | The Owl Semaphore | Algebra **proven** (V₄); utility = open study |
+| 4 | The Tetrasemaphore | Algebra **proven** (V₄, machine-checked in Lean); utility = open study |
 | 5 | Star-Centric Transport | Proposal |
 
-Applied / shipped: **DNS Tool** (dnstool.it-help.tech) and **Organic Computer**
-(organiccomputer.me).
+Applied / shipped: **DNS Tool** (dnstool.it-help.tech), **Calibration Scope**
+(calibrationscope.com) and **Organic Computer** (organiccomputer.me).
 
 ## Stack
 
@@ -25,12 +25,12 @@ Push to `main` deploys via GitHub Actions.
 
 ## Quality gates
 
-Lighthouse 100/100/100/100 · Mozilla Observatory A+ · strict CSP with a hashed
-`style-src` (no `unsafe-inline`) · WCAG AA · email-locked domain · no cookies,
-no trackers, no third-party requests.
+Checked by `verify.sh` on every change: a strict CSP with a hashed `style-src`
+(no `unsafe-inline`), no executable JavaScript, no inline styles and no
+third-party subresources. Targets, not re-measured here: Lighthouse
+100/100/100/100, Mozilla Observatory A+, WCAG AA, and an email-locked domain.
 
-See `AGENTS.md` for the full contributor contract — especially the **epistemic
-discipline** section (never inflate a framework's status; the Owl Semaphore is a
-V₄ group of stance-operations, NOT a four-valued logic).
+**Epistemic discipline:** never inflate a framework's status; the Tetrasemaphore is a
+V₄ group of moves, NOT a four-valued logic.
 
 © 2026 IT Help San Diego Inc. All rights reserved.

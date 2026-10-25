@@ -1,6 +1,6 @@
-# The Intellectual Resistance — Full Reference
+# The Intellectual Resistance · Full Reference
 
-> intellectualresistance.com — a body of work on logic, reason, and thinking
+> intellectualresistance.com: a body of work on logic, reason, and thinking
 > that shows its work. It is the umbrella over five frameworks for one problem: how to
 > preserve signal in a civilization that has learned to transmit far faster than
 > it can verify. Each framework is stated with its math and labeled honestly for
@@ -9,13 +9,13 @@
 
 ## The thesis
 
-A civilization can transmit faster than it verifies — and when it does, the
+A civilization can transmit faster than it verifies. And when it does, the
 carrier starts to outrun the signal. Reputation beats evidence; affiliation
 beats verification; the symbol replaces the thing it stood for. None of this
 requires a conspiracy; it is the default outcome when information velocity
 outpaces verification velocity. The Intellectual Resistance is the deliberate
 countercurrent: set an honest prior, find where presupposition entered the
-reasoning chain, and let evidence do its work — the same discipline whether the
+reasoning chain, and let evidence do its work: the same discipline whether the
 claim is a DNS record, an argument between friends, or a civilization-scale
 belief. The name is the resistor metaphor: in a circuit, resistance is what
 makes current usable; friction, doubt, and the deliberate pause before the
@@ -34,10 +34,10 @@ answer are not the obstacle, they are the work.
 - Reality-check the bold question. Ask the big question, then return to what is
   defensible when the evidence says a framing is unreasonable.
 
-## 1. The Verification Principle — PROVEN (theorem)
+## 1. The Verification Principle: PROVEN (theorem)
 
 Bayesian anti-dogmatism. A question's foundation is the prior you begin with.
-Core theorem: if P(E) > 0 and P(H) is exactly 0 or 1, then P(H | E) = P(H) — a
+Core theorem: if P(E) > 0 and P(H) is exactly 0 or 1, then P(H | E) = P(H): a
 belief pinned at certain or impossible is unrevisable; evidence bounces off. Not
 a character flaw: a mathematical fact about a prior set to 0 or 1, provable in
 one line of Bayes' rule. Honest reasoning keeps priors empirical and strictly
@@ -52,7 +52,7 @@ dogma, because uninformative evidence (Bayes factor 1) leaves even a perfectly
 rational agent unmoved. A lock shows only when evidence is informative (BF ≠ 1)
 yet the prior still doesn't move; thresholds uncalibrated, no validation run.
 
-## 2. Carrier Color — MODEL / framework
+## 2. Carrier Color: MODEL / framework
 
 Identity-mediated distortion in how information is received. A message has a
 signal (the proposition, the evidence) and a carrier (the person, tribe,
@@ -61,59 +61,63 @@ humans frequently evaluate the carrier before the signal, so Received = Signal +
 Carrier Color. The same proposition lands differently depending on who carries
 it. Diagnostic: if you strip the carrier, does your evaluation of the signal
 change? If yes, Carrier Color is present. The goal is NOT to delete the carrier
-(it often carries real context — wisdom, stakes, history) but to make it
+(it often carries real context: wisdom, stakes, history) but to make it
 legible: sort carrier from signal, decode what was actually meant, then read the
 carrier back in as context. Epistemic status: an explanatory model, not a
-measured law; it generates testable predictions (anonymized vs. attributed
-evaluations should diverge when Carrier Color is high) that have not been
-formally run here.
+measured law; it generates testable predictions. One has been tested in a
+narrow AI setting: a prompt's carrier changed a model's verdict on identical
+content. The human prediction (anonymized vs. attributed evaluations should
+diverge when Carrier Color is high) has not been run.
 
-## 3. Candidate Societal Control Levers — CANDIDATE variables (causality not demonstrated)
+## 3. Candidate Societal Control Levers: CANDIDATE variables (causality not demonstrated)
 
 A handful of variables recur wherever coordination happens at scale (politics,
 religion, media, AI, institutions, organizations, cognition). One bookkeeping
-form for the pressure they exert: epistemic efficiency E = S / (C + N + K + P) —
+form for the pressure they exert: epistemic efficiency E = S / (C + N + K + P):
 useful signal S over carrier color C, noise N, coordination cost K, and
-power-gradient pressure P. Compressed candidate set: (1) verification capacity —
-fails when information velocity exceeds verification velocity; (2) carrier color
-— fails when C >> S; (3) reasoning persistence — fails when switching rises and
-recursion falls; (4) shared verification space — fails when groups use only
-private axioms; (5) recursive correction capacity — fails under certainty lock
+power-gradient pressure P. Compressed candidate set: (1) verification capacity:
+fails when information velocity exceeds verification velocity; (2) carrier color:
+fails when C >> S; (3) reasoning persistence: fails when switching rises and
+recursion falls; (4) shared verification space: fails when groups use only
+private axioms; (5) recursive correction capacity: fails under certainty lock
 or feedback suppression. The word is "candidate," deliberately: these are
 recurring variables, not demonstrated causes. No causality established, no
 dominance proven. Calling them "the" control levers would be the exact overclaim
 this project exists to resist.
 
-## 4. The Owl Semaphore — ALGEBRA PROVEN; utility an open study
+## 4. The Tetrasemaphore: ALGEBRA PROVEN; utility an open question
 
-A way to label the stance you are reasoning from. Four states — Normative,
-Non-Normative, Critical, Metacognitive — treated as operations on stance, not
-truth-values. Two independent, commuting yes/no distinctions (orientation of
-stance; locus of audit) generate them: two commuting involutions force exactly
-four elements, closure forces the fourth as their composition, every element is
-its own inverse. The four states therefore form the Klein four-group V₄ (the
-symmetry group of a rectangle). V₄ is forced — two distinct, non-identity commuting involutions land on
-it automatically, selecting it over the only other order-4 group (C₄, excluded because no element
-of order 4 exists here) and over every non-abelian group; verified by direct
-enumeration. Commutativity is the load-bearing condition. Take a, b as distinct,
+Four semaphores that mark how a piece of work stands: NORMATIVE, NON-NORMATIVE,
+METACOGNITIVE and CRITICAL. They answer two yes-or-no questions about a piece
+of thinking: is it looking at its object, or back at its own frame; and does
+it keep its stance toward the standard, or reverse it? In a flat picture the
+four answers are four moves: leave it alone (I), flip it left to right (σᵥ),
+flip it top to bottom (σₕ), or turn it half way round (C₂). Each semaphore
+carries a mark built to survive its own move. The four moves form the Klein
+four-group V₄ (the symmetry group of a rectangle). V₄ is forced: two distinct,
+non-identity commuting involutions always generate it, and the only other
+group of order 4, the cyclic group C₄, is excluded because no move has order 4.
+Commutativity is the load-bearing condition. Take a, b as distinct,
 non-identity involutions: if they do NOT commute they generate a dihedral group
 D_n with n = ord(ab) ≥ 3 (infinite dihedral if ab has infinite order); if they
 commute, the product is itself an involution ((ab)² = a²b² = e), so {e, a, b, ab}
-closes at exactly four — and that is V₄, nothing else.
+closes at exactly four, and that is V₄, nothing else. The algebra is
+machine-checked in the Lean proof assistant: release 1.0.0,
+https://doi.org/10.5281/zenodo.23575816, at https://tetrasemaphore.systems/.
 
 IMPORTANT framing (two claims, two statuses, never conflated): (a) the ALGEBRA
-is proven — a verified mathematical fact; (b) whether these four states are the
-right partition of how people actually evaluate claims is an UNVALIDATED design
-hypothesis — no inter-rater reliability study is finished; a pre-registered
-feasibility pilot (Fleiss' κ) is the next step. And on lineage: this is a group
-of stance-operations, NOT a many-valued logic, NOT an extension of Boolean
-algebra, and NOT a derivative or rediscovery of Belnap–Dunn / First-Degree
-Entailment. It shares only the abstract V₄ group skeleton with those
-four-valued logics — a structural rhyme that ANY system built from two
-independent binary distinctions produces automatically, because there are only
-two groups of order 4. The coincidence is forced, not deep.
+is proven, a machine-checked mathematical fact; (b) whether the semaphores
+help people think about their thinking is an open and UNTESTED question; the
+release sets out how to test it at https://tetrasemaphore.systems/#how-to-test-it.
+And on lineage: this is a group of moves, NOT a many-valued logic, NOT an
+extension of Boolean algebra, and NOT a derivative or rediscovery of
+Belnap–Dunn / First-Degree Entailment. It shares only the abstract V₄ group
+skeleton with those four-valued logics, a structural rhyme that ANY system
+built from two independent binary distinctions produces automatically,
+because toggling the two distinctions gives two commuting involutions. The
+coincidence is forced, not deep.
 
-## 5. Star-Centric Transport — PROPOSAL
+## 5. Star-Centric Transport: PROPOSAL
 
 A verification-aware model of data movement. Modern pipelines check syntax,
 schema, and delivery order but are weak at detecting operational distortion
@@ -122,32 +126,36 @@ center (a latent balance point), and a chunk advances only while a verifier can
 reconstruct that center within tolerance. Formally, observed form x_i = f(c_i,
 k_i) where c_i is the latent center and k_i is contextual distortion; at each
 checkpoint the verifier estimates the center and advances the chunk iff
-‖ĉ_{i,j} − c_i‖ ≤ τ. The "star" is not "perfect data" — it is the invariant the
+‖ĉ_{i,j} − c_i‖ ≤ τ. The "star" is not "perfect data"; it is the invariant the
 pipeline preserves across transmission and transformation. Payoff: earlier
 honest progress estimation, drift caught before it poisons aggregate state, and
 integrity checks before downstream escalation. Generalizes the confidence/drift
 logic already running in DNS Tool. Epistemic status: a design proposal with a
 worked formalism, not a deployed protocol with benchmarks. Refinement (same
-proposal status): the epistemic packet P = ⟨D, C, L⟩ — payload D, carrier-color
+proposal status): the epistemic packet P = ⟨D, C, L⟩: payload D, carrier-color
 metadata C, and a signed, append-only lineage log L that makes "find where
 presupposition entered" a replayable trace rather than a forensic guess.
 Convergence of the same payload D across dissimilar carriers raises posterior
 confidence (odds form, §1: quasi-independent carriers multiply their Bayes
-factors) but does NOT certify truth — shared upstream sources or a common hidden
+factors) but does NOT certify truth: shared upstream sources or a common hidden
 axiom break the independence. "Center" here is the latent invariant c_i, not
 political centrism.
 
-## Applied — the principle, shipped
+## Applied: the principle, shipped
 
 - DNS Tool (https://dnstool.it-help.tech): the Verification Principle made
-  operational — multi-source OSINT domain and email-security intelligence,
+  operational: multi-source OSINT domain and email-security intelligence,
   confidence scoring (Observed / Inferred / Third-party), and "verify it
   yourself" dig/openssl/curl commands. Built on DNS because the RFCs provide
-  ground truth: when a record says v=spf1 -all there is no ambiguity. The proving
+  ground truth: when a record says v=spf1 -all there is no ambiguity (RFC 7208). The proving
   ground where claims can be independently checked. Source:
   https://github.com/IT-Help-San-Diego/dns-tool-intel.
+- Calibration Scope (https://calibrationscope.com): the principle turned into an
+  instrument: blind capability tests on AI models and on people, with
+  machine-verified ground truth. Source:
+  https://github.com/IT-Help-San-Diego/calibration-scope.
 - Organic Computer (https://organiccomputer.me): the human mind spec'd like
-  hardware — an exaflop-scale reasoner on ~20 W and a glass of water — sold as
+  hardware (an exaflop-scale reasoner on ~20 W, by NIST's 2023 estimate, and a glass of water), sold as
   the scarcest business resource: a single mind that holds one hard problem for
   hours and reasons to its foundations. Metacognition first, AI as instrument
   never author, every figure sourced.
@@ -158,7 +166,7 @@ Carey Balboa, founder of IT Help San Diego, 27 years solving technology
 problems. The discipline's root: as a kid he loved real math but was handed
 "just memorize it, trust us" instead of "here is why it works," and refused to
 accept answers whose foundations he couldn't see. That refusal became the
-method — never memorize what changes; look it up every time from the
+method: never memorize what changes; look it up every time from the
 highest-authority source; verify rather than trust a memory, including one's
 own. Around 2015 the question turned from "how do you break in?" to "why does
 this keep failing, and why won't anyone slow down to think about it?" The

@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'sha256-g07SfHaGHBjha3DhClDGmuYzyvG3yGx8lu2gFFGV/2g='; script-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'sha256-6h3HsIWR7Rppm1LSASQVuQ8fT2Y95JcZ14ONGqAFjlA='; script-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <meta name="theme-color" content="#0d1117">
 <meta name="color-scheme" content="dark">
-<title>Dose 01 — METACOGNITIVE · The Intellectual Resistance</title>
+<title>Dose 01 · METACOGNITIVE · The Intellectual Resistance</title>
 <meta name="description" content="Dose 01: I metacognize; therefore, I am again and again. σₕ : (x, y) → (x, −y). ∀n. M(Iₙ) ⊢ Iₙ₊₁. M := λx.Think(Think(x)). Algebra proven. Effect unmeasured.">
 <meta name="author" content="Carey Balboa">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
@@ -18,7 +18,7 @@
 <meta property="og:site_name" content="The Intellectual Resistance">
 <meta property="og:locale" content="en_US">
 <meta property="og:url" content="https://intellectualresistance.com/dose/01">
-<meta property="og:title" content="Dose 01 — METACOGNITIVE">
+<meta property="og:title" content="Dose 01 · METACOGNITIVE">
 <meta property="og:description" content="σₕ : (x, y) → (x, −y). ∀n. M(Iₙ) ⊢ Iₙ₊₁. M := λx.Think(Think(x)). The theorem is established. The effect is not.">
 <meta property="og:image" content="https://intellectualresistance.com/assets/dose-01-og-tetrasemaphore.png">
 <meta property="og:image:width" content="1200">
@@ -26,7 +26,7 @@
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:alt" content="The METACOGNITIVE semaphore, σₕ above its mirror image across a gold line, in a gold Greek-key ring, beside the Dose 01 formulas.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Dose 01 — METACOGNITIVE">
+<meta name="twitter:title" content="Dose 01 · METACOGNITIVE">
 <meta name="twitter:description" content="I metacognize; therefore, I am again and again.">
 <meta name="twitter:image" content="https://intellectualresistance.com/assets/dose-01-og-tetrasemaphore.png">
 <meta name="twitter:image:alt" content="The METACOGNITIVE semaphore, σₕ above its mirror image across a gold line, in a gold Greek-key ring, beside the Dose 01 formulas.">
@@ -139,7 +139,7 @@ section{padding:var(--s6) 0;position:relative}
 .callout.epistemic{border-left-color:var(--info)}
 .callout.epistemic strong{color:var(--info)}
 
-/* status pills — epistemic discipline made visible */
+/* status pills: epistemic discipline made visible */
 .status{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--mono);font-size:.6rem;
   letter-spacing:.08em;text-transform:uppercase;padding:.16rem .5rem;border-radius:4px;vertical-align:middle}
 .status::before{content:"";width:6px;height:6px;border-radius:50%}
@@ -239,29 +239,29 @@ section{padding:var(--s6) 0;position:relative}
 .levers .fail{font-family:var(--mono);color:var(--gold);font-size:.8rem;white-space:nowrap}
 .levers .ex{color:var(--text-muted);font-size:.85rem}
 
-/* four-owl quad — each state with its owl, transform, and epistemic story.
-   MOBILE-FIRST: cards stack (owl + math centered on top, full-width readable text below).
+/* four-semaphore quad: each state with its semaphore, its move, and its story.
+   MOBILE-FIRST: cards stack (semaphore + math centered on top, full-width readable text below).
    This is the default at every width; a 2-up grid + side-by-side card is a wide-screen enhancement only. */
-.owlquad{display:grid;grid-template-columns:1fr;gap:var(--s3);margin:var(--s5) 0}
-.owlcard{display:flex;flex-direction:column;align-items:center;gap:var(--s2);text-align:center;
+.semquad{display:grid;grid-template-columns:1fr;gap:var(--s3);margin:var(--s5) 0}
+.semcard{display:flex;flex-direction:column;align-items:center;gap:var(--s2);text-align:center;
   border:1px solid var(--border);border-radius:14px;background:var(--bg-2);padding:var(--s4) var(--s4) var(--s4)}
-.owlcard.s-n{border-top:3px solid var(--success)}
-.owlcard.s-nn{border-top:3px solid var(--info)}
-.owlcard.s-c{border-top:3px solid var(--danger)}
-.owlcard.s-m{border-top:3px solid #c77fce}
-.owlcard .owlimg{display:flex;flex-direction:column;align-items:center}
-.owlcard .owlimg img{width:112px;height:112px;object-fit:contain;filter:drop-shadow(0 8px 22px rgba(0,0,0,.5))}
-.owlcard .owlimg .tf{display:block;font-family:var(--mono);font-size:.82rem;color:var(--text-dim);text-align:center;margin-top:.5rem;line-height:1.7;letter-spacing:.01em;white-space:nowrap}
-.owlcard .body{min-width:0;max-width:60ch;margin-top:.2rem}
-.owlcard .body .nm{font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-align:center}
-.owlcard.s-n .body .nm{color:var(--success)}
-.owlcard.s-nn .body .nm{color:var(--info)}
-.owlcard.s-c .body .nm{color:var(--danger)}
-.owlcard.s-m .body .nm{color:#c77fce}
-.owlcard .body .ti{font-family:var(--display);font-weight:600;font-size:1.08rem;color:var(--text);margin:.15rem 0 .5rem;text-align:center}
-.owlcard .body p{font-size:.95rem;color:var(--text-muted);margin:0;line-height:1.62;text-align:left}
-/* Single column, stacked, at every width — the section container is narrow enough that a
-   2-up side-by-side layout always starves the text column. One owl + math + full-width text per row. */
+.semcard.s-n{border-top:3px solid #c7b469}
+.semcard.s-nn{border-top:3px solid #38a89a}
+.semcard.s-c{border-top:3px solid #d1564b}
+.semcard.s-m{border-top:3px solid #b07fd6}
+.semcard .semimg{display:flex;flex-direction:column;align-items:center}
+.semcard .semimg img{width:160px;height:160px;object-fit:contain;filter:drop-shadow(0 8px 22px rgba(0,0,0,.5))}
+.semcard .semimg .tf{display:block;font-family:var(--mono);font-size:.82rem;color:var(--text-dim);text-align:center;margin-top:.5rem;line-height:1.7;letter-spacing:.01em;white-space:nowrap}
+.semcard .body{min-width:0;max-width:60ch;margin-top:.2rem}
+.semcard .body .nm{font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-align:center}
+.semcard.s-n .body .nm{color:#e5c97b}
+.semcard.s-nn .body .nm{color:#5ec4b6}
+.semcard.s-c .body .nm{color:#e3746a}
+.semcard.s-m .body .nm{color:#c79ce8}
+.semcard .body .ti{font-family:var(--display);font-weight:600;font-size:1.08rem;color:var(--text);margin:.15rem 0 .5rem;text-align:center}
+.semcard .body p{font-size:.95rem;color:var(--text-muted);margin:0;line-height:1.62;text-align:left}
+/* Single column, stacked, at every width: the section container is narrow enough that a
+   2-up side-by-side layout always starves the text column. One semaphore + math + full-width text per row. */
 
 /* star-centric transport pipeline */
 .pipe{width:100%;height:auto;margin:var(--s4) 0;display:block}
@@ -359,7 +359,7 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       "@type": "WebPage",
       "@id": "https://intellectualresistance.com/dose/01#page",
       "url": "https://intellectualresistance.com/dose/01",
-      "name": "Dose 01 — METACOGNITIVE",
+      "name": "Dose 01 · METACOGNITIVE",
       "inLanguage": "en",
       "isPartOf": {
         "@id": "https://intellectualresistance.com/#website"
@@ -387,7 +387,7 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
   <div class="container">
     <a class="brand" href="/"><span class="dot"></span> INTELLECTUAL&nbsp;RESISTANCE <span class="domain-tag">dose/01</span></a>
     <div class="links">
-      <a href="/#owl">Owl</a>
+      <a href="/#tetrasemaphore">Tetrasemaphore</a>
       <a href="/#verification">Verification</a>
       <a href="/#transport">Transport</a>
       <a href="/dose/01">Dose&nbsp;01</a>
@@ -406,7 +406,7 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
     </picture>
     <h1>I metacognize;<br>therefore, I am <span class="accent">again and again.</span></h1>
     <p class="lead">This is the sentence to practice. Think about your thinking. Keep the claim; invert the frame you are looking from. Descartes had the rule once. The &forall; is the part that survives interruption.</p>
-    <p class="turn"><b>The theorem is established. The effect is not.</b> Algebra proven. No trial is running &mdash; nobody is in a treated arm. The same formulas are on the shirt so a thinker can wear them in public, and so anyone who sees them can run them.</p>
+    <p class="turn"><b>The theorem is established. The effect is not.</b> Algebra proven. No trial is running; nobody is in a treated arm. The same formulas are on the shirt so a thinker can wear them in public, and so anyone who sees them can run them.</p>
   </div>
 </header>
 
@@ -437,7 +437,7 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
     <div class="eqbox">
       <div class="pre">METACOGNITIVE</div>
       <div class="stmt">&sigma;&#8341; : (x, y) &rarr; (x, &minus;y)</div>
-      <p class="gloss">Horizontal reflection. The object is unchanged; the observer&rsquo;s frame inverts. This is &sigma;&#8341; in the Klein four-group of epistemic stances &mdash; Metacognitive, not Critical (which flips both axes) and not Non-Normative (which flips stance only).</p>
+      <p class="gloss">Horizontal reflection. The object is unchanged; the observer&rsquo;s frame inverts. This is &sigma;&#8341; in the Klein four-group of epistemic stances: Metacognitive, not Critical (which flips both axes) and not Non-Normative (which flips stance only).</p>
     </div>
 
     <div class="eqbox">
@@ -463,7 +463,7 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       <strong>Garment edition v1 &middot; 2026.</strong> The cloth prints this URL and the mark <span class="mono">v1 &middot; 2026</span>. That mark is this page&rsquo;s edition, not a software release. It increments only when the derivation on the garment changes.
     </div>
     <div class="callout">
-      <strong>Layout proportions are aesthetic.</strong> This page&rsquo;s spacing scale uses &phi; (0.382 / 0.618 / 1 / 1.618 / 2.618&hellip;). That is house style, not a finding. &phi; and the Fibonacci sequence carry a large body of claims &mdash; divine proportion, sacred geometry, ratios found in art and nature &mdash; most of which do not survive measurement. Nothing here rests on any of them. The proportions make it look the way it looks.
+      <strong>Layout proportions are aesthetic.</strong> This page&rsquo;s spacing scale uses &phi; (0.382 / 0.618 / 1 / 1.618 / 2.618&hellip;). That is house style, not a finding. &phi; and the Fibonacci sequence carry a large body of claims (divine proportion, sacred geometry, ratios found in art and nature), most of which do not survive measurement (G. Markowsky, &ldquo;Misconceptions about the Golden Ratio,&rdquo; <em>The College Mathematics Journal</em> 23, no. 1 (1992), 2&ndash;19, <a href="https://doi.org/10.1080/07468342.1992.11973428" target="_blank" rel="noopener">doi:10.1080/07468342.1992.11973428 &#8599;</a>). Nothing here rests on any of them. The proportions make it look the way it looks.
     </div>
     <div class="callout">
       <strong>Subscripts print as Unicode characters, on the baseline.</strong> The garment uses U+2095 &#8341;, U+2099 &#8345;, U+208A &#8330;, U+2081 &#8321;, U+1D65 &#7525;, U+2082 &#8322;. DejaVu Sans Bold 2.37 draws all six on the baseline (yMin = 0), not below it. Measured on the same file the generator outlines: &#963; yMin &minus;29; the subscript block yMin 0. Both a true lowered subscript and this form clear the 0.60&nbsp;mm print floor. The choice is typographic, not physical: the cloth prints the same codepoints as the published string, so the printed and citable forms are identical character for character. It is not standard mathematical typesetting, which lowers a subscript.
@@ -493,7 +493,7 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       </div>
       <div><h2>How the four states already move</h2><div class="tag">Stories first. Algebra is above. Analogy is labeled.</div></div>
     </div>
-    <p class="lede">The semaphore is not a filing system. It is a notation for how rigorous thought already moves. It encodes a position, not a proof &mdash; and where it borrows from a discipline, it does so as analogy, not as validation.</p>
+    <p class="lede">The semaphore is not a filing system. It is a notation for how rigorous thought already moves. It encodes a position, not a proof, and where it borrows from a discipline, it does so as analogy, not as validation.</p>
 
     <div class="eqbox">
       <div class="pre">METACOGNITIVE &middot; &sigma;&#8341; &middot; this dose</div>
@@ -510,7 +510,7 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
     <div class="eqbox">
       <div class="pre">NON-NORMATIVE &middot; &sigma;&#7525;</div>
       <div class="stmt">Da Vinci&rsquo;s Wings</div>
-      <p class="gloss">Stand in front of a mirror. You are still upright, but left and right have swapped. That is a vertical-axis reflection: (x, y) &rarr; (&minus;x, y). When Leonardo spent years studying birds and designing machines that could not fly, he was in the Non-Normative state on the &sigma;&#7525; semaphore. Facing the other direction. Seeing what everyone else had their backs to. He failed, and left a guideline. Four hundred years later, the Wright Brothers stood on the shoulders of Lilienthal, Chanute and Langley. Non-normative work is rigorous exploration that hasn&rsquo;t finished yet.</p>
+      <p class="gloss">Stand in front of a mirror. You are still upright, but left and right have swapped. That is a vertical-axis reflection: (x, y) &rarr; (&minus;x, y). When Leonardo spent years studying birds and designing machines that could not fly, he was in the Non-Normative state on the &sigma;&#7525; semaphore. Facing the other direction. Seeing what everyone else had their backs to. He failed, and left a guideline. Four hundred years later, the Wright Brothers stood on the shoulders of Lilienthal and Chanute. Non-normative work is rigorous exploration that hasn&rsquo;t finished yet.</p>
     </div>
 
     <div class="eqbox">
@@ -520,15 +520,16 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
     </div>
 
     <div class="callout epistemic">
-      <strong>G&ouml;del is analogy, not proof.</strong> Incompleteness is invoked only as a picture of needing a frame outside the original one &mdash; never as a theorem about cognition. Calibration audits, methodology reviews, the moment a scientist asks whether the telescope itself is introducing the anomaly: those are &sigma;&#8341; in practice.
+      <strong>G&ouml;del is analogy, not proof.</strong> Incompleteness is invoked only as a picture of needing a frame outside the original one, never as a theorem about cognition. Calibration audits, methodology reviews, the moment a scientist asks whether the telescope itself is introducing the anomaly: those are &sigma;&#8341; in practice.
     </div>
+    <p class="muted fs-90"><b>Sources for the stories.</b> I. Newton, <em>Philosophi&aelig; Naturalis Principia Mathematica</em>, London, 1687. A. Einstein, &ldquo;Zur Elektrodynamik bewegter K&ouml;rper,&rdquo; <em>Annalen der Physik</em> 322 (1905), 891&ndash;921, <a href="https://doi.org/10.1002/andp.19053221004" target="_blank" rel="noopener">doi:10.1002/andp.19053221004 &#8599;</a>. Smithsonian National Air and Space Museum, <a href="https://airandspace.si.edu/exhibitions/leonardo-da-vincis-codex-flight-birds" target="_blank" rel="noopener">Leonardo da Vinci&rsquo;s Codex on the Flight of Birds &#8599;</a> and <a href="https://airandspace.si.edu/explore/stories/researching-wright-way" target="_blank" rel="noopener">Researching the Wright Way &#8599;</a>. E. J. Konopinski, C. Marvin &amp; E. Teller, <em>Ignition of the Atmosphere with Nuclear Bombs</em>, Los Alamos report LA-602, 1946, as described in M. Wiescher &amp; K. Langanke, &ldquo;Manhattan Project astrophysics,&rdquo; <em>Physics Today</em> 77, no. 3 (2024), 34&ndash;41, <a href="https://doi.org/10.1063/pt.jksg.hage" target="_blank" rel="noopener">doi:10.1063/pt.jksg.hage &#8599;</a>.</p>
   </div>
 </section>
 </main>
 
 <footer>
   <div class="container">
-    <p class="mono">THE INTELLECTUAL RESISTANCE — intellectualresistance.com/dose/01 — v1 · 2026</p>
+    <p class="mono">THE INTELLECTUAL RESISTANCE · intellectualresistance.com/dose/01 · v1 · 2026</p>
     <p class="tagline">Logic, reason, and thinking that shows its work. Every claim labeled for how far it is proven.</p>
     <p><a href="/">Return to the Resistance</a> &middot; <a href="https://tetrasemaphore.systems/">The Tetrasemaphore</a> &middot; <a href="https://doi.org/10.5281/zenodo.23575816">DOI 10.5281/zenodo.23575816</a> &middot; <a href="https://orcid.org/0009-0000-5237-9065">ORCID</a></p>
     <p class="muted">&copy; 2026 IT Help San Diego Inc. All rights reserved.</p>

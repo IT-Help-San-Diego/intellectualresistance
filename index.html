@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'sha256-g07SfHaGHBjha3DhClDGmuYzyvG3yGx8lu2gFFGV/2g='; script-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'sha256-6h3HsIWR7Rppm1LSASQVuQ8fT2Y95JcZ14ONGqAFjlA='; script-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <meta name="theme-color" content="#0d1117">
 <meta name="color-scheme" content="dark">
-<title>The Intellectual Resistance — thinking that shows its work</title>
-<meta name="description" content="The Intellectual Resistance is a body of work on logic, reason, and thinking that shows its work: preserving signal integrity in a civilization that transmits faster than it verifies. The Verification Principle, Carrier Color, candidate societal control levers, the Owl Semaphore, and Star-Centric Transport — with the math, and with the epistemic discipline to call a candidate a candidate.">
+<title>The Intellectual Resistance · thinking that shows its work</title>
+<meta name="description" content="The Intellectual Resistance is a body of work on logic, reason, and thinking that shows its work: preserving signal integrity in a civilization that transmits faster than it verifies. The Verification Principle, Carrier Color, candidate societal control levers, the Tetrasemaphore and Star-Centric Transport, each with its math and with the epistemic discipline to call a candidate a candidate.">
 <meta name="author" content="Carey Balboa">
-<meta name="keywords" content="intellectual resistance, verification principle, carrier color, societal control levers, owl semaphore, star-centric transport, metacognition, Bayesian reasoning, epistemics, Klein four-group, Carey Balboa, IT Help San Diego">
+<meta name="keywords" content="intellectual resistance, verification principle, carrier color, societal control levers, tetrasemaphore, star-centric transport, metacognition, Bayesian reasoning, epistemics, Klein four-group, Carey Balboa, IT Help San Diego">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <link rel="canonical" href="https://intellectualresistance.com/">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -20,19 +20,19 @@
 <meta property="og:site_name" content="The Intellectual Resistance">
 <meta property="og:locale" content="en_US">
 <meta property="og:url" content="https://intellectualresistance.com/">
-<meta property="og:title" content="The Intellectual Resistance — thinking that shows its work">
-<meta property="og:description" content="A body of work on logic, reason, and thinking that shows its work — preserving signal integrity in a civilization that transmits faster than it verifies.">
+<meta property="og:title" content="The Intellectual Resistance · thinking that shows its work">
+<meta property="og:description" content="A body of work on logic, reason, and thinking that shows its work: preserving signal integrity in a civilization that transmits faster than it verifies.">
 <meta property="og:image" content="https://intellectualresistance.com/assets/og-card.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:alt" content="A resistor in a circuit over a dark field — the Intellectual Resistance mark.">
+<meta property="og:image:alt" content="A resistor in a circuit over a dark field: the Intellectual Resistance mark.">
 <!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="The Intellectual Resistance — thinking that shows its work">
-<meta name="twitter:description" content="Logic, reason, and thinking that shows its work. The Verification Principle, Carrier Color, candidate control levers, the Owl Semaphore, Star-Centric Transport — with the math.">
+<meta name="twitter:title" content="The Intellectual Resistance · thinking that shows its work">
+<meta name="twitter:description" content="Logic, reason, and thinking that shows its work. The Verification Principle, Carrier Color, candidate control levers, the Tetrasemaphore and Star-Centric Transport, each with its math.">
 <meta name="twitter:image" content="https://intellectualresistance.com/assets/og-card.jpg">
-<meta name="twitter:image:alt" content="A resistor in a circuit over a dark field — the Intellectual Resistance mark.">
+<meta name="twitter:image:alt" content="A resistor in a circuit over a dark field: the Intellectual Resistance mark.">
 <style>
 /* ============================================================
    GOLDEN-RATIO DESIGN SYSTEM  ·  φ = 1.618
@@ -142,7 +142,7 @@ section{padding:var(--s6) 0;position:relative}
 .callout.epistemic{border-left-color:var(--info)}
 .callout.epistemic strong{color:var(--info)}
 
-/* status pills — epistemic discipline made visible */
+/* status pills: epistemic discipline made visible */
 .status{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--mono);font-size:.6rem;
   letter-spacing:.08em;text-transform:uppercase;padding:.16rem .5rem;border-radius:4px;vertical-align:middle}
 .status::before{content:"";width:6px;height:6px;border-radius:50%}
@@ -242,29 +242,29 @@ section{padding:var(--s6) 0;position:relative}
 .levers .fail{font-family:var(--mono);color:var(--gold);font-size:.8rem;white-space:nowrap}
 .levers .ex{color:var(--text-muted);font-size:.85rem}
 
-/* four-owl quad — each state with its owl, transform, and epistemic story.
-   MOBILE-FIRST: cards stack (owl + math centered on top, full-width readable text below).
+/* four-semaphore quad: each state with its semaphore, its move, and its story.
+   MOBILE-FIRST: cards stack (semaphore + math centered on top, full-width readable text below).
    This is the default at every width; a 2-up grid + side-by-side card is a wide-screen enhancement only. */
-.owlquad{display:grid;grid-template-columns:1fr;gap:var(--s3);margin:var(--s5) 0}
-.owlcard{display:flex;flex-direction:column;align-items:center;gap:var(--s2);text-align:center;
+.semquad{display:grid;grid-template-columns:1fr;gap:var(--s3);margin:var(--s5) 0}
+.semcard{display:flex;flex-direction:column;align-items:center;gap:var(--s2);text-align:center;
   border:1px solid var(--border);border-radius:14px;background:var(--bg-2);padding:var(--s4) var(--s4) var(--s4)}
-.owlcard.s-n{border-top:3px solid var(--success)}
-.owlcard.s-nn{border-top:3px solid var(--info)}
-.owlcard.s-c{border-top:3px solid var(--danger)}
-.owlcard.s-m{border-top:3px solid #c77fce}
-.owlcard .owlimg{display:flex;flex-direction:column;align-items:center}
-.owlcard .owlimg img{width:112px;height:112px;object-fit:contain;filter:drop-shadow(0 8px 22px rgba(0,0,0,.5))}
-.owlcard .owlimg .tf{display:block;font-family:var(--mono);font-size:.82rem;color:var(--text-dim);text-align:center;margin-top:.5rem;line-height:1.7;letter-spacing:.01em;white-space:nowrap}
-.owlcard .body{min-width:0;max-width:60ch;margin-top:.2rem}
-.owlcard .body .nm{font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-align:center}
-.owlcard.s-n .body .nm{color:var(--success)}
-.owlcard.s-nn .body .nm{color:var(--info)}
-.owlcard.s-c .body .nm{color:var(--danger)}
-.owlcard.s-m .body .nm{color:#c77fce}
-.owlcard .body .ti{font-family:var(--display);font-weight:600;font-size:1.08rem;color:var(--text);margin:.15rem 0 .5rem;text-align:center}
-.owlcard .body p{font-size:.95rem;color:var(--text-muted);margin:0;line-height:1.62;text-align:left}
-/* Single column, stacked, at every width — the section container is narrow enough that a
-   2-up side-by-side layout always starves the text column. One owl + math + full-width text per row. */
+.semcard.s-n{border-top:3px solid #c7b469}
+.semcard.s-nn{border-top:3px solid #38a89a}
+.semcard.s-c{border-top:3px solid #d1564b}
+.semcard.s-m{border-top:3px solid #b07fd6}
+.semcard .semimg{display:flex;flex-direction:column;align-items:center}
+.semcard .semimg img{width:160px;height:160px;object-fit:contain;filter:drop-shadow(0 8px 22px rgba(0,0,0,.5))}
+.semcard .semimg .tf{display:block;font-family:var(--mono);font-size:.82rem;color:var(--text-dim);text-align:center;margin-top:.5rem;line-height:1.7;letter-spacing:.01em;white-space:nowrap}
+.semcard .body{min-width:0;max-width:60ch;margin-top:.2rem}
+.semcard .body .nm{font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-align:center}
+.semcard.s-n .body .nm{color:#e5c97b}
+.semcard.s-nn .body .nm{color:#5ec4b6}
+.semcard.s-c .body .nm{color:#e3746a}
+.semcard.s-m .body .nm{color:#c79ce8}
+.semcard .body .ti{font-family:var(--display);font-weight:600;font-size:1.08rem;color:var(--text);margin:.15rem 0 .5rem;text-align:center}
+.semcard .body p{font-size:.95rem;color:var(--text-muted);margin:0;line-height:1.62;text-align:left}
+/* Single column, stacked, at every width: the section container is narrow enough that a
+   2-up side-by-side layout always starves the text column. One semaphore + math + full-width text per row. */
 
 /* star-centric transport pipeline */
 .pipe{width:100%;height:auto;margin:var(--s4) 0;display:block}
@@ -363,7 +363,7 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       "@id": "https://intellectualresistance.com/#website",
       "url": "https://intellectualresistance.com/",
       "name": "The Intellectual Resistance",
-      "description": "A body of work on logic, reason, and thinking that shows its work — preserving signal integrity in a civilization that transmits faster than it verifies.",
+      "description": "A body of work on logic, reason, and thinking that shows its work: preserving signal integrity in a civilization that transmits faster than it verifies.",
       "inLanguage": "en-US",
       "publisher": { "@id": "https://intellectualresistance.com/#person" }
     },
@@ -404,8 +404,11 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
         },
         {
           "@type": "CreativeWork",
-          "name": "Owl Semaphore System Specification",
-          "identifier": "https://doi.org/10.5281/zenodo.19473697",
+          "name": "The Tetrasemaphore",
+          "version": "1.0.0",
+          "datePublished": "2026-10-22",
+          "url": "https://tetrasemaphore.systems/",
+          "identifier": "https://doi.org/10.5281/zenodo.23575816",
           "author": { "@id": "https://intellectualresistance.com/#person" }
         },
         {
@@ -433,7 +436,7 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
         { "@type": "Thing", "name": "The Verification Principle" },
         { "@type": "Thing", "name": "Carrier Color Theory" },
         { "@type": "Thing", "name": "Candidate Societal Control Levers" },
-        { "@type": "Thing", "name": "The Owl Semaphore" },
+        { "@type": "Thing", "name": "The Tetrasemaphore", "url": "https://tetrasemaphore.systems/" },
         { "@type": "Thing", "name": "Star-Centric Transport" }
       ],
       "hasPart": [
@@ -450,7 +453,7 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
         { "@type": "ListItem", "position": 2, "name": "The Verification Principle", "item": "https://intellectualresistance.com/#verification" },
         { "@type": "ListItem", "position": 3, "name": "Carrier Color", "item": "https://intellectualresistance.com/#carrier-color" },
         { "@type": "ListItem", "position": 4, "name": "Control Levers", "item": "https://intellectualresistance.com/#levers" },
-        { "@type": "ListItem", "position": 5, "name": "The Owl Semaphore", "item": "https://intellectualresistance.com/#owl" },
+        { "@type": "ListItem", "position": 5, "name": "The Tetrasemaphore", "item": "https://intellectualresistance.com/#tetrasemaphore" },
         { "@type": "ListItem", "position": 6, "name": "Star-Centric Transport", "item": "https://intellectualresistance.com/#transport" }
       ]
     }
@@ -469,7 +472,7 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       <a href="#verification">Verification</a>
       <a href="#carrier-color">Carrier&nbsp;Color</a>
       <a href="#levers">Levers</a>
-      <a href="#owl">Owl</a>
+      <a href="#tetrasemaphore">Tetrasemaphore</a>
       <a href="#transport">Transport</a>
       <a href="#applied">Applied</a>
       <a href="/dose/01">Dose&nbsp;01</a>
@@ -491,8 +494,8 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
   <div class="container hero-inner">
     <div class="eyebrow">A body of work &middot; logic, reason, thinking that shows its work</div>
     <h1>Resistance is the<br><span class="accent">whole point.</span></h1>
-    <p class="lead">In a circuit, resistance is what makes current <em>usable</em> &mdash; it sets the terms and drops the voltage to something that won't burn the system down. Thinking is the same. <b>Friction, doubt, and the deliberate pause before the answer are not the obstacle. They are the work.</b></p>
-    <p class="turn">The <b>Intellectual Resistance</b> is the umbrella over a set of frameworks for one problem: how to preserve signal in a civilization that has learned to transmit far faster than it can verify. Each is stated with its math &mdash; and labeled honestly for exactly how far it has been proven.</p>
+    <p class="lead">In a circuit, resistance is what makes current <em>usable</em>: it sets the terms and drops the voltage to something that won't burn the system down. Thinking is the same. <b>Friction, doubt, and the deliberate pause before the answer are not the obstacle. They are the work.</b></p>
+    <p class="turn">The <b>Intellectual Resistance</b> is the umbrella over a set of frameworks for one problem: how to preserve signal in a civilization that has learned to transmit far faster than it can verify. Each is stated with its math, and labeled honestly for exactly how far it has been proven.</p>
 
     <!-- resistor schematic -->
     <svg class="hero-circuit" viewBox="0 0 760 110" role="img" aria-label="A resistor in a circuit: a raw problem enters as current, passes through the human in the loop, and exits as a usable answer.">
@@ -525,14 +528,14 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       </div>
       <div><h2>The thesis</h2><div class="tag">Stated plainly, then defended framework by framework.</div></div>
     </div>
-    <p class="big">A civilization can <span class="accent">transmit faster than it verifies</span> &mdash; and when it does, the carrier starts to outrun the signal.</p>
-    <p class="lede">Reputation beats evidence. Affiliation beats verification. The symbol replaces the thing it stood for. None of this requires a conspiracy; it is what happens by default when information velocity outpaces verification velocity. The Intellectual Resistance is the deliberate countercurrent: <b>set an honest prior, find where presupposition entered, and let evidence do its work</b> &mdash; the same discipline whether the claim is a DNS record, an argument between friends, or a civilization-scale belief.</p>
+    <p class="big">A civilization can <span class="accent">transmit faster than it verifies</span>, and when it does, the carrier starts to outrun the signal.</p>
+    <p class="lede">Reputation beats evidence. Affiliation beats verification. The symbol replaces the thing it stood for. None of this requires a conspiracy; it is what happens by default when information velocity outpaces verification velocity. The Intellectual Resistance is the deliberate countercurrent: <b>set an honest prior, find where presupposition entered, and let evidence do its work</b>: the same discipline whether the claim is a DNS record, an argument between friends, or a civilization-scale belief.</p>
 
     <div class="creed">
-      <div class="item"><div class="k">Verification over assertion</div><p><b>A real measurement beats a confident reading.</b> A computed number, a reproducible command, a brute-force enumeration &mdash; these outrank any citation or memory, including my own.</p></div>
+      <div class="item"><div class="k">Verification over assertion</div><p><b>A real measurement beats a confident reading.</b> A computed number, a reproducible command, a brute-force enumeration: these outrank any citation or memory, including my own.</p></div>
       <div class="item"><div class="k">Claim exactly what is proven</div><p><b>And then stop.</b> A proven theorem is marked proven. A recurring pattern is marked a candidate. A design bet is marked a hypothesis. The restraint is the strength.</p></div>
       <div class="item"><div class="k">Find where presupposition enters</div><p><b>Disputes rarely begin with a false conclusion.</b> They begin with a hidden assumption injected far earlier in the chain. Locate that moment and most disagreements resolve into something solvable.</p></div>
-      <div class="item"><div class="k">Reality-check the bold question</div><p><b>Ask the big question &mdash; then return to what's defensible.</b> When the evidence says a framing is unreasonable, the framing yields. The point is to be right, not to be loud.</p></div>
+      <div class="item"><div class="k">Reality-check the bold question</div><p><b>Ask the big question, then return to what's defensible.</b> When the evidence says a framing is unreasonable, the framing yields. The point is to be right, not to be loud.</p></div>
     </div>
 
     <!-- the metacognitive arc -->
@@ -541,15 +544,15 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       <div class="arc-rows">
         <div class="arc-row">
           <span class="yr">1637</span>
-          <span class="ln"><span class="q">&ldquo;I think, therefore I am.&rdquo;</span><span class="g">Descartes &mdash; thinking proves you exist.</span></span>
+          <span class="ln"><span class="q">&ldquo;I think, therefore I am.&rdquo;</span><span class="g">Descartes: thinking proves you exist.</span></span>
         </div>
         <div class="arc-row">
           <span class="yr">1997</span>
-          <span class="ln"><span class="q">&ldquo;Think different.&rdquo;</span><span class="g">Apple &mdash; thinking sets you apart.</span></span>
+          <span class="ln"><span class="q">&ldquo;Think different.&rdquo;</span><span class="g">Apple: thinking sets you apart.</span></span>
         </div>
         <div class="arc-row now">
           <span class="yr">2026</span>
-          <span class="ln"><span class="q">&ldquo;Think about your thinking.&rdquo;</span><span class="g">The Intellectual Resistance &mdash; thinking audits itself.</span></span>
+          <span class="ln"><span class="q">&ldquo;Think about your thinking.&rdquo;</span><span class="g">The Intellectual Resistance: thinking audits itself.</span></span>
         </div>
       </div>
       <div class="arc-foot">
@@ -566,9 +569,9 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       <div class="section-icon si-gold">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.5 6H15.5M6 8.5V15.5M18 8.5V15.5M8.5 18H15.5"/></svg>
       </div>
-      <div><h2>The map</h2><div class="tag">Five frameworks and three shipped projects &mdash; each labeled by epistemic status.</div></div>
+      <div><h2>The map</h2><div class="tag">Five frameworks and three shipped projects: each labeled by epistemic status.</div></div>
     </div>
-    <p class="lede">These are not independent ideas. Each is a different cut at the same problem &mdash; signal integrity under scale &mdash; and they share vocabulary and machinery. Below, each gets its own section with the math. The status pill on every card is load-bearing: it tells you how far the claim has actually been carried.</p>
+    <p class="lede">These are not independent ideas. Each is a different cut at the same problem (signal integrity under scale), and they share vocabulary and machinery. Below, each gets its own section with the math. The status pill on every card is load-bearing: it tells you how far the claim has actually been carried.</p>
 
     <div class="fwgrid">
       <article class="fwcard">
@@ -586,14 +589,14 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       <article class="fwcard">
         <span class="num">03</span>
         <h3><a href="#levers">Societal Control Levers</a></h3>
-        <p>A handful of variables that recur across politics, media, institutions, and cognition &mdash; candidates for what governs coordination at scale.</p>
+        <p>A handful of variables that recur across politics, media, institutions, and cognition: candidates for what governs coordination at scale.</p>
         <div class="foot"><span class="status st-candidate">Candidate variables</span><a class="cardlink" href="#levers">read &rarr;</a></div>
       </article>
       <article class="fwcard">
         <span class="num">04</span>
-        <h3><a href="#owl">The Owl Semaphore</a></h3>
-        <p>A finite algebra over four epistemic stances. The algebra (a Klein four-group) is proven; whether the four states are the <em>right</em> partition is an open study.</p>
-        <div class="foot"><span class="status st-proven">Algebra proven</span><a class="cardlink" href="#owl">read &rarr;</a></div>
+        <h3><a href="#tetrasemaphore">The Tetrasemaphore</a></h3>
+        <p>Four semaphores that mark how a piece of work stands. The algebra (a Klein four-group) is machine-checked; whether the semaphores help people think about their thinking is the open question.</p>
+        <div class="foot"><span class="status st-proven">Algebra proven</span><a class="cardlink" href="#tetrasemaphore">read &rarr;</a></div>
       </article>
       <article class="fwcard">
         <span class="num">05</span>
@@ -604,7 +607,7 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       <article class="fwcard">
         <span class="num">06</span>
         <h3><a href="#applied">Applied: DNS Tool, Calibration Scope &amp; Organic Computer</a></h3>
-        <p>The principle, shipped. DNS Tool runs the verification engine on real infrastructure; Calibration Scope benchmarks what minds &mdash; silicon and carbon &mdash; can actually do; Organic Computer offers the human substrate directly.</p>
+        <p>The principle, shipped. DNS Tool runs the verification engine on real infrastructure; Calibration Scope benchmarks what minds (silicon and carbon) can actually do; Organic Computer offers the human substrate directly.</p>
         <div class="foot"><span class="status st-shipped">Shipped</span><a class="cardlink" href="#applied">read &rarr;</a></div>
       </article>
     </div>
@@ -618,36 +621,36 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       <div class="section-icon si-info">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4"/><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4z"/></svg>
       </div>
-      <div><h2>01 &middot; The Verification Principle</h2><div class="tag">Bayesian anti-dogmatism &mdash; why a closed mind is a mathematical fact, not a character flaw.</div></div>
+      <div><h2>01 &middot; The Verification Principle</h2><div class="tag">Bayesian anti-dogmatism: why a closed mind is a mathematical fact, not a character flaw.</div></div>
     </div>
     <div class="meta"><span class="status st-proven">Proven (theorem)</span></div>
 
-    <p>The principle is simple: <b>the answer to a question lives in the foundations of the question.</b> A question's foundation is the <em>prior</em> you begin with &mdash; how strongly you already believe a hypothesis before new evidence arrives. Honest reasoning sets that prior from evidence, holds it strictly between impossible and certain, and updates it as new evidence comes in.</p>
+    <p>The principle is simple: <b>the answer to a question lives in the foundations of the question.</b> A question's foundation is the <em>prior</em> you begin with: how strongly you already believe a hypothesis before new evidence arrives. Honest reasoning sets that prior from evidence, holds it strictly between impossible and certain, and updates it as new evidence comes in.</p>
 
     <p>What makes this more than advice is that the failure mode is provable. Bayes' rule updates a hypothesis <span class="mono">H</span> given evidence <span class="mono">E</span>. If the prior <span class="mono">P(H)</span> is pinned at exactly 0 or exactly 1, the update is mathematically frozen:</p>
 
     <div class="eqbox">
-      <div class="pre">The core theorem &mdash; why dogma cannot learn</div>
+      <div class="pre">The core theorem: why dogma cannot learn</div>
       <div class="stmt">P(E) &gt; 0,&nbsp;&nbsp;P(H) &isin; {0,&thinsp;1}&nbsp;&nbsp;<span class="hl">&rArr;</span>&nbsp;&nbsp;P(H&thinsp;|&thinsp;E) = P(H)</div>
-      <p class="gloss">A belief held as <b>certain</b> or <b>impossible</b> is unrevisable &mdash; evidence simply bounces off. Not a personality trait: a <b>fact</b> about a prior set to 0 or 1. The proof is one line of Bayes' rule.</p>
+      <p class="gloss">A belief held as <b>certain</b> or <b>impossible</b> is unrevisable: evidence simply bounces off. Not a personality trait: a <b>fact</b> about a prior set to 0 or 1. The proof is one line of Bayes' rule.</p>
       <span class="def">H = hypothesis under test &nbsp;·&nbsp; E = evidence &nbsp;·&nbsp; P(E) &gt; 0 required &nbsp;·&nbsp; priors empirical, never 0 or 1</span>
     </div>
 
-    <p>So the discipline is to keep priors bounded away from 0 and 1, and to update in odds form &mdash; <span class="mono">posterior odds = Bayes factor &times; prior odds</span> &mdash; so evidence can always move the needle. To <em>understand the foundations</em> of a claim, in this exact sense, <b>is</b> what logic is. It holds for a DNS record, an argument between friends, or polarized politics: anywhere a mind updates on evidence.</p>
+    <p>So the discipline is to keep priors bounded away from 0 and 1, and to update in odds form (<span class="mono">posterior odds = Bayes factor &times; prior odds</span>), so evidence can always move the needle. To <em>understand the foundations</em> of a claim, in this exact sense, <b>is</b> what logic is. It holds for a DNS record, an argument between friends, or polarized politics: anywhere a mind updates on evidence.</p>
 
-    <p>The theorem says a pinned prior <em>can't</em> move. A fair follow-on: can you <b>detect</b>, from behavior alone, when a prior is locked? The tempting metric is raw movement &mdash; <span class="mono">M = &Sigma;&thinsp;|P(H&thinsp;|&thinsp;E&#7522;) &minus; P(H)|</span> &mdash; and <span class="mono">M = 0</span> does flag a prior that never budged. But movement alone is the wrong measure, for a precise reason:</p>
+    <p>The theorem says a pinned prior <em>can't</em> move. A fair follow-on: can you <b>detect</b>, from behavior alone, when a prior is locked? The tempting metric is raw movement (<span class="mono">M = &Sigma;&thinsp;|P(H&thinsp;|&thinsp;E&#7522;) &minus; P(H)|</span>), and <span class="mono">M = 0</span> does flag a prior that never budged. But movement alone is the wrong measure, for a precise reason:</p>
 
     <div class="eqbox">
       <div class="pre">The detector has to control for informative evidence</div>
       <div class="stmt">BF&#7522; = 1&nbsp;&nbsp;<span class="hl">&rArr;</span>&nbsp;&nbsp;P(H&thinsp;|&thinsp;E&#7522;) = P(H)</div>
-      <p class="gloss">If a piece of evidence carries no information &mdash; its Bayes factor is 1 &mdash; a perfectly rational reasoner shows <b>zero</b> update too. So &ldquo;didn't move&rdquo; cannot, by itself, separate a locked prior from correctly-ignored noise. A lock only shows when the evidence is <em>informative</em> (BF&#7522; &ne; 1) yet the prior still doesn't move.</p>
-      <span class="def">right quantity: &Sigma;&thinsp;|&thinsp;P_agent(H | E&#7522;) &minus; P_Bayes(H | E&#7522;)&thinsp;| &mdash; deviation from the Bayes-correct posterior, not from the prior</span>
+      <p class="gloss">If a piece of evidence carries no information (its Bayes factor is 1), a perfectly rational reasoner shows <b>zero</b> update too. So &ldquo;didn't move&rdquo; cannot, by itself, separate a locked prior from correctly-ignored noise. A lock only shows when the evidence is <em>informative</em> (BF&#7522; &ne; 1) yet the prior still doesn't move.</p>
+      <span class="def">right quantity: &Sigma;&thinsp;|&thinsp;P_agent(H | E&#7522;) &minus; P_Bayes(H | E&#7522;)&thinsp;| (deviation from the Bayes-correct posterior, not from the prior)</span>
     </div>
 
-    <div class="callout epistemic"><strong>Epistemic status &mdash; candidate diagnostic, not part of the theorem.</strong> It presumes you can estimate each evidence item's likelihood ratio (usually the hard part), and its thresholds are uncalibrated &mdash; no validation run here. It earns a place on this floor only as &ldquo;where to look,&rdquo; clearly below the proven line above.</p>
+    <div class="callout epistemic"><strong>Epistemic status: candidate diagnostic, not part of the theorem.</strong> It presumes you can estimate each evidence item's likelihood ratio (usually the hard part), and its thresholds are uncalibrated: no validation run here. It earns a place on this floor only as &ldquo;where to look,&rdquo; clearly below the proven line above.</p>
     </div>
 
-    <div class="callout"><strong>Why it leads the set:</strong> every other framework here assumes this one. Carrier Color is a description of <em>what</em> corrupts the prior; the Owl Semaphore is a way to <em>label</em> the stance you're updating from; Star-Centric Transport carries the same verify-before-you-advance logic into data pipelines. The Verification Principle is the floor they all stand on.</p>
+    <div class="callout"><strong>Why it leads the set:</strong> every other framework here assumes this one. Carrier Color is a description of <em>what</em> corrupts the prior; the Tetrasemaphore is a way to <em>label</em> the stance you're updating from; Star-Centric Transport carries the same verify-before-you-advance logic into data pipelines. The Verification Principle is the floor they all stand on.</p>
   </div>
 </section>
 
@@ -658,23 +661,23 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       <div class="section-icon si-violet">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M3 12h18" opacity=".4"/><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18"/></svg>
       </div>
-      <div><h2>02 &middot; Carrier Color</h2><div class="tag">Identity-mediated distortion &mdash; you evaluate the carrier before the signal.</div></div>
+      <div><h2>02 &middot; Carrier Color</h2><div class="tag">Identity-mediated distortion: you evaluate the carrier before the signal.</div></div>
     </div>
     <div class="meta"><span class="status st-candidate">Model / framework</span></div>
 
-    <p>Carrier Color names a specific kind of distortion in how information is received. A message has a <b>signal</b> &mdash; the proposition, the evidence, the actual claim &mdash; and it has a <b>carrier</b>: the person, tribe, institution, ideology, status marker, or emotional charge attached to it. The model's claim is that humans frequently evaluate the carrier <em>before</em> the signal, so what reaches judgment is not the signal alone:</p>
+    <p>Carrier Color names a specific kind of distortion in how information is received. A message has a <b>signal</b> (the proposition, the evidence, the actual claim), and it has a <b>carrier</b>: the person, tribe, institution, ideology, status marker, or emotional charge attached to it. The model's claim is that humans frequently evaluate the carrier <em>before</em> the signal, so what reaches judgment is not the signal alone:</p>
 
     <div class="eqbox">
       <div class="pre">The received message</div>
       <div class="stmt">Received&nbsp;=&nbsp;Signal&nbsp;<span class="gold">+</span>&nbsp;Carrier&nbsp;Color</div>
-      <p class="gloss">The same proposition &mdash; &ldquo;inflation rose 4%,&rdquo; &ldquo;love your neighbor,&rdquo; &ldquo;this software has a vulnerability&rdquo; &mdash; lands differently depending on <b>who carries it</b>. The diagnostic: <em>if I strip the carrier, does my evaluation of the signal change?</em> If yes, Carrier Color is present.</p>
+      <p class="gloss">The same proposition (&ldquo;inflation rose 4%,&rdquo; &ldquo;love your neighbor,&rdquo; &ldquo;this software has a vulnerability&rdquo;) lands differently depending on <b>who carries it</b>. The diagnostic: <em>if I strip the carrier, does my evaluation of the signal change?</em> If yes, Carrier Color is present.</p>
     </div>
 
-    <p>Crucially, the goal is <b>not</b> to delete the carrier. Carrier Color often carries real contextual information &mdash; the wisdom, the stakes, the history. The goal is to make it <em>legible</em>: to sort the carrier from the signal so you can decode what was actually meant. The same move works in a family conversation (&ldquo;this is your carrier color, this is mine, here is the real question&rdquo;) and, in principle, in an intelligence product, where a finding could travel with a transparent log of the human stances that shaped it rather than arriving as bare, falsely-neutral certainty.</p>
+    <p>Crucially, the goal is <b>not</b> to delete the carrier. Carrier Color often carries real contextual information: the wisdom, the stakes, the history. The goal is to make it <em>legible</em>: to sort the carrier from the signal so you can decode what was actually meant. The same move works in a family conversation (&ldquo;this is your carrier color, this is mine, here is the real question&rdquo;) and, in principle, in an intelligence product, where a finding could travel with a transparent log of the human stances that shaped it rather than arriving as bare, falsely-neutral certainty.</p>
 
     <div class="spectrum">
       <div class="sp trust">
-        <div class="cap">Carrier dominates &mdash; trust</div>
+        <div class="cap">Carrier dominates: trust</div>
         <h3>Reputation as evidence</h3>
         <p>Accept it because of who said it. The signal is never inspected.</p>
         <div class="eq">C &raquo; S</div>
@@ -682,18 +685,18 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       <div class="sp mid">
         <div class="cap">Carrier made legible</div>
         <h3>Sort, then decode</h3>
-        <p>Name the carrier, separate it, evaluate the signal on its own terms &mdash; then read the carrier back in as context.</p>
+        <p>Name the carrier, separate it, evaluate the signal on its own terms; then read the carrier back in as context.</p>
         <div class="eq">decode(Signal | Carrier)</div>
       </div>
       <div class="sp bad">
-        <div class="cap">Carrier dominates &mdash; reject</div>
+        <div class="cap">Carrier dominates: reject</div>
         <h3>Reputation as disqualifier</h3>
         <p>Reject it because of who said it. The signal is, again, never inspected.</p>
         <div class="eq">C &raquo; S</div>
       </div>
     </div>
 
-    <div class="callout epistemic"><strong>Epistemic status:</strong> Carrier Color is an <strong>explanatory model</strong>, not a measured law. It generates testable predictions, and one of them has now been tested in a narrow setting. In a controlled paired experiment on a language model (<a href="https://github.com/IT-Help-San-Diego/calibration-scope">calibration-scope</a>, runs 970/971), the <em>same</em> logical arguments were presented under two different prompt carriers with the model, decoding settings, and temperature held identical. The carrier changed the model&rsquo;s verdict on 13 of 53 items, and &mdash; more specifically &mdash; the model&rsquo;s answers went from <strong>run-position-dependent</strong> (varying across repeated identical trials within a run) to <strong>position-invariant</strong> under one carrier: 13 of 27 items varied across repetitions under the baseline carrier, <strong>0 of 27</strong> under the other, with 13 items changing in that direction and none in reverse (McNemar exact, paired, <em>p</em> = 2.4 &times; 10<sup>&minus;4</sup>). Temperature was fixed at 0 and speculative decoding was off in both arms.<br><br><strong>What this does and does not establish.</strong> It is evidence that a carrier can change a verdict on identical content in an artificial reasoner. It is <strong>not</strong> a test of the prediction named above &mdash; that anonymized versus attributed evaluations diverge in <em>humans</em> &mdash; which remains unrun. One model, one item bank, one truncated run. <strong>The obvious alternative explanation has now been tested and rejected.</strong> The carrier adds text, so the two conditions differ in prompt length as well as in content, and at fixed temperature a model&rsquo;s residual output variation can depend on sequence length through low-level numerical effects &mdash; so &ldquo;longer prompts land in a more stable regime&rdquo; was a live alternative to &ldquo;the carrier&rsquo;s content changed the verdict.&rdquo; A <strong>length-matched control carrier</strong> was then run: the same items under a wrapper carrying no logical guidance, only neutral filler, intended to match the logical carrier's length. It did <em>not</em> reproduce the effect. Across 293 items, the model answered inconsistently on 48 without any carrier and on 38 under the neutral filler (a difference indistinguishable from chance, <em>p</em> = 0.18) &mdash; but on only <strong>3 under the logical carrier</strong> (<em>p</em> = 4 &times; 10<sup>&minus;12</sup>). Accuracy behaved the same way: neutral filler cost nothing measurable, the logical carrier cost 7 points. <strong>Only the carrier with meaning changed the outcome.</strong> <strong>Correction 2026-07-28:</strong> this sentence previously read &ldquo;at an identical token budget.&rdquo; That was wrong, and we found it by measuring the prompt token counts the models themselves reported: the logical carrier added <strong>119</strong> tokens to the bare prompt while the neutral filler added <strong>87</strong>, with non-overlapping ranges. <strong>The length-matched control was not in fact length-matched</strong>, and it errs in the direction that favours our own hypothesis &mdash; the arm that collapsed variance is the longer one. What the control still shows is that an 87-token lengthening produced <em>no</em> collapse at all, so the effect is not a consequence of prompt lengthening as such; what it does <em>not</em> show is that the remaining 32-token difference contributes nothing. A genuinely token-matched carrier is the outstanding experiment. <strong>Provenance caveat added 2026-07-28:</strong> each condition above was a single run of the model, so the carrier is not separated from run-to-run engine state. We have since found that this instrument loaded the same model under a <em>different context window than requested</em> on a later run (65,536 against 131,072), and the runs behind the numbers above did not record what they actually loaded &mdash; only what was asked for. Comparing the conditions also shows roughly fifty items per model flipping between a fully consistent right answer and a fully consistent wrong one, including in the model whose overall carrier effect was near zero. <strong>So the measurements above stand as measurements, and the sentence attributing them to the carrier's meaning is provisional until the same condition is run twice.</strong> That replicate is the next experiment.<br><br><strong>What remains bounded.</strong> The comparison that carries this is the direct one between the two carriers, which differ by 32 tokens (119 versus 87 added) and differ overwhelmingly in content. The weaker comparison &mdash; neutral against no carrier at all &mdash; is inconclusive on its own, and this design could not have detected a length effect of moderate size. <strong>So length is excluded as <em>the</em> explanation, not as a contributor</strong>: a partial length contribution remains possible. The result is a <strong>single-model</strong> observation: the second model tested was already fully consistent without any carrier, so it had no variability for a carrier to remove. And the neutral control differs from the logical one in vocabulary and phrasing as well as meaning, so this separates <em>content</em> from <em>length</em> &mdash; it does not yet isolate meaning from vocabulary. The status above is unchanged, and the full correction history, including several retractions of our own earlier readings, is in the repository&rsquo;s epistemic log. It is offered as a lens, held to the same standard it describes. <strong>Correction 2026-07-29:</strong> this passage previously called the varying answers &ldquo;stochastic.&rdquo; A run-level replicate refutes that word. Re-running the identical battery (run 985 vs run 974) produced <strong>byte-identical outputs on all 1,758 trials</strong> &mdash; including the exact rep-by-rep sequence of all 48 items that vary within a run, 48 of 48 &mdash; while executing genuinely, with different measured latencies (10,611&nbsp;ms vs 6,110&nbsp;ms) on new database rows. A random process cannot reproduce its own coin flips. The within-run variation is therefore <em>deterministic and order-dependent</em>, not stochastic: it replays identically when the run is repeated. <strong>The measured contrast is unchanged</strong> &mdash; 48 items vary under the baseline carrier and 3 under the logical one, under identical conditions &mdash; but the mechanism is not uncertainty. The defensible claim is that the carrier determines whether an answer depends on its position in the run, which is narrower than &ldquo;the model was uncertain&rdquo; and falsifiable in a way that phrasing was not.</p>
+    <div class="callout epistemic"><strong>Epistemic status:</strong> Carrier Color is an <strong>explanatory model</strong>, not a measured law. It generates testable predictions, and one of them has now been tested in a narrow setting. In a controlled paired experiment on a language model (<a href="https://github.com/IT-Help-San-Diego/calibration-scope">calibration-scope</a>, runs 970/971), the <em>same</em> logical arguments were presented under two different prompt carriers with the model, decoding settings, and temperature held identical. The carrier changed the model&rsquo;s verdict on 13 of 53 items, and, more specifically, the model&rsquo;s answers went from <strong>run-position-dependent</strong> (varying across repeated identical trials within a run) to <strong>position-invariant</strong> under one carrier: 13 of 27 items varied across repetitions under the baseline carrier, <strong>0 of 27</strong> under the other, with 13 items changing in that direction and none in reverse (McNemar exact, paired, <em>p</em> = 2.4 &times; 10<sup>&minus;4</sup>). Temperature was fixed at 0 and speculative decoding was off in both arms.<br><br><strong>What this does and does not establish.</strong> It is evidence that a carrier can change a verdict on identical content in an artificial reasoner. It is <strong>not</strong> a test of the prediction named above (that anonymized versus attributed evaluations diverge in <em>humans</em>), which remains unrun. One model, one item bank, one truncated run. <strong>The obvious alternative explanation has now been tested and rejected.</strong> The carrier adds text, so the two conditions differ in prompt length as well as in content, and at fixed temperature a model&rsquo;s residual output variation can depend on sequence length through low-level numerical effects, so &ldquo;longer prompts land in a more stable regime&rdquo; was a live alternative to &ldquo;the carrier&rsquo;s content changed the verdict.&rdquo; A <strong>length-matched control carrier</strong> was then run: the same items under a wrapper carrying no logical guidance, only neutral filler, intended to match the logical carrier's length. It did <em>not</em> reproduce the effect. Across 293 items, the model answered inconsistently on 48 without any carrier and on 38 under the neutral filler (a difference indistinguishable from chance, <em>p</em> = 0.18), but on only <strong>3 under the logical carrier</strong> (<em>p</em> = 4 &times; 10<sup>&minus;12</sup>). Accuracy behaved the same way: neutral filler cost nothing measurable, the logical carrier cost 7 points. <strong>Only the carrier with meaning changed the outcome.</strong> <strong>Correction 2026-07-28:</strong> this sentence previously read &ldquo;at an identical token budget.&rdquo; That was wrong, and we found it by measuring the prompt token counts the models themselves reported: the logical carrier added <strong>119</strong> tokens to the bare prompt while the neutral filler added <strong>87</strong>, with non-overlapping ranges. <strong>The length-matched control was not in fact length-matched</strong>, and it errs in the direction that favours our own hypothesis: the arm that collapsed variance is the longer one. What the control still shows is that an 87-token lengthening produced <em>no</em> collapse at all, so the effect is not a consequence of prompt lengthening as such; what it does <em>not</em> show is that the remaining 32-token difference contributes nothing. A genuinely token-matched carrier is the outstanding experiment. <strong>Provenance caveat added 2026-07-28:</strong> each condition above was a single run of the model, so the carrier is not separated from run-to-run engine state. We have since found that this instrument loaded the same model under a <em>different context window than requested</em> on a later run (65,536 against 131,072), and the runs behind the numbers above did not record what they actually loaded, only what was asked for. Comparing the conditions also shows roughly fifty items per model flipping between a fully consistent right answer and a fully consistent wrong one, including in the model whose overall carrier effect was near zero. <strong>So the measurements above stand as measurements, and the sentence attributing them to the carrier's meaning is provisional until the same condition is run twice.</strong> That replicate is the next experiment.<br><br><strong>What remains bounded.</strong> The comparison that carries this is the direct one between the two carriers, which differ by 32 tokens (119 versus 87 added) and differ overwhelmingly in content. The weaker comparison, neutral against no carrier at all, is inconclusive on its own, and this design could not have detected a length effect of moderate size. <strong>So length is excluded as <em>the</em> explanation, not as a contributor</strong>: a partial length contribution remains possible. The result is a <strong>single-model</strong> observation: the second model tested was already fully consistent without any carrier, so it had no variability for a carrier to remove. And the neutral control differs from the logical one in vocabulary and phrasing as well as meaning, so this separates <em>content</em> from <em>length</em>; it does not yet isolate meaning from vocabulary. The status above is unchanged, and the full correction history, including several retractions of our own earlier readings, is in the repository&rsquo;s epistemic log. It is offered as a lens, held to the same standard it describes. <strong>Correction 2026-07-29:</strong> this passage previously called the varying answers &ldquo;stochastic.&rdquo; A run-level replicate refutes that word. Re-running the identical battery (run 985 vs run 974) produced <strong>byte-identical outputs on all 1,758 trials</strong> (including the exact rep-by-rep sequence of all 48 items that vary within a run, 48 of 48) while executing genuinely, with different measured latencies (10,611&nbsp;ms vs 6,110&nbsp;ms) on new database rows. A random process cannot reproduce its own coin flips. The within-run variation is therefore <em>deterministic and order-dependent</em>, not stochastic: it replays identically when the run is repeated. <strong>The measured contrast is unchanged</strong> (48 items vary under the baseline carrier and 3 under the logical one, under identical conditions), but the mechanism is not uncertainty. The defensible claim is that the carrier determines whether an answer depends on its position in the run, which is narrower than &ldquo;the model was uncertain&rdquo; and falsifiable in a way that phrasing was not.</p>
   </div>
 </section>
 
@@ -706,7 +709,7 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       </div>
       <div><h2>03 &middot; Candidate Societal Control Levers</h2><div class="tag">Variables that recur wherever coordination happens at scale.</div></div>
     </div>
-    <div class="meta"><span class="status st-candidate">Candidate variables &mdash; causality not demonstrated</span></div>
+    <div class="meta"><span class="status st-candidate">Candidate variables: causality not demonstrated</span></div>
 
     <p>Looking across politics, religion, media, AI, institutions, organizations, and individual cognition, a handful of variables keep reappearing as the things that seem to govern whether a system reasons well or drifts. One way to write the pressure they put on a system is as an <b>epistemic efficiency</b>: useful signal over the burdens that degrade it.</p>
 
@@ -714,7 +717,7 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       <div class="pre">Epistemic efficiency (working form)</div>
       <div class="stmt">E&nbsp;=&nbsp;<span class="gold">S</span>&nbsp;/&nbsp;(&thinsp;C&nbsp;+&nbsp;N&nbsp;+&nbsp;K&nbsp;+&nbsp;P&thinsp;)</div>
       <p class="gloss">Signal <b>S</b> divided by carrier color <b>C</b>, noise <b>N</b>, coordination cost <b>K</b>, and power-gradient pressure <b>P</b>. A healthy system keeps S large relative to the denominator; a degrading one lets the denominator win.</p>
-      <span class="def">A descriptive bookkeeping device, not a measured equation &mdash; the variables are not yet operationally defined or fit to data.</span>
+      <span class="def">A descriptive bookkeeping device, not a measured equation: the variables are not yet operationally defined or fit to data.</span>
     </div>
 
     <p>Compressed to the few that seem most load-bearing, the current candidate set is:</p>
@@ -731,88 +734,88 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       </tbody>
     </table>
 
-    <div class="callout epistemic"><strong>Read this carefully:</strong> the word is <strong>candidate</strong>, deliberately. These are recurring variables, not demonstrated causes &mdash; no causality has been established, no dominance proven. Calling them &ldquo;the&rdquo; control levers would be exactly the kind of overclaim this whole project exists to resist. They are where to look next, not a finished answer.</p>
+    <div class="callout epistemic"><strong>Read this carefully:</strong> the word is <strong>candidate</strong>, deliberately. These are recurring variables, not demonstrated causes: no causality has been established, no dominance proven. Calling them &ldquo;the&rdquo; control levers would be exactly the kind of overclaim this whole project exists to resist. They are where to look next, not a finished answer.</p>
   </div>
 </section>
 
-<!-- ===================== 4. OWL SEMAPHORE ===================== -->
-<section class="fw" id="owl">
+<!-- ===================== 4. TETRASEMAPHORE ===================== -->
+<section class="fw" id="tetrasemaphore">
+  <span id="owl"></span>
   <div class="container">
     <div class="section-head">
       <div class="section-icon si-green">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="10" r="3"/><circle cx="15" cy="10" r="3"/><path d="M12 13v4M5 7l2-2M19 7l-2-2"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M12 4v16M4 12h16"/></svg>
       </div>
-      <div><h2>04 &middot; The Owl Semaphore</h2><div class="tag">A finite algebra over four epistemic stances.</div></div>
+      <div><h2>04 &middot; The Tetrasemaphore</h2><div class="tag">Four semaphores that mark how a piece of work stands.</div></div>
     </div>
     <div class="meta"><span class="status st-proven">Algebra proven</span> <span class="status st-hypothesis">Utility: open study</span></div>
 
-    <p>The Owl Semaphore is a way to <b>label the stance you are reasoning from</b>. It defines four states &mdash; <b>Normative</b>, <b>Non-Normative</b>, <b>Critical</b>, and <b>Metacognitive</b> &mdash; treated not as truth-values but as <em>operations on stance</em>: transformations you apply when you change how you're evaluating a claim. The semaphore is not a filing system; it is a notation for how rigorous thought already moves. It encodes a <em>position</em>, not a proof &mdash; and where it borrows from a discipline, it does so as analogy, not as validation.</p>
+    <p>The Tetrasemaphore is four semaphores that <b>mark how a piece of work stands</b>: <b>NORMATIVE</b>, <b>NON-NORMATIVE</b>, <b>METACOGNITIVE</b> or <b>CRITICAL</b>. Each state is a move of a flat picture, and each semaphore carries a mark built to survive its own move, written in the symbols chemists and mathematicians already use for symmetry. The semaphore is not a filing system; it is a notation for how rigorous thought already moves. It encodes a <em>position</em>, not a proof, and where it borrows from a discipline, it does so as analogy, not as validation.</p>
 
-    <div class="owlquad">
-      <figure class="owlcard s-n">
-        <div class="owlimg">
-          <picture><source srcset="assets/owl-normative.webp" type="image/webp"><img src="assets/owl-normative.png" width="118" height="118" alt="The Normative owl — upright gold Owl of Athena in a Greek meander ring." loading="lazy" decoding="async"></picture>
-          <span class="tf">T = I &middot; det = +1<br>(x,&thinsp;y) &rarr; (x,&thinsp;y)</span>
+    <div class="semquad">
+      <figure class="semcard s-n">
+        <div class="semimg">
+          <picture><source srcset="assets/TETRASEMAPHORE-NORMATIVE-en-320.webp" type="image/webp"><img src="assets/TETRASEMAPHORE-NORMATIVE-en-320.png" width="160" height="160" alt="The NORMATIVE semaphore, whose mark survives every move." loading="lazy" decoding="async"></picture>
+          <span class="tf">I &middot; det = +1<br>(x,&thinsp;y) &rarr; (x,&thinsp;y)</span>
         </div>
         <figcaption class="body">
           <div class="nm">Normative</div>
           <div class="ti">The proven ground</div>
-          <p>Upright, facing forward &mdash; no transform; you see the room exactly as it is. Newton's laws held for 200 years before Einstein found their edges: tested, verified, operational. The owl stands upright when the work has been done and the foundation holds &mdash; not permanent truth, but a foundation the evidence supports right now.</p>
+          <p>Stand upright, feet planted, facing forward: nothing changes. Newton&rsquo;s laws of motion, published in 1687,<sup><a href="#r10">[10]</a></sup> held for more than 200 years before Einstein showed, in 1905,<sup><a href="#r11">[11]</a></sup> where they break down. The Normative semaphore marks the move that changes nothing: the work has been done and the foundation holds. Not because it is permanently true, but because right now, the evidence supports it.</p>
         </figcaption>
       </figure>
 
-      <figure class="owlcard s-nn">
-        <div class="owlimg">
-          <picture><source srcset="assets/owl-non-normative.webp" type="image/webp"><img src="assets/owl-non-normative.png" width="118" height="118" alt="The Non-Normative owl — mirror-reflected, in a teal ring." loading="lazy" decoding="async"></picture>
-          <span class="tf">&sigma;&#7515; &middot; det = &minus;1<br>(x,&thinsp;y) &rarr; (&minus;x,&thinsp;y)</span>
+      <figure class="semcard s-nn">
+        <div class="semimg">
+          <picture><source srcset="assets/TETRASEMAPHORE-NON-NORMATIVE-en-320.webp" type="image/webp"><img src="assets/TETRASEMAPHORE-NON-NORMATIVE-en-320.png" width="160" height="160" alt="The NON-NORMATIVE semaphore, whose mark survives only the left-to-right flip." loading="lazy" decoding="async"></picture>
+          <span class="tf">&sigma;&#7525; &middot; det = &minus;1<br>(x,&thinsp;y) &rarr; (&minus;x,&thinsp;y)</span>
         </div>
         <figcaption class="body">
           <div class="nm">Non-Normative</div>
-          <div class="ti">Da Vinci's wings</div>
-          <p>A mirror image &mdash; up stays up, but left and right swap: a vertical-axis reflection. Leonardo spent years sketching wing mechanics and building machines that couldn't fly; he failed, yet left a guideline the Wright brothers stood on 400 years later. The engine of progress: rigorous exploration that hasn't finished yet.</p>
+          <div class="ti">Da Vinci&rsquo;s wings</div>
+          <p>Stand in front of a mirror. You are still upright, but left and right have swapped. When Leonardo spent years studying birds and designing machines that could not fly,<sup><a href="#r12">[12]</a></sup> he was in the Non-Normative state: facing the other direction, seeing what everyone else had their backs to. He failed, and left a guideline. Four hundred years later, the Wright Brothers stood on the shoulders of Lilienthal and Chanute.<sup><a href="#r13">[13]</a></sup> Non-normative work is rigorous exploration that hasn&rsquo;t finished yet.</p>
         </figcaption>
       </figure>
 
-      <figure class="owlcard s-c">
-        <div class="owlimg">
-          <picture><source srcset="assets/owl-critical.webp" type="image/webp"><img src="assets/owl-critical.png" width="118" height="118" alt="The Critical owl — fully inverted, in an alert-red ring." loading="lazy" decoding="async"></picture>
+      <figure class="semcard s-m">
+        <div class="semimg">
+          <picture><source srcset="assets/TETRASEMAPHORE-METACOGNITIVE-en-320.webp" type="image/webp"><img src="assets/TETRASEMAPHORE-METACOGNITIVE-en-320.png" width="160" height="160" alt="The METACOGNITIVE semaphore, whose mark survives only the top-to-bottom flip." loading="lazy" decoding="async"></picture>
+          <span class="tf">&sigma;&#8341; &middot; det = &minus;1<br>(x,&thinsp;y) &rarr; (x,&thinsp;&minus;y)</span>
+        </div>
+        <figcaption class="body">
+          <div class="nm">Metacognitive</div>
+          <div class="ti">The observer&rsquo;s mirror</div>
+          <p>A child loses a piece from a building set and cannot find it. They bend down, grab their ankles, and look between their legs. The room is the same room; left is still left, but up and down have inverted. The Metacognitive semaphore marks the top-to-bottom flip because the frame flipped: not a finding about the subject, but a finding about the <em>instrument</em>. Calibration audits, methodology reviews, the moment a scientist asks whether the telescope itself is introducing the anomaly: those are &sigma;&#8341; in practice.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="semcard s-c">
+        <div class="semimg">
+          <picture><source srcset="assets/TETRASEMAPHORE-CRITICAL-en-320.webp" type="image/webp"><img src="assets/TETRASEMAPHORE-CRITICAL-en-320.png" width="160" height="160" alt="The CRITICAL semaphore, whose mark survives only the half-turn." loading="lazy" decoding="async"></picture>
           <span class="tf">C&#8322; &middot; det = +1<br>(x,&thinsp;y) &rarr; (&minus;x,&thinsp;&minus;y)</span>
         </div>
         <figcaption class="body">
           <div class="nm">Critical</div>
           <div class="ti">The Manhattan moment</div>
-          <p>A handstand &mdash; both axes flip; the blood rushes to your head and you can't hold it long. Total inversion under pressure: &ldquo;what if the atmosphere ignites?&rdquo; Your proof turns on you &mdash; not because the analysis was wrong, but because it was right and the answer is terrifying. Psychology's <em>ego-dystonic</em> is a loose analogy; engineers call it a show-stopper, security a 0-day.</p>
-        </figcaption>
-      </figure>
-
-      <figure class="owlcard s-m">
-        <div class="owlimg">
-          <picture><source srcset="assets/owl-metacognitive.webp" type="image/webp"><img src="assets/owl-metacognitive.png" width="118" height="118" alt="The Metacognitive owl — horizontally reflected, in a violet ring." loading="lazy" decoding="async"></picture>
-          <span class="tf">&sigma;&#8341; &middot; det = &minus;1<br>(x,&thinsp;y) &rarr; (x,&thinsp;&minus;y)</span>
-        </div>
-        <figcaption class="body">
-          <div class="nm">Metacognitive</div>
-          <div class="ti">The observer's mirror</div>
-          <p>A child loses a piece from a building set, looks everywhere, then bends down and looks between their legs &mdash; the room is the same, but up and down invert. A different angle reveals what the original frame could not; robotics inverts sensors for the same reason. Not a finding about the subject &mdash; a finding about the <em>instrument</em>: calibration audits, methodology reviews, asking whether the telescope itself made the anomaly. (Gödel is invoked only as a structural analogy &mdash; the need for a frame outside the first &mdash; never as proof about cognition.)</p>
+          <p>Turn around, then look between your legs. Both axes flip, and you cannot hold it for long. The physicists of the Manhattan Project knew the Critical state: &ldquo;What if the atmosphere ignites?&rdquo; The calculation said it would not.<sup><a href="#r14">[14]</a></sup> Your proof turns on you: not because the analysis was wrong, but because it was right. The bomb worked.</p>
         </figcaption>
       </figure>
     </div>
 
-    <p class="muted fs-90">Triple-redundant by design &mdash; state is carried by posture, ring color, <em>and</em> the transform &mdash; so the notation degrades gracefully and stays accessible. Full stories and sources: <a href="https://dnstool.it-help.tech/owl-semaphore" target="_blank" rel="noopener">the Owl Semaphore page &#8599;</a>. The Metacognitive operator, as a public derivation: <a href="/dose/01">Dose 01</a>.</p>
+    <p class="muted fs-90">Shape carries every state, and color comes second: in grayscale the four still differ by shape alone. Every formula, story and proof, one semaphore at a time: <a href="https://tetrasemaphore.systems/#four-semaphores" target="_blank" rel="noopener">tetrasemaphore.systems &#8599;</a>. The Metacognitive semaphore, worn as a public derivation: <a href="/dose/01">Dose 01</a>.</p>
 
-    <p>Two independent, commuting yes/no distinctions generate these states: the <em>orientation of stance</em> and the <em>locus of audit</em>. Two independent, commuting involutions force exactly four elements, closure forces the fourth as their composition, and every element is its own inverse. That structure has a name:</p>
+    <p>The four states answer two yes-or-no questions about a piece of thinking: is it looking at its <em>object</em>, or back at its own <em>frame</em>; and does it <em>keep</em> its stance toward the standard, or <em>reverse</em> it, the way a mirror reverses left and right? Two yes-or-no questions have exactly four answers, and in a flat picture they are four moves: leave it alone (I), flip it left to right (&sigma;&#7525;), flip it top to bottom (&sigma;&#8341;), or turn it half way round (C&#8322;), which is both flips at once. Each move is its own way back, and any two of the last three make the other. That structure has a name:</p>
 
     <div class="eqbox">
       <div class="pre">The proven structure</div>
-      <div class="stmt">{&thinsp;N,&thinsp;NN,&thinsp;C,&thinsp;M&thinsp;}&nbsp;&cong;&nbsp;<span class="gold">V&#8324;</span>&nbsp;&nbsp;(Klein four-group)</div>
-      <p class="gloss">The four states form the <b>Klein four-group</b> &mdash; the symmetry group of a rectangle. V&#8324; is <b>forced</b>: two <em>distinct, non-identity</em> commuting involutions land on it automatically, selecting it over the only other order-4 group (C&#8324;) and over every non-abelian group. Verified by direct enumeration.</p>
-      <span class="def">involution: x &compfn; x = identity &nbsp;·&nbsp; commuting: a &compfn; b = b &compfn; a &nbsp;·&nbsp; fourth element C&#8322; = &sigma;&#7515; &compfn; &sigma;&#8341; &nbsp;·&nbsp; C&#8324; excluded: no element of order 4</span>
+      <div class="stmt"><span class="gold">V&#8324;</span>&nbsp;=&nbsp;{&thinsp;I,&thinsp;&sigma;&#7525;,&thinsp;&sigma;&#8341;,&thinsp;C&#8322;&thinsp;}&nbsp;&nbsp;(Klein four-group)</div>
+      <p class="gloss">The four moves form the <b>Klein four-group</b>, the symmetry group of a rectangle. V&#8324; is <b>forced</b>: two <em>distinct, non-identity</em> commuting involutions always generate it. The only other group of order 4, the cyclic group C&#8324;, is ruled out because no move here has order 4. Machine-checked in the Lean proof assistant: <a href="https://github.com/IT-Help-San-Diego/tetrasemaphore/blob/v1.0.0/proofs/STATEMENTS.md" target="_blank" rel="noopener">the proofs &#8599;</a>.</p>
+      <span class="def">involution: x &compfn; x = identity &nbsp;·&nbsp; commuting: a &compfn; b = b &compfn; a &nbsp;·&nbsp; fourth element C&#8322; = &sigma;&#7525; &compfn; &sigma;&#8341; &nbsp;·&nbsp; C&#8324; excluded: no element of order 4</span>
     </div>
 
-    <div class="callout"><strong>Why &ldquo;commuting&rdquo; is the load-bearing word.</strong> Take the two distinctions above as involutions a, b &mdash; <em>distinct and non-identity</em>. If they <em>don't</em> commute, they generate a dihedral group: D&#8345; with n = ord(a&compfn;b) &ge; 3, or the infinite dihedral group when a&compfn;b has infinite order. If they <em>do</em> commute, their product is itself an involution &mdash; (a&compfn;b)&sup2; = a&compfn;b&compfn;a&compfn;b = a&sup2;b&sup2; = e &mdash; so {&thinsp;e, a, b, a&compfn;b&thinsp;} closes at exactly four, each its own inverse. That, and only that, is V&#8324;: with the two distinctions fixed, the structure is <em>forced</em>, not chosen.</p>
-    </div>
+    <div class="callout"><strong>Why &ldquo;commuting&rdquo; is the load-bearing word.</strong> Take the two moves as involutions a and b, <em>distinct and non-identity</em>. If they <em>don't</em> commute, they generate a dihedral group: D&#8345; with n = ord(a&compfn;b) &ge; 3, or the infinite dihedral group when a&compfn;b has infinite order. If they <em>do</em> commute, their product is itself an involution, since (a&compfn;b)&sup2; = a&compfn;b&compfn;a&compfn;b = a&sup2;b&sup2; = e, so {&thinsp;e, a, b, a&compfn;b&thinsp;} closes at exactly four, each its own inverse. That, and only that, is V&#8324;: with the two distinctions fixed, the structure is <em>forced</em>, not chosen.</div>
 
-    <div class="callout epistemic"><strong>Two claims, two very different statuses &mdash; do not conflate them.</strong> <em>(1) The algebra is proven.</em> The group structure is a verified mathematical fact. <em>(2) Whether these four states are the right partition of how people actually evaluate claims is an unvalidated design hypothesis.</em> There is no inter-rater reliability study finished yet; a pre-registered feasibility pilot (Fleiss' &kappa;) is the next step. And to be precise about lineage: this is a <strong>group of stance-operations, not a many-valued logic</strong> &mdash; it shares only the abstract V&#8324; skeleton with four-valued logics like Belnap&ndash;Dunn (a structural rhyme that any two-distinction system produces), and is not a logic, not an extension of Boolean algebra, and not a rediscovery of them.</p>
+    <div class="callout epistemic"><strong>Two claims, two very different statuses: do not conflate them.</strong> <em>(1) The algebra is proven.</em> The group structure is a mathematical fact, machine-checked in Lean. <em>(2) Whether the semaphores help people think about their thinking is an open question, and untested.</em> Testing it properly needs people who have not read the note, their consent and an ethics review; the release sets out the tests anyone can run, and the result that would show the system does not teach: <a href="https://tetrasemaphore.systems/#how-to-test-it" target="_blank" rel="noopener">How to test it &#8599;</a>. And to be precise about lineage: this is a <strong>group of moves, not a many-valued logic</strong>. It shares only the abstract V&#8324; skeleton with four-valued logics like Belnap&ndash;Dunn (a structural rhyme that any two-distinction system produces), and it is not a logic, not an extension of Boolean algebra, and not a rediscovery of them.</div>
   </div>
 </section>
 
@@ -827,25 +830,25 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
     </div>
     <div class="meta"><span class="status st-candidate">Proposal</span></div>
 
-    <p>Star-Centric Transport carries the verify-before-you-advance discipline into data pipelines. Modern systems are good at checking syntax, schema, and delivery order, but weak at noticing when data has become <em>operationally distorted</em> long before a downstream failure appears. The proposal: every clean chunk retains a recoverable <b>center</b> &mdash; a latent balance point &mdash; and a chunk may advance only while a verifier can still reconstruct that center within tolerance.</p>
+    <p>Star-Centric Transport carries the verify-before-you-advance discipline into data pipelines. Modern systems are good at checking syntax, schema, and delivery order, but weak at noticing when data has become <em>operationally distorted</em> long before a downstream failure appears. The proposal: every clean chunk retains a recoverable <b>center</b>, a latent balance point, and a chunk may advance only while a verifier can still reconstruct that center within tolerance.</p>
 
     <div class="eqbox">
       <div class="pre">The transport rule</div>
       <div class="stmt">x&#7522; = f(c&#7522;, k&#7522;)&nbsp;&nbsp;&middot;&nbsp;&nbsp;advance&nbsp;iff&nbsp;&Vert;&thinsp;c&#770;&#7522;,&#11428; &minus; c&#7522;&thinsp;&Vert;&nbsp;&le;&nbsp;<span class="gold">&tau;</span></div>
-      <p class="gloss">Observed form <b>x&#7522;</b> is the latent center <b>c&#7522;</b> deformed by contextual distortion <b>k&#7522;</b>. At each checkpoint the verifier estimates the center; if its distance from the true center exceeds the tolerance band <b>&tau;</b>, the chunk is slowed, quarantined, or flagged &mdash; not treated as trustworthy forward progress.</p>
-      <span class="def">The &ldquo;star&rdquo; is not &ldquo;perfect data&rdquo; &mdash; it's the invariant the pipeline is trying to preserve across transmission, transformation, and review.</span>
+      <p class="gloss">Observed form <b>x&#7522;</b> is the latent center <b>c&#7522;</b> deformed by contextual distortion <b>k&#7522;</b>. At each checkpoint the verifier estimates the center; if its distance from the true center exceeds the tolerance band <b>&tau;</b>, the chunk is slowed, quarantined, or flagged, not treated as trustworthy forward progress.</p>
+      <span class="def">The &ldquo;star&rdquo; is not &ldquo;perfect data&rdquo;; it's the invariant the pipeline is trying to preserve across transmission, transformation, and review.</span>
     </div>
 
-    <p>A transport rule needs a unit to transport. The natural one is an <b>epistemic packet</b> &mdash; the chunk plus the two things you'd need to audit it later:</p>
+    <p>A transport rule needs a unit to transport. The natural one is an <b>epistemic packet</b>: the chunk plus the two things you'd need to audit it later:</p>
 
     <div class="eqbox">
       <div class="pre">The epistemic packet</div>
       <div class="stmt"><span class="gold">P</span> = &langle;&thinsp;D,&thinsp;C,&thinsp;L&thinsp;&rangle;</div>
-      <p class="gloss"><b>D</b> &mdash; payload: the signal being moved (the latent center <span class="mono">c&#7522;</span> above, before distortion). <b>C</b> &mdash; carrier-color metadata: the tribe/role/emotional-amplitude tags &sect;2 says ride along with any human-sourced claim. <b>L</b> &mdash; lineage log: a signed, append-only record of each hop, marking where carrier color was injected or amplified.</p>
+      <p class="gloss"><b>D</b> (payload): the signal being moved (the latent center <span class="mono">c&#7522;</span> above, before distortion). <b>C</b> (carrier-color metadata): the tribe/role/emotional-amplitude tags &sect;2 says ride along with any human-sourced claim. <b>L</b> (lineage log): a signed, append-only record of each hop, marking where carrier color was injected or amplified.</p>
       <span class="def">L makes &ldquo;find where presupposition entered&rdquo; a literal, replayable trace rather than a forensic guess &nbsp;·&nbsp; &ldquo;center&rdquo; here is the latent invariant c&#7522;, <em>not</em> political centrism</span>
     </div>
 
-    <p>Because each hop is logged, a verifier can do what pipelines usually can't: when the <em>same</em> payload D arrives along carriers that bias in <em>different</em> directions, that agreement is evidence the signal is carrier-independent. In the odds form of &sect;1, quasi-independent carriers multiply their Bayes factors &mdash; so <b>convergence across dissimilar carriers raises posterior confidence</b>. It does not certify truth: a shared upstream source or a common hidden axiom breaks the independence the inference needs. Convergence is a strong prior-mover, not a verdict.</p>
+    <p>Because each hop is logged, a verifier can do what pipelines usually can't: when the <em>same</em> payload D arrives along carriers that bias in <em>different</em> directions, that agreement is evidence the signal is carrier-independent. In the odds form of &sect;1, quasi-independent carriers multiply their Bayes factors, so <b>convergence across dissimilar carriers raises posterior confidence</b>. It does not certify truth: a shared upstream source or a common hidden axiom breaks the independence the inference needs. Convergence is a strong prior-mover, not a verdict.</p>
 
     <svg class="pipe" viewBox="0 0 760 96" role="img" aria-label="A data pipeline with three checkpoints; each verifies that a chunk's recoverable center is still within tolerance before allowing it to advance.">
       <line x1="20" y1="48" x2="740" y2="48" stroke="#30363d" stroke-width="2"/>
@@ -858,8 +861,8 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       </g>
     </svg>
 
-    <p class="muted">The payoff is earlier, more honest progress estimation; drift caught before it poisons aggregate state; and integrity checks that happen <em>before</em> downstream escalation or policy action. It generalizes the same confidence-and-drift logic that already runs inside DNS Tool &mdash; positioned not as a mystical new protocol, but as a verification-aware transport model for high-integrity pipelines.</p>
-    <div class="callout epistemic"><strong>Epistemic status:</strong> a <strong>design proposal</strong> with a worked formalism &mdash; the epistemic-packet format included &mdash; not a deployed protocol with benchmarks. The mechanism is specified; its empirical advantage over existing validation/drift-detection approaches remains to be measured.</p>
+    <p class="muted">The payoff is earlier, more honest progress estimation; drift caught before it poisons aggregate state; and integrity checks that happen <em>before</em> downstream escalation or policy action. It generalizes the same confidence-and-drift logic that already runs inside DNS Tool, positioned not as a mystical new protocol, but as a verification-aware transport model for high-integrity pipelines.</p>
+    <div class="callout epistemic"><strong>Epistemic status:</strong> a <strong>design proposal</strong> with a worked formalism (the epistemic-packet format included), not a deployed protocol with benchmarks. The mechanism is specified; its empirical advantage over existing validation/drift-detection approaches remains to be measured.</p>
   </div>
 </section>
 
@@ -870,42 +873,42 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       <div class="section-icon si-info">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></svg>
       </div>
-      <div><h2>Applied &mdash; the principle, shipped</h2><div class="tag">Theory earns its keep when it runs on real infrastructure.</div></div>
+      <div><h2>Applied: the principle, shipped</h2><div class="tag">Theory earns its keep when it runs on real infrastructure.</div></div>
     </div>
-    <p class="lede">Three of these ideas are not just essays. They are deployed, verifiable systems &mdash; the proof that the Verification Principle survives contact with reality.</p>
+    <p class="lede">Three of these ideas are not just essays. They are deployed, verifiable systems: the proof that the Verification Principle survives contact with reality.</p>
 
     <div class="projects">
       <div class="project dns">
         <div class="kicker">OSINT &middot; domain security intelligence</div>
         <h3>DNS Tool</h3>
-        <p>The Verification Principle, made operational. DNS Tool collects from many redundant public sources, cross-references them, scores every finding by confidence (Observed / Inferred / Third-party), and hands you the exact <span class="mono">dig</span>/<span class="mono">openssl</span>/<span class="mono">curl</span> command to verify it yourself. Built on DNS precisely because the RFCs give ground truth: when a record says <span class="mono">v=spf1 -all</span>, there is no ambiguity about what it means. It is the proving ground &mdash; the principle demonstrated where claims can be independently checked.</p>
+        <p>The Verification Principle, made operational. DNS Tool collects from many redundant public sources, cross-references them, scores every finding by confidence (Observed / Inferred / Third-party), and hands you the exact <span class="mono">dig</span>/<span class="mono">openssl</span>/<span class="mono">curl</span> command to verify it yourself. Built on DNS precisely because the RFCs give ground truth: when a record says <span class="mono">v=spf1 -all</span>, there is no ambiguity about what it means.<sup><a href="#r16">[16]</a></sup> It is the proving ground: the principle demonstrated where claims can be independently checked.</p>
         <a class="visit" href="https://dnstool.it-help.tech" target="_blank" rel="noopener">Open DNS Tool &#8599;</a>
       </div>
       <div class="project cs">
         <div class="kicker">Capability verification instrument</div>
         <h3>Calibration Scope</h3>
-        <p>The principle turned into an instrument. Calibration Scope runs blind capability tests on AI models &mdash; and on you &mdash; with machine-verified ground truth, SHA-3-sealed evidence, and formal logic specifications. Local-first: the science happens on your hardware, where you can check it. Silicon and carbon under one method, with every verdict reproducible.</p>
+        <p>The principle turned into an instrument. Calibration Scope runs blind capability tests on AI models, and on you, with machine-verified ground truth, SHA-3-sealed evidence, and formal logic specifications. Local-first: the science happens on your hardware, where you can check it. Silicon and carbon under one method, with every verdict reproducible.</p>
         <a class="visit" href="https://calibrationscope.com" target="_blank" rel="noopener">Open Calibration Scope &#8599;</a>
       </div>
       <div class="project oc">
         <div class="kicker">Deep thinking as a service</div>
         <h3>Organic Computer</h3>
-        <p>The human substrate, offered directly. Organic Computer specs the human mind like hardware &mdash; an exaflop-scale reasoner running on ~20&nbsp;W and a glass of water &mdash; and sells the scarcest resource in business: a single mind that will hold one hard problem for hours and reason to its foundations. It is the Intellectual Resistance turned into a practice: metacognition first, AI as instrument never author, every figure sourced.</p>
+        <p>The human substrate, offered directly. Organic Computer specs the human mind like hardware (an exaflop-scale reasoner<sup><a href="#r15">[15]</a></sup> running on ~20&nbsp;W and a glass of water) and sells the scarcest resource in business: a single mind that will hold one hard problem for hours and reason to its foundations. It is the Intellectual Resistance turned into a practice: metacognition first, AI as instrument never author, every figure sourced.</p>
         <a class="visit" href="https://organiccomputer.me" target="_blank" rel="noopener">Open Organic Computer &#8599;</a>
       </div>
     </div>
 
     <div class="maxim">
       <span class="label">The maxim</span>
-      <blockquote>The answer to a question lives in the <span class="em">foundations</span> of the question. To understand those foundations &mdash; <span class="em">that</span> is logic.</blockquote>
+      <blockquote>The answer to a question lives in the <span class="em">foundations</span> of the question. To understand those foundations: <span class="em">that</span> is logic.</blockquote>
       <div class="rule"></div>
-      <cite>&mdash; the operating principle of the Intellectual Resistance</cite>
+      <cite>the operating principle of the Intellectual Resistance</cite>
     </div>
 
     <hr class="divider">
 
     <!-- published companion: The Belief Machine -->
-    <div class="callout epistemic"><strong>Published companion &mdash; <em>The Belief Machine</em> (SSRN, 2026).</strong> A peer-reviewable essay that supplies empirical spine to two of the frameworks above. It documents <b>identity-protective cognition</b> (Kahan et al., 2017<sup><a href="#r7">[7]</a></sup>) &mdash; the lab-measured finding that information threatening group identity is processed defensively <em>regardless of intelligence</em> &mdash; which is the documented cousin of Carrier&nbsp;Color: the carrier (group identity) overriding the signal. It then argues the fix is the <b>mandatory protected pause</b> (the surgical timeout, the aviation checklist), which is the Verification Principle applied to AI governance: a structured interruption that forces foreground evaluation before a high-stakes action. It also defines a new term, <em>mechanized oppression</em>. <a href="https://ssrn.com/abstract=6722059" target="_blank" rel="noopener">Read it on SSRN &#8599;</a></p>
+    <div class="callout epistemic"><strong>Published companion: <em>The Belief Machine</em> (SSRN, 2026).</strong> A peer-reviewable essay that supplies empirical spine to two of the frameworks above. It documents <b>identity-protective cognition</b> (Kahan et al., 2017<sup><a href="#r7">[7]</a></sup>): the lab-measured finding that information threatening group identity is processed defensively, and more so, not less, among the most numerate, which is the documented cousin of Carrier&nbsp;Color: the carrier (group identity) overriding the signal. It then argues the fix is the <b>mandatory protected pause</b> (the surgical timeout, the aviation checklist), which is the Verification Principle applied to AI governance: a structured interruption that forces foreground evaluation before a high-stakes action. It also defines a new term, <em>mechanized oppression</em>. <a href="https://ssrn.com/abstract=6722059" target="_blank" rel="noopener">Read it on SSRN &#8599;</a></p>
   </div>
 </section>
 
@@ -918,9 +921,9 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       </div>
       <div><h2>Where this comes from</h2><div class="tag">The origin of the discipline.</div></div>
     </div>
-    <p>I'm <b>Carey Balboa</b>, founder of IT Help San Diego, solving technology problems for 27 years. The discipline behind this work has an old root: as a kid I loved math &mdash; the real kind, the kind that makes things happen &mdash; but I was handed &ldquo;just memorize it, just trust us&rdquo; instead of &ldquo;here is <em>why</em> it works.&rdquo; I wouldn't accept answers whose foundations I couldn't see. That refusal cost me in school; it also became my method.</p>
-    <p>To this day I don't memorize what changes &mdash; I look it up, every time, from the highest-authority source &mdash; because the honest move is to verify, not to trust a memory, including my own. Around 2015 the question changed from &ldquo;how do you break in?&rdquo; to &ldquo;why does this keep failing, and why won't anyone slow down enough to think about it?&rdquo; I cut the things that fracture attention and built my life around protecting it. The frameworks on this page are what that protected attention has been pointed at. They are offered the way I'd want to receive them: with the math shown, and with each claim labeled for exactly how far it's been carried.</p>
-    <div class="callout"><strong>A standing invitation to refute.</strong> Everything here is built to be falsifiable. If a framework's math is wrong, the honest response is to fix or retract it &mdash; and the fastest way to earn my attention is a real measurement that contradicts a claim. That is not a threat to the work; it <em>is</em> the work.</p>
+    <p>I'm <b>Carey Balboa</b>, founder of IT Help San Diego, solving technology problems for 27 years. The discipline behind this work has an old root: as a kid I loved math (the real kind, the kind that makes things happen), but I was handed &ldquo;just memorize it, just trust us&rdquo; instead of &ldquo;here is <em>why</em> it works.&rdquo; I wouldn't accept answers whose foundations I couldn't see. That refusal cost me in school; it also became my method.</p>
+    <p>To this day I don't memorize what changes: I look it up, every time, from the highest-authority source, because the honest move is to verify, not to trust a memory, including my own. Around 2015 the question changed from &ldquo;how do you break in?&rdquo; to &ldquo;why does this keep failing, and why won't anyone slow down enough to think about it?&rdquo; I cut the things that fracture attention and built my life around protecting it. The frameworks on this page are what that protected attention has been pointed at. They are offered the way I'd want to receive them: with the math shown, and with each claim labeled for exactly how far it's been carried.</p>
+    <div class="callout"><strong>A standing invitation to refute.</strong> Everything here is built to be falsifiable. If a framework's math is wrong, the honest response is to fix or retract it. And the fastest way to earn my attention is a real measurement that contradicts a claim. That is not a threat to the work; it <em>is</em> the work.</p>
   </div>
 </section>
 
@@ -934,25 +937,32 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
       <div><h2>References &amp; primary sources</h2><div class="tag">Foundations you can check independently.</div></div>
     </div>
     <ol>
-      <li id="r1"><span class="srcbadge sb-self">Primary</span>C. J. Balboa, <em>Philosophical Foundations for Security Analysis Communication</em> &amp; <em>DNS Tool Methodology</em>, 2026. ORCID 0009-0000-5237-9065. <a href="https://doi.org/10.5281/zenodo.19468134" target="_blank" rel="noopener">doi:10.5281/zenodo.19468134 &#8599;</a></li>
-      <li id="r2"><span class="srcbadge sb-acad">Group theory</span>The Klein four-group V&#8324; is the unique non-cyclic group of order 4 &mdash; the symmetry group of a non-square rectangle; any structure built from two independent commuting involutions is isomorphic to it. Standard result in elementary abstract algebra (see e.g. Dummit &amp; Foote, <em>Abstract Algebra</em>, 3rd ed., &sect;2.5). <a href="https://groupprops.subwiki.org/wiki/Klein_four-group" target="_blank" rel="noopener">Group Properties Wiki &#8599;</a></li>
+      <li id="r1"><span class="srcbadge sb-self">Primary</span>C. J. Balboa, <em>DNS Tool: Domain Security Audit Platform</em>, 2026. ORCID 0009-0000-5237-9065. <a href="https://doi.org/10.5281/zenodo.19468134" target="_blank" rel="noopener">doi:10.5281/zenodo.19468134 &#8599;</a></li>
+      <li id="r2"><span class="srcbadge sb-acad">Group theory</span>The Klein four-group V&#8324; is the unique non-cyclic group of order 4: the symmetry group of a non-square rectangle; any structure built from two independent commuting involutions is isomorphic to it. Standard result in elementary abstract algebra (see e.g. Dummit &amp; Foote, <em>Abstract Algebra</em>, 3rd ed., &sect;2.5). <a href="https://groupprops.subwiki.org/wiki/Klein_four-group" target="_blank" rel="noopener">Group Properties Wiki &#8599;</a></li>
       <li id="r3"><span class="srcbadge sb-acad">Bayesian epistemics</span>The &ldquo;regularity&rdquo; requirement that contingent priors lie strictly in (0,1) so that conditionalization can revise them is standard in Bayesian confirmation theory; a prior of 0 or 1 is a fixed point of Bayes&rsquo; rule. See R. Carnap, <em>Logical Foundations of Probability</em> (1950); standard treatments of conditionalization. <a href="https://plato.stanford.edu/entries/epistemology-bayesian/" target="_blank" rel="noopener">Stanford Encyclopedia of Philosophy &#8599;</a></li>
-      <li id="r4"><span class="srcbadge sb-acad">Four-valued logic (distinction)</span>N. D. Belnap, &ldquo;A Useful Four-Valued Logic,&rdquo; in <em>Modern Uses of Multiple-Valued Logic</em>, Reidel, 1977 &mdash; cited here only to mark the boundary: the Owl Semaphore shares V&#8324; as an abstract group skeleton but is a system of stance-operations, not a many-valued logic. <a href="https://doi.org/10.1007/978-94-010-1161-7_2" target="_blank" rel="noopener">doi:10.1007/978-94-010-1161-7_2 &#8599;</a></li>
-      <li id="r5"><span class="srcbadge sb-self">Project</span>DNS Tool &mdash; deployed OSINT domain &amp; email-security intelligence platform. <a href="https://dnstool.it-help.tech" target="_blank" rel="noopener">dnstool.it-help.tech &#8599;</a> · source: <a href="https://github.com/IT-Help-San-Diego/dns-tool-intel" target="_blank" rel="noopener">github.com/IT-Help-San-Diego &#8599;</a></li>
-      <li id="r6"><span class="srcbadge sb-self">Project</span>Organic Computer &mdash; the human mind spec'd as hardware; sustained deliberate reasoning as a service. <a href="https://organiccomputer.me" target="_blank" rel="noopener">organiccomputer.me &#8599;</a></li>
-      <li id="r7"><span class="srcbadge sb-acad">Primary &mdash; peer-reviewed</span>D. M. Kahan, E. Peters, E. C. Dawson &amp; P. Slovic, &ldquo;Motivated numeracy and enlightened self-government,&rdquo; <em>Behavioural Public Policy</em>, vol. 1, no. 1, pp. 54&ndash;86, 2017 &mdash; the empirical basis for identity-protective cognition. <a href="https://doi.org/10.1017/bpp.2016.2" target="_blank" rel="noopener">doi:10.1017/bpp.2016.2 &#8599;</a></li>
+      <li id="r4"><span class="srcbadge sb-acad">Four-valued logic (distinction)</span>N. D. Belnap, &ldquo;A Useful Four-Valued Logic,&rdquo; in <em>Modern Uses of Multiple-Valued Logic</em>, Reidel, 1977. Cited here only to mark the boundary: the Tetrasemaphore shares V&#8324; as an abstract group skeleton but is a group of moves, not a many-valued logic. <a href="https://doi.org/10.1007/978-94-010-1161-7_2" target="_blank" rel="noopener">doi:10.1007/978-94-010-1161-7_2 &#8599;</a></li>
+      <li id="r5"><span class="srcbadge sb-self">Project</span>DNS Tool: deployed OSINT domain &amp; email-security intelligence platform. <a href="https://dnstool.it-help.tech" target="_blank" rel="noopener">dnstool.it-help.tech &#8599;</a> · source: <a href="https://github.com/IT-Help-San-Diego/dns-tool-intel" target="_blank" rel="noopener">github.com/IT-Help-San-Diego &#8599;</a></li>
+      <li id="r6"><span class="srcbadge sb-self">Project</span>Organic Computer: the human mind spec'd as hardware; sustained deliberate reasoning as a service. <a href="https://organiccomputer.me" target="_blank" rel="noopener">organiccomputer.me &#8599;</a></li>
+      <li id="r7"><span class="srcbadge sb-acad">Primary &middot; peer-reviewed</span>D. M. Kahan, E. Peters, E. C. Dawson &amp; P. Slovic, &ldquo;Motivated numeracy and enlightened self-government,&rdquo; <em>Behavioural Public Policy</em>, vol. 1, no. 1, pp. 54&ndash;86, 2017: the empirical basis for identity-protective cognition. <a href="https://doi.org/10.1017/bpp.2016.2" target="_blank" rel="noopener">doi:10.1017/bpp.2016.2 &#8599;</a></li>
       <li id="r8"><span class="srcbadge sb-self">Companion paper</span>C. J. Balboa, <em>The Belief Machine: How Human Identity Defense, AI Sycophancy, and Unaudited Targeting Systems Became One Problem</em>, SSRN working paper 6722059, 2026. ORCID 0009-0000-5237-9065. <a href="https://ssrn.com/abstract=6722059" target="_blank" rel="noopener">ssrn.com/abstract=6722059 &#8599;</a></li>
-      <li id="r9"><span class="srcbadge sb-self">Framework spec</span>C. J. Balboa, <em>Owl Semaphore System Specification</em> (finite algebra of epistemic states), Zenodo, 2026. <a href="https://doi.org/10.5281/zenodo.19473697" target="_blank" rel="noopener">doi:10.5281/zenodo.19473697 &#8599;</a></li>
+      <li id="r9"><span class="srcbadge sb-self">Framework release</span>C. J. Balboa, <em>The Tetrasemaphore</em>, version 1.0.0 (four semaphores, Lean proofs, public note and method), Zenodo, 2026. <a href="https://doi.org/10.5281/zenodo.23575816" target="_blank" rel="noopener">doi:10.5281/zenodo.23575816 &#8599;</a></li>
+      <li id="r10"><span class="srcbadge sb-acad">Primary</span>I. Newton, <em>Philosophi&aelig; Naturalis Principia Mathematica</em>, London: Royal Society, 1687: the laws of motion.</li>
+      <li id="r11"><span class="srcbadge sb-acad">Primary</span>A. Einstein, &ldquo;Zur Elektrodynamik bewegter K&ouml;rper,&rdquo; <em>Annalen der Physik</em>, vol. 322, no. 10, pp. 891&ndash;921, 1905: special relativity. <a href="https://doi.org/10.1002/andp.19053221004" target="_blank" rel="noopener">doi:10.1002/andp.19053221004 &#8599;</a></li>
+      <li id="r12"><span class="srcbadge sb-acad">Institutional</span>Smithsonian National Air and Space Museum, &ldquo;Leonardo da Vinci&rsquo;s Codex on the Flight of Birds&rdquo;: Leonardo&rsquo;s codex on flight, 1505&ndash;1506, four centuries before the Wright Flyer. <a href="https://airandspace.si.edu/exhibitions/leonardo-da-vincis-codex-flight-birds" target="_blank" rel="noopener">airandspace.si.edu &#8599;</a></li>
+      <li id="r13"><span class="srcbadge sb-acad">Institutional</span>Smithsonian National Air and Space Museum, &ldquo;Researching the Wright Way&rdquo;: Lilienthal&rsquo;s table of lift and drag, and Chanute&rsquo;s work, as the Wrights&rsquo; starting points. <a href="https://airandspace.si.edu/explore/stories/researching-wright-way" target="_blank" rel="noopener">airandspace.si.edu &#8599;</a></li>
+      <li id="r14"><span class="srcbadge sb-acad">Primary</span>E. J. Konopinski, C. Marvin &amp; E. Teller, <em>Ignition of the Atmosphere with Nuclear Bombs</em>, Los Alamos report LA-602, 1946: the calculation that the atmosphere would not ignite. Described in M. Wiescher &amp; K. Langanke, &ldquo;Manhattan Project astrophysics,&rdquo; <em>Physics Today</em>, vol. 77, no. 3, pp. 34&ndash;41, 2024. <a href="https://doi.org/10.1063/pt.jksg.hage" target="_blank" rel="noopener">doi:10.1063/pt.jksg.hage &#8599;</a></li>
+      <li id="r15"><span class="srcbadge sb-acad">Institutional</span>NIST, &ldquo;Brain-Inspired Computing Can Help Us Create Faster, More Energy-Efficient Devices &mdash; If We Win the Race,&rdquo; <em>Taking Measure</em> blog, 15 March 2023: the brain as the equivalent of an exaflop on about 20 watts. <a href="https://www.nist.gov/blogs/taking-measure/brain-inspired-computing-can-help-us-create-faster-more-energy-efficient" target="_blank" rel="noopener">nist.gov &#8599;</a></li>
+      <li id="r16"><span class="srcbadge sb-acad">Standard</span>S. Kitterman, <em>Sender Policy Framework (SPF) for Authorizing Use of Domains in Email, Version 1</em>, RFC 7208, IETF, April 2014: &ldquo;-&rdquo; is the fail qualifier. <a href="https://doi.org/10.17487/RFC7208" target="_blank" rel="noopener">doi:10.17487/RFC7208 &#8599;</a></li>
     </ol>
-    <p class="muted fs-90">Author identity &mdash; ORCID <a href="https://orcid.org/0009-0000-5237-9065" target="_blank" rel="noopener">0009-0000-5237-9065</a> · DNS Tool corpus DOI <a href="https://doi.org/10.5281/zenodo.19468134" target="_blank" rel="noopener">10.5281/zenodo.19468134</a>.</p>
+    <p class="muted fs-90">Author identity: ORCID <a href="https://orcid.org/0009-0000-5237-9065" target="_blank" rel="noopener">0009-0000-5237-9065</a> · DNS Tool corpus DOI <a href="https://doi.org/10.5281/zenodo.19468134" target="_blank" rel="noopener">10.5281/zenodo.19468134</a>.</p>
   </div>
 </section>
 </main>
 
 <footer>
   <div class="container">
-    <p class="mono">THE INTELLECTUAL RESISTANCE — intellectualresistance.com</p>
-    <p class="tagline">Logic, reason, and thinking that shows its work. Built in the IT Help San Diego scientific design language —<br>golden-ratio layout, self-contained assets, strict content-security policy. Every claim labeled for how far it's proven.</p>
+    <p class="mono">THE INTELLECTUAL RESISTANCE · intellectualresistance.com</p>
+    <p class="tagline">Logic, reason, and thinking that shows its work. Built in the IT Help San Diego scientific design language:<br>golden-ratio layout, self-contained assets, strict content-security policy. Every claim labeled for how far it's proven.</p>
 
     <!-- Corporate tree -->
     <nav class="ftr-tree" aria-label="Organizational structure">
@@ -1003,7 +1013,7 @@ a.ftr-node:hover{border-color:rgba(200,149,106,.35);color:#e6edf3}
         <a href="#verification" class="ftr-link">Verification Principle</a>
         <a href="#carrier-color" class="ftr-link">Carrier Color</a>
         <a href="#levers" class="ftr-link">Control Levers</a>
-        <a href="#owl" class="ftr-link">Owl Semaphore</a>
+        <a href="#tetrasemaphore" class="ftr-link">Tetrasemaphore</a>
         <a href="#transport" class="ftr-link">Star-Centric Transport</a>
       </div>
       <div class="ftr-cell">
