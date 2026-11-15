@@ -7,6 +7,11 @@
 > exactly how far it has been proven. Authored by Carey Balboa, founder of IT
 > Help San Diego Inc. ORCID 0009-0000-5237-9065.
 
+Changed on 15 November 2026 (UTC): this file earlier said Organic Computer was
+"sold as the scarcest business resource: a single mind that holds one hard
+problem for hours and reasons to its foundations". Those words are withdrawn.
+It now describes Organic Computer as a datasheet for the human brain.
+
 ## The thesis
 
 A civilization can transmit faster than it verifies. And when it does, the
@@ -154,11 +159,12 @@ political centrism.
   instrument: blind capability tests on AI models and on people, with
   machine-verified ground truth. Source:
   https://github.com/IT-Help-San-Diego/calibration-scope.
-- Organic Computer (https://organiccomputer.me): the human mind spec'd like
-  hardware (an exaflop-scale reasoner on ~20 W, by NIST's 2023 estimate, and a glass of water), sold as
-  the scarcest business resource: a single mind that holds one hard problem for
-  hours and reasons to its foundations. Metacognition first, AI as instrument
-  never author, every figure sourced.
+- Organic Computer (https://organiccomputer.me): a datasheet for the human
+  brain, with its sources listed. It presents the brain as a compute substrate,
+  specified the way hardware is specified (an exaflop-scale reasoner on ~20 W,
+  by NIST's 2023 estimate, and a glass of water), and sets it beside an
+  exascale supercomputer. The premise is playful. The figures are not.
+  Metacognition first, AI as instrument never author, every figure sourced.
 
 ## Whose resistance this is
 

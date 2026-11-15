@@ -2,6 +2,8 @@
 
 > A body of work on logic, reason, and thinking that shows its work: preserving signal integrity in a civilization that has learned to transmit faster than it can verify. Five frameworks (each stated with its math and labeled by epistemic status) and two shipped projects. By Carey Balboa, IT Help San Diego Inc.
 
+Changed on 15 November 2026 (UTC): this file earlier described Organic Computer as "sustained, deliberate reasoning offered as a service" and as "The Resistance turned into a practice". Those words are withdrawn. It now describes Organic Computer as a datasheet for the human brain.
+
 ## Frameworks
 
 - [The Verification Principle](https://intellectualresistance.com/#verification): PROVEN (theorem). Bayesian anti-dogmatism: if P(E)>0 and P(H)∈{0,1} then P(H|E)=P(H): a belief pinned at certain or impossible cannot learn. The epistemic core under everything else. Candidate corollary: detecting a locked prior requires measuring deviation from the Bayes-correct update, not raw movement (uninformative evidence, BF=1, leaves a rational agent unmoved too).
@@ -15,7 +17,7 @@
 
 - [DNS Tool](https://dnstool.it-help.tech): the Verification Principle made operational: multi-source OSINT domain/email-security intelligence with confidence scoring and "verify it yourself" commands. Built on DNS because RFCs give ground truth.
 - [Calibration Scope](https://calibrationscope.com): the principle turned into an instrument: blind capability tests on AI models and on people, with machine-verified ground truth. Source: https://github.com/IT-Help-San-Diego/calibration-scope.
-- [Organic Computer](https://organiccomputer.me): the human mind spec'd as hardware; sustained, deliberate reasoning offered as a service. The Resistance turned into a practice.
+- [Organic Computer](https://organiccomputer.me): a datasheet for the human brain, specified the way hardware is specified and set beside an exascale supercomputer, with its sources listed. The premise is playful. The figures are not.
 
 ## Related properties (same author)
 
