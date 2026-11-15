@@ -15,7 +15,7 @@
 
 - [DNS Tool](https://dnstool.it-help.tech): the Verification Principle made operational: multi-source OSINT domain/email-security intelligence with confidence scoring and "verify it yourself" commands. Built on DNS because RFCs give ground truth.
 - [Calibration Scope](https://calibrationscope.com): the principle turned into an instrument: blind capability tests on AI models and on people, with machine-verified ground truth. Source: https://github.com/IT-Help-San-Diego/calibration-scope.
-- [Organic Computer](https://organiccomputer.me): the human mind spec'd as hardware; sustained, deliberate reasoning offered as a service. The Resistance turned into a practice.
+- [Organic Computer](https://organiccomputer.me): a datasheet for the human brain, specified the way hardware is specified and set beside an exascale supercomputer, with its sources listed. It offers no service.
 
 ## Related properties (same author)
 
@@ -28,3 +28,5 @@
 Indexing access granted to AI/LLM and search crawlers via this file and `/robots.txt` is operational; it helps real users find first-party answers. It is **not** a license to redistribute, train on, or build derivatives from this site's content, copy, brand assets, or the Intellectual Resistance marks. All rights reserved unless a page is explicitly marked otherwise.
 
 Contact: licensing@it-help.tech
+
+Changed on 15 November 2026 (UTC): this file earlier described Organic Computer as "sustained, deliberate reasoning offered as a service" and as "The Resistance turned into a practice". Those words are withdrawn. It now says Organic Computer is a datasheet that offers no service.

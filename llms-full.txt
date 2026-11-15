@@ -154,11 +154,12 @@ political centrism.
   instrument: blind capability tests on AI models and on people, with
   machine-verified ground truth. Source:
   https://github.com/IT-Help-San-Diego/calibration-scope.
-- Organic Computer (https://organiccomputer.me): the human mind spec'd like
-  hardware (an exaflop-scale reasoner on ~20 W, by NIST's 2023 estimate, and a glass of water), sold as
-  the scarcest business resource: a single mind that holds one hard problem for
-  hours and reasons to its foundations. Metacognition first, AI as instrument
-  never author, every figure sourced.
+- Organic Computer (https://organiccomputer.me): a datasheet for the human
+  brain, with its sources listed. It presents the brain as a compute substrate,
+  specified the way hardware is specified (an exaflop-scale reasoner on ~20 W,
+  by NIST's 2023 estimate, and a glass of water), and sets it beside an
+  exascale supercomputer. It offers no service. Metacognition first, AI as
+  instrument never author, every figure sourced.
 
 ## Whose resistance this is
 
@@ -179,3 +180,8 @@ author's attention is a real measurement that contradicts a claim.
 Crawler/LLM indexing access is operational, not a license to redistribute, train
 on, or build derivatives from this content, copy, or marks. All rights reserved
 unless a page states otherwise. Contact: licensing@it-help.tech
+
+Changed on 15 November 2026 (UTC): this file earlier said Organic Computer was
+"sold as the scarcest business resource: a single mind that holds one hard
+problem for hours and reasons to its foundations". Those words are withdrawn.
+It now says Organic Computer is a datasheet that offers no service.
