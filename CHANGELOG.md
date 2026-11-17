@@ -3,13 +3,31 @@
 This file records changes to intellectualresistance.com that are not corrections: nothing a reader was
 told was wrong. Corrections are not recorded here. They are made where a reader sees them: as an entry in
 the family corrections index, https://www.it-help.tech/corrections/, which the home page links from its
-footer, and, from July 2026, as three dated notes on the home page, each beside the passage it concerns.
+footer, and as three notes dated 28 and 29 July 2026 on the home page, each beside the passage it
+concerns.
 
 This file is for whoever maintains the site. It is not served: the deploy leaves every `.md` file out of
 the bucket.
 
 This file begins with the entry below. Earlier changes are in this repository's history. Newest first.
 Each heading gives the day in UTC, and the day in Los Angeles where the two differ.
+
+## 17 November 2026: one sentence repunctuated
+
+On the home page, the sentence about a line with no resistor at its end had a spaced hyphen after "more
+signal". It now reads: "And a line with no resistor at its end doesn't carry more signal. It rings: the
+wave reflects, returns over what is still arriving, and the receiver cannot tell the message from its own
+echo." Organic Computer carries the same sentence and changed with it.
+
+Why: the site's own words carry no long dash, and no spaced hyphen standing in for one. The substitute
+is a full stop, a colon, a comma or parentheses.
+
+No claim changed, so this is recorded here and not as a new entry in the corrections index. The index's
+entry for this page, C-20261115-02, quotes the sentence; the change to its quotation is recorded in that
+entry, with the earlier punctuation.
+
+The head note of this file now gives the dates of the three notes on the home page, 28 and 29 July 2026,
+where it said "from July 2026", which read as a continuing practice.
 
 ## 17 November 2026: narrow screens
 
