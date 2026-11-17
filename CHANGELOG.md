@@ -14,8 +14,8 @@ Each heading gives the day in UTC, and the day in Los Angeles where the two diff
 ## 17 November 2026: narrow screens
 
 In Chromium, the home page and the Dose 01 page no longer scroll sideways at phone widths, and the home
-page no longer does at tablet widths. Chromium is the one engine these numbers come from: see the last
-paragraph.
+page no longer does at tablet widths. The numbers in this entry are Chromium's, except in the last
+paragraph, which says what was measured in Safari and what was not.
 
 Before this change the home page's document was 596 px wide in every window narrower than that (measured
 at 320, 375, 390, 430 and 595 px) and 1033 px wide in a window 861 to 1032 px wide. The Dose 01 page's
@@ -43,6 +43,9 @@ block's hash changed with the block and is pinned again in each page's own polic
 header policy. This is recorded here and not in the corrections index because nothing a reader was told
 changed.
 
-The measurements are from Chromium 141 and Chrome 157 on macOS. Safari was not measured for this change.
-Every browser on an iPhone runs Safari's engine, so nothing here says the change is verified on an
-iPhone.
+The numbers above are from Chromium 141 and Chrome 157 on macOS. Mobile Safari was measured separately,
+before the merge, in the iOS Simulator (iOS 27.0), by comparing a frame of the page at rest with a frame
+after a push to the left. Before this change the home page moved 222 px sideways in a window 375 points
+wide and 195 px in one 402 points wide, and the Dose 01 page moved 191 px at 375. With this change the
+home page did not move at 375 or at 402, and the Dose 01 page did not move at 375. Not measured: a real
+iPhone, any tablet width in Safari, Safari on a Mac, and a phone turned on its side.
