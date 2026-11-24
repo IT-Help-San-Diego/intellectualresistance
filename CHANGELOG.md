@@ -12,6 +12,27 @@ the bucket.
 This file begins with the entry below. Earlier changes are in this repository's history. Newest first.
 Each heading gives the day in UTC, and the day in Los Angeles where the two differ.
 
+## 23 November 2026: the METACOGNITIVE film on the Dose 01 page, and the DOI that resolves to the latest version
+
+The Dose 01 page gains a closed disclosure under the METACOGNITIVE still, "Watch the three moves applied to
+it (18 seconds, no sound)". Opening it shows the release's own 1298 px still as the poster of a plain video
+element. Nothing is fetched until the reader presses play; the film then plays inline with the browser's own
+controls, WebM first and MP4 second, both served from this site (`assets/films/`) and byte for byte the files
+of Tetrasemaphore release 1.3.0. No script and no third party are involved; the page's policy already allowed
+media from this site. The caption says what the film shows and that the pale blue outline the film draws is
+not part of the semaphore. The still stays as it was. The rules for the disclosure were added to the style
+block both pages share, so the style hash changed in both pages and in `infra/cloudfront/security-headers.json`.
+
+The home page's reference list, its structured data, `llms.txt` and `llms-full.txt` cited The Tetrasemaphore
+as version 1.0.0 with that version's DOI, 10.5281/zenodo.23575816. They now cite 10.5281/zenodo.23575814, the
+DOI that always resolves to the latest version, and name no version number. On the Dose 01 page the footer
+link and the sentence on the four stances do the same; the sentence that says what the garment's glyphs were
+checked against keeps 1.0.0, because that is the version they were checked against.
+
+Why: Tetrasemaphore releases now follow one another (1.1.0, 1.2.0 and 1.3.0 since 1.0.0), and a citation
+pinned to one version goes stale with each; the concept DOI does not. No claim changed: the 1.0.0 citation
+was true when written. Recorded here and not in the corrections index.
+
 ## 17 November 2026: one sentence repunctuated
 
 On the home page, the sentence about a line with no resistor at its end had a spaced hyphen after "more

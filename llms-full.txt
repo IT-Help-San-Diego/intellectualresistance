@@ -107,8 +107,8 @@ non-identity involutions: if they do NOT commute they generate a dihedral group
 D_n with n = ord(ab) ≥ 3 (infinite dihedral if ab has infinite order); if they
 commute, the product is itself an involution ((ab)² = a²b² = e), so {e, a, b, ab}
 closes at exactly four, and that is V₄, nothing else. The algebra is
-machine-checked in the Lean proof assistant: release 1.0.0,
-https://doi.org/10.5281/zenodo.23575816, at https://tetrasemaphore.systems/.
+machine-checked in the Lean proof assistant:
+https://doi.org/10.5281/zenodo.23575814 (the latest version), at https://tetrasemaphore.systems/.
 
 IMPORTANT framing (two claims, two statuses, never conflated): (a) the ALGEBRA
 is proven, a machine-checked mathematical fact; (b) whether the semaphores
