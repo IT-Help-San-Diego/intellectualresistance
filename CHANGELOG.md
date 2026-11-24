@@ -14,8 +14,8 @@ Each heading gives the day in UTC, and the day in Los Angeles where the two diff
 
 ## 23 November 2026: the METACOGNITIVE film on the Dose 01 page, and the DOI that resolves to the latest version
 
-The Dose 01 page gains a closed disclosure under the METACOGNITIVE still, "Watch it make the three moves
-(18 seconds, no sound)". Opening it shows the release's own 1298 px still as the poster of a plain video
+The Dose 01 page gains a closed disclosure under the METACOGNITIVE still, "Watch the three moves applied to
+it (18 seconds, no sound)". Opening it shows the release's own 1298 px still as the poster of a plain video
 element. Nothing is fetched until the reader presses play; the film then plays inline with the browser's own
 controls, WebM first and MP4 second, both served from this site (`assets/films/`) and byte for byte the files
 of Tetrasemaphore release 1.3.0. No script and no third party are involved; the page's policy already allowed
